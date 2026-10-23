@@ -36,38 +36,21 @@ Services and descriptions match the website. If something changes on the site, c
 
 ---
 
-## 2. Categories
+## 2. Categories (confirmed on the profile)
 
-Pick **one primary** and **up to 9 secondary** categories. Google only accepts names from its own list:
-**type the first few letters and click a suggestion from the dropdown.** Typing a full name and pressing enter gives
-"We didn't understand your category".
-
-**Primary (most important ranking signal):**
-- `HVAC contractor`
-
-**Secondary, in priority order:**
-
-| Type this | Pick | Website page |
+| | Category | Website pages it covers |
 | --- | --- | --- |
-| `heating` | Heating contractor | /heating |
-| `furnace` | Furnace repair service | /heating, /heating/24-hour-furnace-repair |
-| `air cond` | Air conditioning contractor | /air-conditioning |
-| `air cond` | Air conditioning repair service | /air-conditioning |
-| `commercial refrig` | Commercial refrigeration | /refrigeration and its sub-pages |
-| `mechanical` | Mechanical contractor (if it appears) | /rooftop-units, /ventilation/hood-fans-make-up-air |
-| `water heat` | Only a *repair* or *installation* service if one appears; skip if only store/supplier options show | /water-heaters |
+| **Primary** | HVAC contractor | Whole site, water heaters, home ventilation |
+| Secondary | Heating contractor | /heating |
+| Secondary | Furnace repair service | /heating, /heating/24-hour-furnace-repair |
+| Secondary | Air conditioning contractor | /air-conditioning |
+| Secondary | Air conditioning repair service | /air-conditioning |
+| Secondary | Commercial refrigeration | /refrigeration, walk-ins, ice machines |
+| Secondary | Mechanical contractor | /rooftop-units, hood fans & make-up air, commercial ventilation |
 
-**Tried and rejected by Google** (not real category names): "Refrigeration repair service", "Water heater installation service", "Ventilating equipment".
+**Adding more later:** type the first few letters and click a suggestion from the dropdown. Typing a full name and pressing enter gives "We didn't understand your category". Never pick anything ending in *store, supplier, wholesaler or manufacturer*.
 
-**No matching category? That's fine.** List the work as services under `HVAC contractor` (section 5). It still shows on the profile, and the website covers it.
-
-**Avoid these categories:**
-- Anything ending in **store, supplier, wholesaler or manufacturer**. Those mean selling products.
-- `Air duct cleaning service`. He doesn't advertise duct cleaning.
-- `Appliance repair service` or `Refrigerator repair service`. Those are for home fridges and washers.
-- `Plumber` or `Gas company`. Don't add these unless Quinn confirms he holds the licence and wants to be found for it.
-
-Fewer accurate categories beat many loose ones.
+**Tried and rejected by Google** (not real names): "Refrigeration repair service", "Water heater installation service", "Ventilating equipment". Water heaters and home ventilation are listed as services under HVAC contractor instead.
 
 ---
 
@@ -92,116 +75,247 @@ GBL HVAC LTD is a Calgary heating, cooling and refrigeration company, open 24 ho
 
 ---
 
-## 5. Services (each description: 300 characters max)
+## 5. Services by category (each description: 300 characters max)
 
-How to add them: **Edit profile → Services**. Google lists services under each category.
-1. **Tick Google's suggested services** only where they're true (e.g. "Furnace repair", "AC installation"). Skip anything he doesn't do, like duct cleaning or appliance repair.
-2. **Add custom services** for everything below. Put each under the category shown, then paste the description.
+Your categories are set. In **Edit profile → Services**, Google shows each category with its own list.
+For each category below:
+1. **Tick Google's suggested services** only where they're true. Skip anything he doesn't do (duct cleaning, appliance repair, plumbing).
+2. **Add custom service** for each one listed, then paste the description.
 3. **Leave the price blank.** No pricing has been confirmed.
 
-On the profile, services don't compete with each other the way website pages do, so walk-in coolers and freezers, and hood fans and make-up air, can be listed separately here.
+Every description matches the website page shown in brackets. No phone numbers, links or prices (Google can reject them).
 
-### Under: HVAC contractor
+### HVAC contractor
 
-**24/7 Emergency HVAC Service** (site: whole site)
-> Open 24 hours a day, 7 days a week, including holidays. No heat, no cooling, or a commercial system down? Call any time and talk directly to Quinn, the owner. We handle heating, cooling, ventilation, refrigeration and water heaters for homes and businesses.
+_Primary category. Whole-business and cross-system services, plus water heaters and home ventilation (no separate category for those)._
 
-**Rooftop Unit (RTU) Repair** (site: /rooftop-units)
-> Repair of commercial rooftop units for stores, restaurants, offices and warehouses. We diagnose and fix heating sections, cooling and refrigerant problems, belts, fans, economizers and controls. Calls answered 24/7.
+**24/7 Emergency HVAC Service** (whole site, 222 chars)
+> Open 24 hours a day, 7 days a week, including holidays. No heat, no cooling, or a commercial system down? Call any time and talk directly to Quinn, the owner. Heating, cooling, ventilation, refrigeration and water heaters.
 
-**Rooftop Unit Replacement** (site: /rooftop-units)
-> Replacement of commercial rooftop units when repair no longer makes sense. We give an honest repair-versus-replace comparison and walk you through the crane lift, curb and connections, and scheduling around your business hours.
+**Residential HVAC Service** (/#residential, 195 chars)
+> Heating, cooling, ventilation and water heaters for Calgary homes: furnace and AC installation and repair, seasonal tune-ups, HRVs and hot water tanks. One company for every system in your house.
 
-**Rooftop Unit Maintenance** (site: /rooftop-units)
-> Scheduled rooftop unit maintenance: filters, belts, coil cleaning, heating section and venting checks, refrigerant pressures, economizer and controls testing, and clearing condensate drains to prevent roof leaks.
+**Commercial HVAC Service** (/#commercial, 193 chars)
+> One company for every system in your building: rooftop units, heating, cooling, ventilation, make-up air, walk-in coolers and freezers, ice machines and commercial refrigeration. Answered 24/7.
 
-**Commercial HVAC Maintenance Contracts** (site: /maintenance-plans)
-> Scheduled maintenance for commercial heating, cooling, ventilation and refrigeration, timed around your business hours. Rooftop units, furnaces, boilers, make-up air and walk-in coolers. Every visit documented.
+**HVAC Maintenance & Tune-Ups** (/maintenance-plans, 212 chars)
+> Seasonal tune-ups that prevent breakdowns and help keep energy bills down: fall furnace tune-ups, spring AC tune-ups, plus boiler, HRV and water heater checks. Catch small problems before they become emergencies.
 
-### Under: Heating contractor / Furnace repair service
+**Thermostat Installation & Repair** (/heating, 121 chars)
+> Thermostat installation, upgrades and troubleshooting for furnaces, boilers and air conditioning in homes and businesses.
 
-**Furnace Repair** (site: /heating)
-> Furnace diagnosis and repair for Calgary homes and businesses. We check the thermostat, igniter, flame sensor, pressure switches, inducer, blower, venting and safety controls, then explain what we found before any work starts.
+**Ductwork Repair & Modifications** (/ventilation, 167 chars)
+> Ductwork repair, sealing of leaky joints, new runs for renovations and basement developments, and airflow balancing so heat and cooling reach the rooms that need them.
 
-**24 Hour Furnace Repair** (site: /heating/24-hour-furnace-repair)
-> No heat in the middle of the night? We answer 24/7, including weekends and holidays. Emergency diagnosis and repair for residential and commercial furnaces, boilers and unit heaters across Calgary.
+**HRV & Air Exchanger Service** (/ventilation, 216 chars)
+> Heat recovery ventilator (HRV) and air exchanger service, repair and installation. We clean cores and filters, fix noise, icing and drainage problems, and clear outdoor hoods so you get fresh air without losing heat.
 
-**Furnace Installation & Replacement** (site: /heating)
-> High-efficiency furnace installation and replacement, sized for your actual home or building. We look at the space, ductwork and venting and give honest repair-versus-replace advice before you decide.
+**Home Ventilation & Air Quality** (/ventilation, 165 chars)
+> Condensation on windows, musty smells, stuffy bedrooms or mould near windows? We check your ventilation, HRV, exhaust fans and airflow and fix what's not keeping up.
 
-**Boiler Installation & Repair** (site: /heating)
-> Hot water boiler installation, repair and maintenance for homes and commercial buildings that heat with hydronic systems.
+**Hot Water Tank Repair** (/water-heaters, 180 chars)
+> Hot water tank repair: no hot water, pilot won't stay lit, leaks, rusty water or rumbling noises. We repair burners, thermocouples, gas valves, venting and elements. Answered 24/7.
 
-**Furnace Tune-Up** (site: /maintenance-plans)
-> Fall furnace tune-up before the cold arrives: burners and flame sensor cleaned, igniter, inducer and pressure switches checked, venting and safety controls tested, blower and capacitor checked, and the right filter recommended.
+**Hot Water Tank Replacement** (/water-heaters, 192 chars)
+> Hot water tank replacement when the tank has reached the end of its life, typically around 8 to 12 years. Sized for your household so you don't run out of hot water or heat more than you need.
 
-**Thermostat Installation** (site: /heating)
-> Thermostat installation, upgrades and troubleshooting for furnaces, boilers and air conditioning systems in homes and businesses.
+**Tankless Water Heater Installation** (/water-heaters, 186 chars)
+> Tankless water heater installation for endless hot water and a smaller footprint. We check your gas line, venting and electrical first and tell you honestly whether tankless makes sense.
 
-**Commercial Heating** (site: /heating)
-> Heating service for restaurants, stores and offices: commercial furnaces, unit heaters, boilers and the heating side of rooftop units. Available 24/7 so you're not cold during opening hours.
-
-### Under: Air conditioning contractor / Air conditioning repair service
-
-**AC Installation** (site: /air-conditioning)
-> Central air conditioning installation for Calgary homes and businesses. Most homes with a forced-air furnace can add AC using existing ductwork. We size the system to your home and plan where the outdoor unit goes.
-
-**AC Repair** (site: /air-conditioning)
-> Air conditioning repair: no cold air, outdoor unit not running, ice on the lines, water leaks, noisy units or tripping breakers. We test the capacitor, contactor, fans, compressor, refrigerant and airflow.
-
-**AC Tune-Up** (site: /air-conditioning, /maintenance-plans)
-> Spring AC tune-up before the first hot day: condenser coil cleaned, refrigerant pressures, capacitor, contactor and fan motor checked, condensate drain cleared and cooling performance confirmed.
-
-**Commercial Air Conditioning** (site: /air-conditioning, /rooftop-units)
-> Cooling for offices, stores and restaurants: commercial split systems and rooftop unit cooling, plus scheduled maintenance so your system is checked before summer.
-
-### Under: Commercial refrigeration (or HVAC contractor if that category isn't available)
-
-**Commercial Refrigeration Repair** (site: /refrigeration)
-> Commercial refrigeration repair for restaurants, cafés, grocery and convenience stores, bars and caterers. Reach-in coolers and freezers, display cases, prep tables and condensing units. Answered 24/7.
-
-**Walk-In Cooler Repair** (site: /refrigeration/walk-in-coolers-freezers)
-> Walk-in cooler repair, answered 24/7. Temperature rising, ice on the coil, water on the floor or doors not sealing? We diagnose the whole system: controls, evaporator, condensing unit, refrigerant, gaskets and drains.
-
-**Walk-In Freezer Repair** (site: /refrigeration/walk-in-coolers-freezers)
-> Walk-in freezer repair, answered 24/7. We fix defrost heaters and timers, iced-up evaporator coils, frozen drain lines, door frame heaters, condensing units and refrigerant problems before you lose product.
-
-**Ice Machine Repair** (site: /refrigeration/ice-machines)
-> Commercial ice machine repair for restaurants, bars, cafés and hotels. Not making ice, slow production, small or cloudy cubes, leaks or off-tasting ice. We check the refrigeration, water system and controls.
-
-**Ice Machine Cleaning & Descaling** (site: /refrigeration/ice-machines)
-> Ice machine cleaning, descaling and sanitizing. Calgary's hard water leaves scale that slows production, and ice is food, so bins and water parts need regular sanitizing. Includes condenser cleaning and water filter checks.
-
-**Refrigeration Preventive Maintenance** (site: /refrigeration)
-> Scheduled maintenance for walk-ins, reach-ins and ice machines: condenser coils cleaned, refrigerant and pressures checked, fans, defrost and controls tested, door gaskets inspected and drains cleared.
-
-### Under: HVAC contractor (or a water heater repair/installation category if Google offers one)
-
-**Hot Water Tank Repair** (site: /water-heaters)
-> Hot water tank repair for homes and businesses: no hot water, pilot won't stay lit, leaks, rusty water or rumbling noises. We repair burners, thermocouples, gas valves, venting and elements. Answered 24/7.
-
-**Hot Water Tank Replacement** (site: /water-heaters)
-> Hot water tank replacement when the tank has reached the end of its life, typically around 8 to 12 years. We help you choose the right size so you don't run out of hot water or heat more than you need.
-
-**Tankless Water Heater Installation** (site: /water-heaters)
-> Tankless water heater installation for endless hot water and a smaller footprint. We check your gas line, venting and electrical first and tell you honestly whether tankless makes sense for your home or business.
-
-**Tankless Water Heater Service** (site: /water-heaters)
+**Tankless Water Heater Service & Descaling** (/water-heaters, 153 chars)
 > Tankless water heater repair and descaling. Calgary's hard water builds scale inside tankless units, so regular descaling keeps them running efficiently.
 
-### Under: HVAC contractor (or Mechanical contractor if you added it)
+**Commercial Water Heater Service** (/water-heaters, 190 chars)
+> Service and replacement of commercial water heaters for restaurants, salons, gyms and other businesses that use a lot of hot water. We'll check whether your system is keeping up with demand.
 
-**HRV & Air Exchanger Service** (site: /ventilation)
-> Heat recovery ventilator (HRV) and air exchanger service, repair and installation. We clean cores and filters, fix noise, icing and drainage problems, and clear outdoor hoods for fresh air without losing heat.
+---
 
-**Ductwork Repair & Modifications** (site: /ventilation)
-> Ductwork repair, sealing and modifications, new runs for renovations and basement developments, and airflow balancing so heat and cooling reach the rooms that need them.
+### Heating contractor
 
-**Kitchen Hood Fan Repair** (site: /ventilation/hood-fans-make-up-air)
+_Installing and servicing heating systems._
+
+**Furnace Installation & Replacement** (/heating, 200 chars)
+> High-efficiency furnace installation and replacement, sized for your actual home or building. We look at the space, ductwork and venting and give honest repair-versus-replace advice before you decide.
+
+**Boiler Installation** (/heating, 133 chars)
+> Hot water boiler installation for homes and commercial buildings that heat with hydronic systems, sized and set up for your building.
+
+**Boiler Repair & Maintenance** (/heating, 154 chars)
+> Hot water boiler repair and maintenance for homes and commercial buildings. Diagnosis, repair and regular checks to keep hydronic heat running all winter.
+
+**Commercial Heating Service** (/heating, 182 chars)
+> Heating for restaurants, stores and offices: commercial furnaces, boilers, unit heaters and the heating side of rooftop units. Available 24/7 so you're not cold during opening hours.
+
+**Unit Heater Repair** (/heating, 106 chars)
+> Repair and maintenance of unit heaters in shops, warehouses, garages and commercial spaces. Answered 24/7.
+
+**Heating System Replacement Advice** (/heating, 151 chars)
+> Old system needing a major repair? We compare repair and replacement honestly, based on age, condition and what the repair involves, so you can decide.
+
+---
+
+### Furnace repair service
+
+_Furnace breakdowns and furnace maintenance._
+
+**Furnace Repair** (/heating, 209 chars)
+> Furnace diagnosis and repair for Calgary homes and businesses. We check the thermostat, igniter, flame sensor, pressure switches, inducer, blower, venting and safety controls, then explain what we found first.
+
+**24 Hour Furnace Repair** (/heating/24-hour-furnace-repair, 171 chars)
+> No heat in the middle of the night? We answer 24/7, including weekends and holidays. Emergency diagnosis and repair for residential and commercial furnaces across Calgary.
+
+**No Heat Emergency Service** (/heating/24-hour-furnace-repair, 149 chars)
+> Furnace out in a cold snap? Call any time. We help you keep the house warm and protect your pipes while we get the heat back on as soon as it's safe.
+
+**Furnace Tune-Up** (/maintenance-plans, 193 chars)
+> Fall furnace tune-up before the cold arrives: burners and flame sensor cleaned, igniter, inducer and pressure switches checked, venting and safety controls tested, blower and capacitor checked.
+
+**Furnace Igniter & Flame Sensor Repair** (/heating/24-hour-furnace-repair, 181 chars)
+> Igniter clicks but the burners won't light, or they light and shut off seconds later? A failed igniter or dirty flame sensor is one of the most common no-heat causes. Repaired 24/7.
+
+**Furnace Blower Motor Repair** (/heating/24-hour-furnace-repair, 155 chars)
+> Furnace runs but no air from the vents, or a loud squeal or hum? We repair and replace blower motors and capacitors on residential and commercial furnaces.
+
+**Furnace Short Cycling Repair** (/heating, 166 chars)
+> Furnace starts, runs a few minutes, shuts off and repeats? We find the cause, from a clogged filter or dirty flame sensor to a failing pressure switch or overheating.
+
+**Furnace Vent & Intake Pipe Service** (/heating, 190 chars)
+> Furnace shutting off in very cold weather? Snow and frost can block the intake and exhaust pipes on high-efficiency furnaces. We clear them, check the venting and show you what to watch for.
+
+**Commercial Furnace Repair** (/heating, 134 chars)
+> Furnace repair for restaurants, stores, offices and shops, answered around the clock so your business isn't cold during opening hours.
+
+---
+
+### Air conditioning contractor
+
+_Installing and replacing AC systems._
+
+**Central AC Installation** (/air-conditioning, 201 chars)
+> Central air conditioning installation for Calgary homes. Most homes with a forced-air furnace can add AC using existing ductwork. Sized to your home, with the outdoor unit placed for airflow and quiet.
+
+**AC Replacement** (/air-conditioning, 158 chars)
+> Replacement of old or failing air conditioners, sized properly so the system doesn't run constantly or short cycle. Honest repair-versus-replace advice first.
+
+**Commercial AC Installation** (/air-conditioning, 166 chars)
+> Air conditioning for offices, stores and restaurants: commercial split systems and rooftop unit cooling, installed to keep staff, customers and equipment comfortable.
+
+**AC Tune-Up** (/maintenance-plans, 194 chars)
+> Spring AC tune-up before the first hot day: condenser coil cleaned, refrigerant pressures, capacitor, contactor and fan motor checked, condensate drain cleared and cooling performance confirmed.
+
+**AC Sizing & Placement Consultation** (/air-conditioning, 163 chars)
+> Thinking about adding AC? We check your furnace, ductwork and electrical, size the system to your home and plan where the outdoor unit should go before you commit.
+
+---
+
+### Air conditioning repair service
+
+_AC breakdowns and repairs._
+
+**AC Repair** (/air-conditioning, 195 chars)
+> Air conditioning repair for homes and businesses. We test the thermostat, capacitor, contactor, fan motors, compressor, refrigerant pressures, condensate drain and airflow to find the real cause.
+
+**AC Not Cooling Repair** (/air-conditioning, 169 chars)
+> AC running but blowing warm air? Common causes are a dirty filter, a failed capacitor or contactor, low refrigerant from a leak, or a frozen coil. We find it and fix it.
+
+**Outdoor AC Unit Not Running** (/air-conditioning, 180 chars)
+> Outdoor unit silent when the thermostat calls for cooling, or buzzing without starting? A failed capacitor or contactor is one of the most common causes and usually a quick repair.
+
+**Frozen AC Coil Repair** (/air-conditioning, 145 chars)
+> Ice on the refrigerant lines or indoor coil? Turn the AC off and call us. We find the cause, from airflow and filter problems to low refrigerant.
+
+**AC Refrigerant Leak Repair** (/air-conditioning, 132 chars)
+> Low refrigerant means there's a leak. Topping up only buys time, so we explain the options for finding and fixing the leak properly.
+
+**AC Water Leak Repair** (/air-conditioning, 133 chars)
+> Water pooling around the furnace or indoor coil? Usually a blocked condensate drain or a frozen coil. We clear it and find the cause.
+
+**Commercial AC Repair** (/air-conditioning, 117 chars)
+> Repair of commercial split systems and rooftop unit cooling for offices, stores and restaurants. Calls answered 24/7.
+
+**24/7 AC Repair** (/air-conditioning, 101 chars)
+> AC quit on the hottest day of the year? We're open 24 hours, 7 days a week, for homes and businesses.
+
+---
+
+### Commercial refrigeration
+
+_Coolers, freezers and ice for food businesses._
+
+**24/7 Emergency Refrigeration Service** (/refrigeration, 154 chars)
+> Cooler or freezer warming up after hours? We answer 24/7 for restaurants, grocery and convenience stores, bars and caterers. Call before you lose product.
+
+**Commercial Refrigeration Repair** (/refrigeration, 179 chars)
+> Commercial refrigeration repair: controls, defrost, evaporator and condenser fans, coils, refrigerant, compressors and electrical. We diagnose the whole system, not just one part.
+
+**Walk-In Cooler Repair** (/refrigeration/walk-in-coolers-freezers, 196 chars)
+> Walk-in cooler repair, answered 24/7. Temperature rising, ice on the coil, water on the floor or doors not sealing? We check controls, evaporator, condensing unit, refrigerant, gaskets and drains.
+
+**Walk-In Freezer Repair** (/refrigeration/walk-in-coolers-freezers, 182 chars)
+> Walk-in freezer repair, answered 24/7. We fix defrost heaters and timers, iced-up evaporator coils, frozen drain lines, door frame heaters, condensing units and refrigerant problems.
+
+**Walk-In Defrost & Drain Repair** (/refrigeration/walk-in-coolers-freezers, 181 chars)
+> Coil turning into a block of ice, or water and ice on the floor? We repair defrost heaters, timers and controls, and drain line heaters that stop defrost water freezing in the line.
+
+**Reach-In Cooler & Freezer Repair** (/refrigeration, 120 chars)
+> Repair of reach-in coolers and freezers, under-counter units and prep tables for restaurants, cafés and food businesses.
+
+**Display Case Repair** (/refrigeration, 107 chars)
+> Repair of refrigerated display cases and merchandisers for grocery and convenience stores, cafés and delis.
+
+**Condensing Unit Repair** (/refrigeration, 171 chars)
+> Repair of refrigeration condensing units: compressors, condenser fans, coils and electrical. Dirty condenser coils are a common cause of poor performance in busy kitchens.
+
+**Ice Machine Repair** (/refrigeration/ice-machines, 196 chars)
+> Commercial ice machine repair for restaurants, bars, cafés and hotels. Not making ice, slow production, small or cloudy cubes, leaks or off-tasting ice. We check refrigeration, water and controls.
+
+**Ice Machine Cleaning & Descaling** (/refrigeration/ice-machines, 170 chars)
+> Ice machine cleaning, descaling and sanitizing. Calgary's hard water leaves scale that slows production, and ice is food, so bins and water parts need regular sanitizing.
+
+**Door Gasket & Closer Repair** (/refrigeration/walk-in-coolers-freezers, 145 chars)
+> Torn gaskets or doors that won't close let warm air in and make coolers work harder. We repair gaskets, hinges, closers and freezer door heaters.
+
+**Refrigeration Preventive Maintenance** (/refrigeration, 207 chars)
+> Scheduled maintenance for walk-ins, reach-ins and ice machines: condenser coils cleaned, refrigerant checked, fans, defrost and controls tested, gaskets inspected and drains cleared. Timed around your hours.
+
+---
+
+### Mechanical contractor
+
+_Rooftop units, kitchen exhaust, make-up air and commercial ventilation._
+
+**Rooftop Unit (RTU) Repair** (/rooftop-units, 186 chars)
+> Repair of commercial rooftop units for stores, restaurants, offices and warehouses. Heating sections, cooling and refrigerant, belts, fans, economizers and controls. Calls answered 24/7.
+
+**Rooftop Unit Replacement** (/rooftop-units, 194 chars)
+> Replacement of commercial rooftop units when repair no longer makes sense. Honest repair-versus-replace comparison, and we plan the crane lift, curb, connections and timing around your business.
+
+**Rooftop Unit Maintenance** (/rooftop-units, 208 chars)
+> Scheduled rooftop unit maintenance: filters, belts, coil cleaning, heating section and venting checks, refrigerant pressures, economizer and controls testing, and condensate drains cleared to stop roof leaks.
+
+**Rooftop Unit Roof Leak Diagnosis** (/rooftop-units, 173 chars)
+> Water dripping through the ceiling under the rooftop unit? Often a blocked condensate drain. We check and clear it, and tell you if the curb or roof flashing needs a roofer.
+
+**Economizer & Controls Repair** (/rooftop-units, 163 chars)
+> A stuck economizer damper can pour freezing air in all winter or waste energy all summer. We repair dampers, actuators, sensors, thermostats and building controls.
+
+**Kitchen Hood Fan Repair** (/ventilation/hood-fans-make-up-air, 187 chars)
 > Commercial kitchen exhaust hood fan repair: motors, belts, pulleys, bearings and controls. Smoke escaping the hood or a squealing roof fan? We fix it and work around your kitchen's hours.
 
-**Make-Up Air Unit Repair** (site: /ventilation/hood-fans-make-up-air)
-> Make-up air unit repair for restaurants and commercial kitchens. Doors hard to open or freezing air in winter? We service burners, igniters, flame safety controls, blowers, belts, filters, dampers and hood interlocks.
+**Make-Up Air Unit Repair** (/ventilation/hood-fans-make-up-air, 200 chars)
+> Make-up air unit repair for restaurants and commercial kitchens. Doors hard to open or freezing air in winter? We service burners, igniters, flame safety controls, blowers, belts, filters and dampers.
+
+**Hood & Make-Up Air Interlock Repair** (/ventilation/hood-fans-make-up-air, 164 chars)
+> Hood fans and make-up air units should start and stop together. When an interlock or switch fails, one runs without the other. We test and balance the whole system.
+
+**Kitchen Ventilation Maintenance** (/ventilation/hood-fans-make-up-air, 183 chars)
+> Scheduled maintenance for kitchen exhaust and make-up air: belts, motors, bearings, fan wheels, filters, burner and safety controls checked before winter, plus dampers and interlocks.
+
+**Commercial Ventilation Service** (/ventilation, 183 chars)
+> Fresh air for offices, stores and restaurants: commercial ventilation, make-up air and rooftop unit ventilation. Signs of trouble include hard-to-open doors, drafts and stuffy spaces.
+
+**Commercial HVAC Maintenance Contracts** (/maintenance-plans, 171 chars)
+> Scheduled maintenance for rooftop units, furnaces, boilers, make-up air, walk-in coolers and other refrigeration, timed around your business hours. Every visit documented.
 
 ---
 
