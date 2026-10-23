@@ -47,6 +47,7 @@ All page content lives in `lib/services.ts`. Adding an entry there creates the p
 
 ## Confirmed by the client (intake form, Oct 22, 2026)
 
+- Business name **GBL HVAC LTD**, matching the Google Business Profile (the intake form said "GBL HVAC"; confirmed the profile uses GBL HVAC LTD). Use it character for character everywhere
 - Phone (403) 970-6988, email gblhvac@hotmail.com
 - Open 24 hours, 7 days (the form showed Friday "Closed" and odd open/close times; client confirmed that was an error)
 - Primary category HVAC, secondary Refrigeration
@@ -58,7 +59,6 @@ All page content lives in `lib/services.ts`. Adding an entry there creates the p
 
 ## Waiting on the client (do not invent)
 
-- [ ] **Exact business name on the Google Business Profile.** The intake form says `GBL HVAC`; the van, business card and site say `GBL HVAC LTD`. They must match character for character. Whichever is on the GBP wins: change `SITE.name` in `lib/site.ts` (and the GBP if needed)
 - [ ] **Domain**, and whether it's www or not. Then set `NEXT_PUBLIC_SITE_URL` in Vercel
 - [ ] **Licences / tickets** (Gas Fitter, Refrigeration Mechanic, etc.). Once confirmed, add a credentials banner below the hero and on each hub. Until then, gas-related copy avoids any credential claims
 - [ ] Insurance / WCB coverage
