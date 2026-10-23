@@ -39,55 +39,62 @@ export const SERVICES: ServicePage[] = [
     h1: "Furnace Repair in Calgary",
     lede: "Furnace and boiler repair, installation and maintenance for Calgary homes and businesses. Open 24 hours, every day of the year.",
     intro: [
-      "A Calgary winter doesn't wait for business hours. When the furnace quits on a January night, the house starts losing heat right away, and pipes, pets and people all feel it. That's why GBL HVAC LTD answers the phone 24 hours a day, 7 days a week.",
-      "We repair, install and maintain furnaces and boilers in houses, townhomes, rental properties, shops, restaurants and offices across Calgary and the surrounding area. One call gets you a straight answer about what's wrong and what it takes to fix it.",
+      "Furnace dies on a January night? We pick up 24/7 and get your heat back on.",
     ],
     sections: [
       {
         heading: "Signs your furnace needs service",
-        body: [
-          "Most furnaces give some warning before they fail completely. Catching these early is usually cheaper and far less stressful than a 2am breakdown.",
-        ],
+        body: [],
         bullets: [
-          "The furnace runs but the air from the vents is cool or barely warm",
-          "It short-cycles: starts, runs a few minutes, shuts off, repeats",
-          "Some rooms are much colder than others",
-          "New noises: banging, squealing, rattling or a loud boom at start-up",
-          "The igniter clicks but the burners don't light",
-          "Your gas bill has climbed with no change in how you use heat",
-          "The furnace is old and has needed several repairs in the last few winters",
+          "Cool air: furnace runs but vents blow cool or barely warm",
+          "Short cycling: starts, runs a few minutes, shuts off, repeats",
+          "Cold rooms: some rooms much colder than others",
+          "New noises: banging, squealing, rattling or a boom at start-up",
+          "No ignition: igniter clicks but burners don't light",
+          "Rising gas bill: with no change in how you use heat",
+          "Older unit: several repairs in the last few winters",
         ],
       },
       {
         heading: "Furnace repair",
-        body: [
-          "A repair visit starts with a proper diagnosis. We check the thermostat, filter, igniter, flame sensor, pressure switches, inducer motor, blower, venting and safety controls, then tell you what we found in plain language before any work starts.",
-          "Many no-heat calls come down to a single failed part or a blocked intake or exhaust pipe. Snow and frost can block the PVC pipes on the outside wall of high-efficiency furnaces during a Calgary cold snap, and the furnace shuts itself off to stay safe. We'll show you what to watch for so it doesn't catch you out again.",
-        ],
-      },
-      {
-        heading: "Furnace and boiler installation",
-        body: [
-          "When a furnace is near the end of its life, repeated repairs stop making sense. Most furnaces last somewhere around 15 to 20 years, depending on how well they were maintained. If yours is in that range and needs a major part, we'll lay out repair versus replacement honestly so you can decide.",
-          "A new system should be sized for your actual home or building, not just matched to whatever was there before. We look at the space, the existing ductwork and venting, and how you use the building, then recommend equipment that fits. We also install and service hot water boilers for homes and commercial buildings that heat with hydronic systems.",
-          "Some heating work in Calgary needs a City permit and inspection. Ask us whether yours does and we'll explain the steps before the job starts.",
-        ],
-      },
-      {
-        heading: "Heating for businesses",
-        body: [
-          "A cold restaurant, store or office costs you customers and staff comfort. We service commercial furnaces, unit heaters, boilers and the heating side of rooftop units, and we can set up regular maintenance so problems are caught on a scheduled visit instead of during opening hours.",
-        ],
-      },
-      {
-        heading: "Before you call: quick checks",
-        body: ["These take two minutes and sometimes solve the problem outright. If they don't, call us any time."],
+        body: [],
         bullets: [
-          "Make sure the thermostat is set to Heat and above room temperature, and replace its batteries if it has them",
-          "Check the furnace switch (it looks like a light switch near the unit) is on",
-          "Check the breaker for the furnace hasn't tripped",
-          "Replace a dirty filter. A clogged filter can make the furnace overheat and shut down",
-          "Clear snow and frost from the intake and exhaust pipes outside",
+          "Full diagnosis: thermostat, filter, igniter, flame sensor, switches, inducer, blower, venting, safety controls",
+          "Plain-language answer: what's wrong and what it takes, before work starts",
+          "Common culprit: snow or frost blocking the pipes on the outside wall",
+        ],
+      },
+      {
+        heading: "Installation & replacement",
+        body: [],
+        bullets: [
+          "Honest advice: repair vs. replace, your call",
+          "Typical lifespan: around 15 to 20 years, depending on maintenance",
+          "Sized right: for your actual home, ducts and venting",
+          "Boilers too: hot water boilers for homes and commercial buildings",
+          "Permits: some heating work needs a City permit. Ask us",
+        ],
+      },
+      {
+        heading: "Businesses",
+        body: [],
+        bullets: [
+          "Commercial furnaces and unit heaters",
+          "Boilers and rooftop unit heating sections",
+          "Scheduled maintenance so it doesn't fail during opening hours",
+        ],
+      },
+      {
+        heading: "Quick checks before you call",
+        body: [
+          "Two minutes. Sometimes it fixes the problem. If not, call any time.",
+        ],
+        bullets: [
+          "Thermostat: set to Heat, above room temp, fresh batteries",
+          "Furnace switch: the light-style switch near the unit is on",
+          "Breaker: not tripped",
+          "Filter: replace if dirty, a clogged filter can shut it down",
+          "Outside pipes: clear snow and frost",
         ],
       },
     ],
@@ -136,59 +143,70 @@ export const SERVICES: ServicePage[] = [
     h1: "24 Hour Furnace Repair in Calgary",
     lede: "No heat at 2am, minus 30 outside. Call 403-970-6988. We pick up 24 hours a day, 7 days a week.",
     intro: [
-      "Furnaces don't pick a good time to fail. They quit on the coldest night of the year, on a long weekend, or right after the family has gone to bed. When that happens, you need someone who actually answers.",
-      "GBL HVAC LTD is open 24 hours. When you call 403-970-6988 you talk directly to Quinn, the owner, not an answering service that takes a message for the morning.",
+      "No heat at 2am? Call 403-970-6988. You talk to Quinn, the owner, not an answering service.",
     ],
     sections: [
       {
-        heading: "What to do right now",
-        body: ["While you're waiting for us, these steps keep your family and your home safe and warm."],
+        heading: "Do this right now",
+        body: [],
         bullets: [
-          "If you smell gas or a carbon monoxide alarm is sounding, get everyone out and call 911 from outside. Don't wait for an HVAC company",
-          "Check the thermostat is on Heat, the furnace switch is on and the breaker hasn't tripped",
-          "Swap a dirty filter if you have a spare",
-          "Clear snow and frost off the furnace pipes on the outside wall",
-          "Close curtains and blinds, shut doors to unused rooms and keep everyone in one warm area",
-          "Use electric space heaters only as directed. Never use a gas stove, oven or barbecue to heat the house",
+          "Gas smell or CO alarm: get everyone out and call 911 from outside",
+          "Basic checks: thermostat on Heat, furnace switch on, breaker not tripped",
+          "Filter: swap it if you have a spare",
+          "Outside pipes: clear snow and frost",
+          "Stay warm: close blinds, shut unused rooms, keep everyone together",
+          "Never: heat the house with a gas stove, oven or barbecue",
         ],
       },
       {
         heading: "Protect your pipes",
         body: [
-          "In a deep Calgary cold snap, a house without heat can get cold enough for water lines to freeze, especially pipes on outside walls, in crawl spaces and in unheated garages. A burst pipe can do far more damage than the furnace repair itself.",
-          "While the heat is off, open cabinet doors under sinks on outside walls so warmer room air reaches the pipes, and let a tap drip slightly. If you're leaving the house, tell us so we can talk through the risk.",
+          "A burst pipe can cost more than the furnace repair.",
         ],
-      },
-      {
-        heading: "What happens when you call",
-        body: [
-          "Tell us what the furnace is doing: no heat at all, cold air, short cycling, strange noises, error codes or lights blinking on the control board. A few questions on the phone often narrow down the problem before we arrive.",
-          "On site we diagnose the actual cause, explain it in plain language and get your heat back on as soon as it's safe to do so. If a part has to be ordered, we'll tell you straight and talk through options for keeping the house warm in the meantime.",
-        ],
-      },
-      {
-        heading: "Common causes of a no-heat call",
-        body: ["Most overnight no-heat calls trace back to a short list of problems:"],
         bullets: [
-          "Blocked intake or exhaust pipes from snow, ice or frost",
-          "A failed hot surface igniter",
-          "A dirty or failed flame sensor that shuts the burners off seconds after lighting",
+          "Pipes on outside walls, crawl spaces and garages freeze first",
+          "Open cabinet doors under sinks on outside walls",
+          "Let a tap drip slightly",
+          "Leaving the house? Tell us so we can talk through the risk",
+        ],
+      },
+      {
+        heading: "When you call",
+        body: [],
+        bullets: [
+          "Tell us: no heat, cold air, short cycling, noises, error lights",
+          "We narrow it down on the phone",
+          "On site: diagnose, explain, get heat back on safely",
+          "Part on order? We'll talk through keeping you warm meanwhile",
+        ],
+      },
+      {
+        heading: "Common causes",
+        body: [],
+        bullets: [
+          "Snow, ice or frost blocking intake or exhaust pipes",
+          "Failed hot surface igniter",
+          "Dirty or failed flame sensor",
           "Inducer motor or pressure switch faults",
-          "A failed blower motor or capacitor",
-          "A severely clogged filter causing the furnace to overheat and lock out",
+          "Blower motor or capacitor failure",
+          "Clogged filter causing overheat lockout",
           "Thermostat or wiring faults",
         ],
       },
       {
         heading: "Businesses too",
-        body: [
-          "A restaurant with no heat before the lunch rush, a store with frozen staff, or an office that can't open: commercial heating failures cost money by the hour. We answer commercial calls around the clock as well, and we work on furnaces, unit heaters, boilers and rooftop units.",
+        body: [],
+        bullets: [
+          "Restaurants, stores and offices answered around the clock",
+          "Furnaces, unit heaters, boilers and rooftop units",
         ],
       },
       {
-        heading: "Stop the next one before it starts",
-        body: [
-          "Many emergency calls could have been caught on a fall tune-up: a cracked igniter, a dirty flame sensor or a weak capacitor are all visible before they fail. Once your heat is back on, ask us about seasonal maintenance so your furnace is checked before the cold arrives.",
+        heading: "Stop the next one",
+        body: [],
+        bullets: [
+          "Fall tune-ups catch cracked igniters, dirty sensors and weak capacitors",
+          "Ask about seasonal maintenance once your heat is back",
         ],
       },
     ],
@@ -239,49 +257,58 @@ export const SERVICES: ServicePage[] = [
     h1: "AC Installation & Repair in Calgary",
     lede: "Central air conditioning installed, repaired and tuned up for Calgary homes and businesses, so you're ready before the heat arrives.",
     intro: [
-      "Calgary summers are short, but the hot stretches are real. Upper floors and newer homes with big windows can get uncomfortable fast, and once a heat wave hits, everyone wants their AC fixed at the same time.",
-      "GBL HVAC LTD installs, repairs and maintains central air conditioning for houses, townhomes, offices and stores. We're open 24 hours, so you can reach us when the AC quits on the hottest day of the year.",
+      "Calgary summers are short, but the hot stretches are real. Get your AC installed, fixed or tuned up before the heat hits.",
     ],
     sections: [
       {
         heading: "AC installation",
-        body: [
-          "Most Calgary homes with forced-air furnaces can add central air conditioning using the existing ductwork. The outdoor unit is paired with an indoor coil that sits on top of the furnace, and the furnace blower moves the cool air through the house.",
-          "Sizing matters. An undersized system runs constantly and never catches up. An oversized one cools quickly but cycles on and off, leaving the house clammy and wearing out parts. We look at your home's size, layout, windows and existing ducts before recommending equipment.",
-          "We'll also talk through where the outdoor unit should go: level ground, clearance for airflow, and away from bedroom windows where the noise would bother you.",
-        ],
-      },
-      {
-        heading: "AC repair",
-        body: ["Call us if you notice any of these:"],
+        body: [],
         bullets: [
-          "The AC runs but the air from the vents isn't cold",
-          "The outdoor unit isn't running when the thermostat calls for cooling",
-          "Ice on the refrigerant lines or the indoor coil",
-          "Water pooling around the furnace or indoor coil",
-          "Loud buzzing, clicking or grinding from the outdoor unit",
-          "The breaker trips when the AC starts",
-          "Some rooms stay hot no matter how long it runs",
+          "Uses your ducts: most homes with a forced-air furnace can add central air",
+          "Sized right: not too big, not too small, based on your home",
+          "Smart placement: level ground, airflow clearance, away from bedroom windows",
         ],
       },
       {
-        heading: "What we check on a repair",
-        body: [
-          "We test the thermostat, capacitor, contactor, fan motors, compressor, refrigerant pressures, condensate drain and airflow through the filter and coil. A failed capacitor or contactor is one of the most common reasons an outdoor unit won't start, and it's usually a quick repair.",
-          "If the system is low on refrigerant, that means there's a leak somewhere. Topping it up without finding the leak only buys time, so we'll explain the options for locating and repairing it.",
+        heading: "Call us if",
+        body: [],
+        bullets: [
+          "Vents blow warm air",
+          "Outdoor unit won't run",
+          "Ice on the lines or indoor coil",
+          "Water pooling near the furnace",
+          "Buzzing, clicking or grinding outside",
+          "Breaker trips when AC starts",
+          "Some rooms stay hot",
         ],
       },
       {
-        heading: "Tune-ups before summer",
-        body: [
-          "A spring tune-up catches weak parts before the first hot day and keeps the system running efficiently. We clean the outdoor coil, check electrical connections and refrigerant, test the capacitor, clear the condensate drain and confirm the system is cooling properly.",
-          "Between visits, keep the outdoor unit clear of grass clippings, leaves and cottonwood fluff, and change your furnace filter regularly. The AC uses the same filter and blower as your furnace.",
+        heading: "What we check",
+        body: [],
+        bullets: [
+          "Thermostat, capacitor, contactor and fan motors",
+          "Compressor and refrigerant pressures",
+          "Condensate drain and airflow",
+          "Low refrigerant: means a leak, we find it instead of just topping up",
+        ],
+      },
+      {
+        heading: "Spring tune-up",
+        body: [],
+        bullets: [
+          "Clean outdoor coil",
+          "Check electrical connections and refrigerant",
+          "Test capacitor, clear condensate drain",
+          "Your part: keep the outdoor unit clear of grass and cottonwood fluff",
         ],
       },
       {
         heading: "Commercial cooling",
-        body: [
-          "Offices, stores and restaurants need reliable cooling for staff, customers and equipment. We service commercial split systems and the cooling side of rooftop units, and we can set up scheduled maintenance so your system is checked before summer every year.",
+        body: [],
+        bullets: [
+          "Commercial split systems",
+          "Rooftop unit cooling",
+          "Scheduled maintenance before summer",
         ],
       },
     ],
@@ -329,53 +356,64 @@ export const SERVICES: ServicePage[] = [
     h1: "Commercial Refrigeration Repair in Calgary",
     lede: "Walk-in coolers, freezers and commercial refrigeration for Calgary restaurants, stores and businesses. Answered 24/7.",
     intro: [
-      "When a walk-in cooler starts warming up, the clock is running on every case of product inside it. A failure at closing time or over a long weekend can mean throwing out thousands of dollars of stock.",
-      "GBL HVAC LTD services commercial refrigeration for restaurants, cafés, grocery and convenience stores, bars, caterers and other businesses across Calgary. We answer 24 hours a day, so a cooler failure at midnight gets a real answer at midnight.",
+      "A failing cooler means product on the line. We answer 24/7 for restaurants, stores and food businesses.",
     ],
     sections: [
       {
         heading: "What we work on",
+        body: [],
         bullets: [
-          "Walk-in coolers and walk-in freezers",
+          "Walk-in coolers and freezers",
           "Condensing units and evaporators",
           "Reach-in coolers and freezers",
           "Display cases and merchandisers",
           "Prep tables and under-counter units",
           "Ice machines",
         ],
-        body: [],
       },
       {
         heading: "Warning signs",
-        body: ["Call before it becomes an emergency if you notice:"],
+        body: [],
         bullets: [
-          "The box temperature creeping up, or slow to recover after the door has been open",
-          "Ice building up on the evaporator coil or around the door",
-          "The condensing unit running constantly or short cycling",
-          "Water on the floor of the walk-in",
-          "Doors that don't seal or close properly, or torn gaskets",
-          "New noises from fans or the compressor",
+          "Temperature creeping up or slow to recover",
+          "Ice on the evaporator coil or door",
+          "Condensing unit running non-stop or short cycling",
+          "Water on the walk-in floor",
+          "Doors not sealing, torn gaskets",
+          "New fan or compressor noises",
         ],
       },
       {
-        heading: "If your cooler is failing right now",
-        body: [
-          "Keep the door shut as much as possible. Every opening lets cold air out and warm air in. Move the most valuable or most perishable product to another working cooler or freezer if you have one, and keep a thermometer inside so you know the actual temperature.",
-          "Food safety rules generally require cold-held food to stay at 4°C or below. Keep a record of temperatures and times so you can make an informed decision about product with your health inspector's guidance.",
-          "Then call 403-970-6988. Tell us the unit type, what temperature it's at and what it's doing, and we'll go from there.",
+        heading: "Failing right now?",
+        body: [],
+        bullets: [
+          "Keep the door shut",
+          "Move valuable product to a working unit",
+          "Thermometer inside: record temps and times",
+          "Food safety: cold-held food generally at 4°C or below",
+          "Call 403-970-6988: tell us the unit, temp and symptoms",
         ],
       },
       {
         heading: "Repair",
-        body: [
-          "We diagnose the whole system: thermostat and controls, defrost timer and heaters, evaporator and condenser fans, coils, refrigerant charge, compressor and electrical components. Dirty condenser coils are one of the most common causes of poor performance, especially in busy kitchens where grease and dust build up fast.",
+        body: [],
+        bullets: [
+          "Thermostat and controls",
+          "Defrost timers and heaters",
+          "Evaporator and condenser fans",
+          "Coils, refrigerant, compressor, electrical",
+          "Dirty condenser coils: a top cause in busy kitchens",
         ],
       },
       {
         heading: "Preventive maintenance",
-        body: [
-          "Most refrigeration breakdowns build up over weeks: a coil getting dirtier, a fan motor starting to fail, a door gasket letting warm air in. Scheduled maintenance catches these early, keeps the system running efficiently and cuts the risk of losing stock.",
-          "A typical maintenance visit includes cleaning condenser coils, checking refrigerant and operating pressures, inspecting fans, testing defrost and controls, checking door gaskets and hinges, and clearing drain lines. We can set up a schedule that suits your business and your opening hours.",
+        body: [],
+        bullets: [
+          "Clean condenser coils",
+          "Check refrigerant and pressures",
+          "Inspect fans, test defrost and controls",
+          "Check gaskets and hinges, clear drains",
+          "Scheduled around your opening hours",
         ],
       },
     ],
@@ -423,54 +461,60 @@ export const SERVICES: ServicePage[] = [
     h1: "Ventilation, HRVs & Ductwork in Calgary",
     lede: "Air exchangers, ventilation and ductwork for cleaner, healthier air in Calgary homes and businesses.",
     intro: [
-      "Newer homes are built tight to save energy. That's great for heating bills, but it also traps moisture, cooking smells and stale air inside. Good ventilation swaps that air for fresh air without throwing away the heat you've paid for.",
-      "GBL HVAC LTD installs, services and repairs heat recovery ventilators (HRVs), air exchangers, exhaust fans and ductwork for homes and commercial spaces across Calgary.",
+      "Tight new homes trap moisture and stale air. Good ventilation swaps it for fresh air without wasting heat.",
     ],
     sections: [
       {
-        heading: "Signs your ventilation isn't keeping up",
-        bullets: [
-          "Heavy condensation or frost on the inside of windows in winter",
-          "Musty smells, or cooking smells that linger",
-          "Stuffy rooms, especially bedrooms overnight",
-          "Mould spots around window frames or in bathrooms",
-          "An HRV that's noisy, iced up, or hasn't been cleaned in years",
-          "Rooms that are always too hot or too cold",
-        ],
+        heading: "Signs you need better ventilation",
         body: [],
+        bullets: [
+          "Condensation or frost on inside windows",
+          "Musty or lingering cooking smells",
+          "Stuffy bedrooms overnight",
+          "Mould near windows or in bathrooms",
+          "HRV noisy, iced up or never cleaned",
+          "Rooms always too hot or too cold",
+        ],
       },
       {
-        heading: "HRVs and air exchangers",
-        body: [
-          "An HRV pulls stale air out of the house and brings fresh outdoor air in. Inside, the two airstreams pass through a core that transfers heat from the outgoing air to the incoming air, so you get fresh air without a blast of cold.",
-          "Many newer Calgary homes already have an HRV, but a lot of owners don't know it needs care. The filters and core need regular cleaning, the condensate drain needs to stay clear, and the outdoor hoods need to be free of snow, frost and debris. A neglected HRV can move very little air.",
-          "We service existing units, troubleshoot noise, icing and drainage problems, and install new HRVs where homes need better ventilation.",
+        heading: "HRVs & air exchangers",
+        body: [],
+        bullets: [
+          "What it does: swaps stale air for fresh, keeps the heat",
+          "Needs care: filters, core, drain and outdoor hoods",
+          "Neglected units: can move very little air",
+          "We service, troubleshoot and install",
         ],
       },
       {
         heading: "Ductwork",
-        body: [
-          "Ductwork moves the air your furnace, air conditioner and HRV produce. Leaky, undersized or poorly balanced ducts mean some rooms never get enough air while the system works harder than it should.",
-          "We repair and modify ductwork, add runs for renovations and basement developments, seal leaky joints, and balance airflow so heat and cooling reach the rooms that need them.",
+        body: [],
+        bullets: [
+          "Repairs and sealing leaky joints",
+          "New runs for renovations and basements",
+          "Airflow balancing so every room gets air",
         ],
       },
       {
         heading: "Commercial ventilation",
-        body: [
-          "Offices, stores and restaurants need enough fresh air for the people inside, and kitchens need make-up air to replace what the exhaust hood pulls out. When make-up air falls short, doors become hard to open, the space feels drafty and equipment can struggle.",
-          "We service commercial ventilation, make-up air units and the ventilation side of rooftop units, and we can include it in a regular maintenance schedule.",
+        body: [],
+        bullets: [
+          "Fresh air for offices, stores and restaurants",
+          "Make-up air to replace what kitchen hoods pull out",
+          "Rooftop unit ventilation",
+          "Signs of trouble: hard-to-open doors, drafts",
         ],
       },
       {
-        heading: "Simple things you can do",
-        bullets: [
-          "Run bathroom fans during and for a while after showers",
-          "Use the range hood when cooking",
-          "Clean or replace HRV filters as the manual recommends",
-          "Keep outdoor HRV and exhaust hoods clear of snow in winter",
-          "Keep supply and return vents uncovered by furniture and rugs",
-        ],
+        heading: "Easy wins at home",
         body: [],
+        bullets: [
+          "Run bathroom fans during and after showers",
+          "Use the range hood when cooking",
+          "Clean HRV filters per the manual",
+          "Keep outdoor hoods clear of snow",
+          "Don't cover vents with furniture or rugs",
+        ],
       },
     ],
     included: [
@@ -513,53 +557,59 @@ export const SERVICES: ServicePage[] = [
     h1: "Water Heater Installation & Repair in Calgary",
     lede: "Hot water tank and tankless water heater installation and repair for Calgary homes and businesses.",
     intro: [
-      "No hot water is more than an inconvenience. It means no showers, no laundry and no dishes, and for a restaurant or salon it can mean closing the doors.",
-      "GBL HVAC LTD installs and repairs hot water tanks and tankless water heaters across Calgary. We're open 24 hours, so a leaking tank at night gets an answer at night.",
+      "No hot water means no showers, no laundry, and for some businesses, no opening. We fix it 24/7.",
     ],
     sections: [
       {
-        heading: "Signs your water heater needs attention",
-        bullets: [
-          "No hot water, or hot water that runs out much faster than it used to",
-          "Water pooling around the base of the tank",
-          "Rusty or discoloured hot water",
-          "Rumbling or popping sounds from the tank",
-          "The pilot light won't stay lit",
-          "A tank that's more than about 10 years old",
-        ],
+        heading: "Signs it needs attention",
         body: [],
+        bullets: [
+          "No hot water, or it runs out fast",
+          "Water around the base of the tank",
+          "Rusty or discoloured hot water",
+          "Rumbling or popping sounds",
+          "Pilot won't stay lit",
+          "Tank older than about 10 years",
+        ],
       },
       {
-        heading: "If your tank is leaking",
-        body: [
-          "Turn off the cold water supply valve on the pipe going into the top of the tank. For a gas tank, turn the gas control knob to Off or Pilot. For an electric tank, switch off its breaker. Then call us.",
-          "A small drip from a fitting can sometimes be repaired. A leak from the tank itself means the tank has failed and needs replacing.",
+        heading: "Leaking? Do this",
+        body: [],
+        bullets: [
+          "Shut off: the cold water valve on top of the tank",
+          "Gas tank: turn the control to Off or Pilot",
+          "Electric tank: switch off its breaker",
+          "Then call us",
+          "Fitting drip: often repairable. Tank leak: needs replacing",
         ],
       },
       {
         heading: "Tank water heaters",
-        body: [
-          "Most Calgary homes have a gas-fired hot water tank. A typical tank lasts somewhere around 8 to 12 years, depending on water quality and maintenance. Calgary's water is moderately hard, which leaves sediment in the bottom of the tank over time and makes it work harder.",
-          "We repair burners, thermocouples, gas valves, venting and elements, and replace tanks when they've reached the end of their life. When replacing, we'll help you choose the right size for your household so you're not running out of hot water or heating more than you need.",
+        body: [],
+        bullets: [
+          "Typical lifespan: around 8 to 12 years",
+          "Calgary's hard water: leaves sediment that shortens life",
+          "Repairs: burners, thermocouples, gas valves, venting, elements",
+          "Replacement: sized for your household",
         ],
       },
       {
         heading: "Tankless water heaters",
-        body: [
-          "A tankless water heater heats water as you use it, so it never runs out the way a tank does and takes up much less space. It's a good fit for many households and businesses, but not every home: the gas line, venting and electrical have to support it.",
-          "We'll look at your current setup and tell you honestly whether tankless makes sense for you. Tankless units need regular descaling, especially with Calgary's hard water, and we service existing tankless systems as well as installing new ones.",
+        body: [],
+        bullets: [
+          "Endless hot water, small footprint",
+          "Not for every home: gas line, venting and electrical must support it",
+          "Honest advice on whether it fits",
+          "Regular descaling: important with Calgary water",
         ],
       },
       {
-        heading: "Commercial water heaters",
-        body: [
-          "Restaurants, salons, gyms and other businesses use a lot more hot water than a house. We service and replace commercial water heaters and can help you figure out whether your current system is keeping up with demand.",
-        ],
-      },
-      {
-        heading: "Permits",
-        body: [
-          "Replacing a water heater in Calgary may require a City permit and inspection. Ask us whether your job does and we'll explain the steps before work starts.",
+        heading: "Commercial & permits",
+        body: [],
+        bullets: [
+          "Commercial water heaters for restaurants, salons and gyms",
+          "Is yours keeping up with demand? We'll check",
+          "Some replacements need a City permit. Ask us",
         ],
       },
     ],
@@ -603,60 +653,66 @@ export const SERVICES: ServicePage[] = [
     h1: "Furnace & AC Maintenance in Calgary",
     lede: "Seasonal furnace and AC tune-ups that prevent breakdowns and help keep energy bills down. Homes and businesses.",
     intro: [
-      "The best furnace repair is the one you never need. Most breakdowns start as small problems: a cracked igniter, a dirty flame sensor, a weak capacitor, a clogged drain. They're easy to spot on a scheduled visit and expensive to discover at 2am in January.",
-      "GBL HVAC LTD offers seasonal tune-ups for furnaces, air conditioners, boilers, HRVs and water heaters, plus scheduled maintenance for commercial heating, cooling and refrigeration.",
+      "Most breakdowns start small. A scheduled visit catches them before 2am in January.",
     ],
     sections: [
       {
         heading: "Fall furnace tune-up",
-        body: ["Book it before the first real cold snap. A typical furnace tune-up covers:"],
+        body: [
+          "Book before the first cold snap.",
+        ],
         bullets: [
-          "Inspecting and cleaning the burners and flame sensor",
-          "Checking the igniter, inducer motor and pressure switches",
-          "Inspecting the heat exchanger area and venting",
-          "Testing safety controls and limit switches",
-          "Checking the blower, motor and capacitor",
-          "Checking the thermostat and system operation",
-          "Replacing or recommending the right filter",
+          "Clean burners and flame sensor",
+          "Check igniter, inducer and pressure switches",
+          "Inspect heat exchanger area and venting",
+          "Test safety controls and limit switches",
+          "Check blower, motor and capacitor",
+          "Check thermostat and the right filter",
         ],
       },
       {
         heading: "Spring AC tune-up",
-        body: ["Book it before the first hot stretch, when everyone else calls at once. A typical AC tune-up covers:"],
+        body: [
+          "Book before everyone else calls.",
+        ],
         bullets: [
-          "Cleaning the outdoor condenser coil",
-          "Checking refrigerant operating pressures",
-          "Testing the capacitor, contactor and fan motor",
-          "Clearing the condensate drain",
-          "Checking electrical connections",
-          "Confirming temperature drop and airflow",
+          "Clean outdoor condenser coil",
+          "Check refrigerant pressures",
+          "Test capacitor, contactor and fan motor",
+          "Clear condensate drain",
+          "Confirm temperature drop and airflow",
         ],
       },
       {
         heading: "Why it's worth it",
-        body: [
-          "A clean, properly adjusted system runs more efficiently, which helps with gas and power bills. It's also less likely to fail on the coldest or hottest day of the year, when repair demand is highest.",
-          "Regular maintenance also gives you a record of your system's condition. When a furnace or AC is getting near the end of its life, you'll see it coming and can plan a replacement on your schedule instead of in an emergency.",
-          "Many equipment manufacturers expect regular professional maintenance as a condition of their warranty. Check your warranty paperwork for the details.",
+        body: [],
+        bullets: [
+          "Efficiency: a clean system uses less gas and power",
+          "Fewer emergencies: less likely to fail on the worst day",
+          "No surprises: see replacement coming and plan for it",
+          "Warranty: many manufacturers expect regular maintenance",
         ],
       },
       {
-        heading: "Commercial maintenance contracts",
-        body: [
-          "For restaurants, stores, offices and other businesses, a breakdown costs more than the repair. We set up scheduled maintenance for rooftop units, furnaces, boilers, make-up air, walk-in coolers and other refrigeration, timed around your business hours.",
-          "Every visit is documented, so you know what was checked, what was found and what's coming up. Tell us what equipment you have and we'll suggest a schedule.",
+        heading: "Commercial contracts",
+        body: [],
+        bullets: [
+          "Rooftop units, furnaces and boilers",
+          "Make-up air, walk-ins and refrigeration",
+          "Timed around your business hours",
+          "Every visit documented",
         ],
       },
       {
         heading: "Between visits",
-        bullets: [
-          "Check your furnace filter monthly in winter and replace it when it's dirty",
-          "Keep the outdoor AC unit clear of grass, leaves and cottonwood fluff",
-          "Keep furnace intake and exhaust pipes clear of snow",
-          "Clean HRV filters as the manufacturer recommends",
-          "Test smoke and carbon monoxide alarms regularly",
-        ],
         body: [],
+        bullets: [
+          "Check the furnace filter monthly in winter",
+          "Keep the outdoor AC unit clear",
+          "Keep furnace pipes clear of snow",
+          "Clean HRV filters",
+          "Test smoke and CO alarms",
+        ],
       },
     ],
     included: [
@@ -699,64 +755,71 @@ export const SERVICES: ServicePage[] = [
     h1: "Rooftop Unit Repair & Service in Calgary",
     lede: "Heating and cooling for stores, restaurants, offices and warehouses. Rooftop units repaired, replaced and maintained, with calls answered 24/7.",
     intro: [
-      "Most commercial buildings in Calgary are heated and cooled by rooftop units. One box on the roof handles heat in January, cooling in July and fresh air all year. When it stops working, the whole space feels it: staff, customers, product and equipment.",
-      "GBL HVAC LTD repairs, replaces and maintains rooftop units for strip malls, restaurants, retail stores, offices, shops and light industrial buildings. We answer 24 hours a day, so a unit that quits overnight or on a weekend gets a real answer, not a voicemail.",
+      "One box on the roof heats, cools and ventilates your building. When it quits, everyone feels it. We answer 24/7.",
     ],
     sections: [
       {
-        heading: "Signs your rooftop unit needs service",
+        heading: "Signs it needs service",
         body: [],
         bullets: [
-          "No heat, or the space can't hold temperature on cold days",
-          "No cooling, or warm air from the vents in summer",
-          "The unit short-cycles, starting and stopping over and over",
-          "Squealing belts, grinding fan motors or banging on the roof",
-          "Water leaking through the ceiling under the unit",
-          "Ice on the refrigerant lines or coil",
-          "Higher energy bills with no change in hours or use",
-          "Areas of the building that are always too hot or too cold",
+          "No heat or can't hold temperature",
+          "Warm air in summer",
+          "Short cycling",
+          "Squealing belts or grinding fans",
+          "Water through the ceiling under the unit",
+          "Ice on the lines or coil",
+          "Higher energy bills",
+          "Hot and cold zones",
         ],
       },
       {
         heading: "Heating side",
-        body: [
-          "Most rooftop units in Calgary have a gas-fired heating section. Over a long winter it runs hard, and the common failures are similar to a furnace: igniters, flame sensors, inducer motors, pressure switches, gas valves and limit switches. We diagnose the cause, explain it in plain language and get the heat back on as soon as it's safe.",
-          "Snow and ice matter on a roof too. Drifting snow can block fresh-air and combustion openings, and ice can build up around the unit. We check those as part of any winter call.",
+        body: [],
+        bullets: [
+          "Gas-fired heating sections",
+          "Igniters, flame sensors, inducers, gas valves, limit switches",
+          "Winter check: snow and ice blocking air openings",
         ],
       },
       {
         heading: "Cooling side",
-        body: [
-          "In summer the same unit cools the building. We service compressors, condenser fans, contactors, capacitors, refrigerant circuits and coils. Dirty condenser coils are one of the most common reasons a rooftop unit struggles on hot days, especially on roofs near cottonwoods or dusty lots.",
-          "If the system is low on refrigerant, there's a leak. We'll explain the options for finding and fixing it rather than just topping it up.",
+        body: [],
+        bullets: [
+          "Compressors, fans, contactors, capacitors",
+          "Refrigerant circuits and coils",
+          "Dirty condenser coils: a top cause on hot days",
+          "Leaks found and fixed, not just topped up",
         ],
       },
       {
-        heading: "Fresh air, economizers and controls",
-        body: [
-          "Rooftop units also bring in outside air for the people inside. Many have an economizer that uses cool outdoor air instead of running the compressor when the weather allows. A stuck economizer damper can let freezing air pour in during winter or waste energy in summer.",
-          "We check dampers, actuators, sensors and thermostats or building controls so the unit is bringing in the right amount of air and responding to the space properly.",
+        heading: "Fresh air & controls",
+        body: [],
+        bullets: [
+          "Economizer dampers and actuators",
+          "Stuck damper: freezing air in winter, wasted energy in summer",
+          "Sensors, thermostats and building controls",
         ],
       },
       {
         heading: "Replacement",
-        body: [
-          "When a rooftop unit is old and needs a major component, replacement can make more sense than another repair. We'll give you an honest comparison. Replacing a rooftop unit usually means planning a crane lift, checking the curb and connections, and scheduling around your business hours. We'll walk you through what's involved before you decide.",
+        body: [],
+        bullets: [
+          "Honest repair vs. replace comparison",
+          "Crane lift, curb and connections planned",
+          "Scheduled around your business hours",
         ],
       },
       {
-        heading: "Maintenance that prevents shutdowns",
-        body: [
-          "Rooftop units are out of sight, so they're often out of mind until something fails. Scheduled maintenance catches the small problems first. A typical visit includes:",
-        ],
+        heading: "Maintenance visit",
+        body: [],
         bullets: [
-          "Replacing filters and checking belts and pulleys",
-          "Cleaning condenser and evaporator coils",
-          "Inspecting the heating section, burners and venting",
-          "Checking refrigerant operating pressures",
-          "Testing economizer dampers and controls",
-          "Clearing condensate drains to prevent roof leaks",
-          "Checking electrical connections, contactors and capacitors",
+          "Filters, belts and pulleys",
+          "Clean condenser and evaporator coils",
+          "Inspect heating section and venting",
+          "Check refrigerant pressures",
+          "Test economizer and controls",
+          "Clear condensate drains to stop roof leaks",
+          "Check electrical connections",
         ],
       },
     ],
@@ -805,62 +868,73 @@ export const SERVICES: ServicePage[] = [
     h1: "Walk-In Cooler & Freezer Repair in Calgary",
     lede: "When a walk-in starts warming up, every hour counts. We answer 24/7 for restaurants, grocers and food businesses across Calgary.",
     intro: [
-      "A walk-in cooler or freezer holds most of the stock in a restaurant, café, grocery store or catering kitchen. When it fails, the cost isn't just the repair. It's the product inside, and potentially a day of business.",
-      "GBL HVAC LTD repairs and maintains walk-in coolers and walk-in freezers across Calgary. We're open 24 hours, so when the box starts warming up at closing time, on a Sunday or in the middle of the night, you can call 403-970-6988 and talk to Quinn directly.",
+      "Your walk-in holds most of your stock. When it warms up, every hour counts. We answer 24/7.",
     ],
     sections: [
       {
-        heading: "If your walk-in is failing right now",
-        body: [
-          "Keep the door shut. Every opening lets cold air out. Put a thermometer inside so you know the real temperature, not just what the display says, and write down readings and times.",
-          "Move the most valuable or most perishable product to another working cooler or freezer if you have one. Cold-held food generally needs to stay at 4°C or below, and frozen food should stay frozen solid. Your health inspector can advise on product that has warmed up.",
-          "Then call us. Tell us whether it's a cooler or a freezer, what temperature it's at and what you see and hear, and we'll go from there.",
-        ],
-      },
-      {
-        heading: "Warning signs to call about early",
+        heading: "Failing right now?",
         body: [],
         bullets: [
-          "Temperature creeping up, or slow to recover after deliveries",
-          "Ice building up on the evaporator coil in the box",
-          "Frost or ice around the door frame, or a door that won't seal",
-          "Water on the floor, or ice on the floor of a freezer",
-          "The condensing unit running non-stop or short cycling",
-          "New noises from the evaporator fans or condensing unit",
-          "Torn door gaskets or a door that doesn't close by itself",
+          "Keep the door shut",
+          "Thermometer inside: record real temps and times",
+          "Move valuable product to a working unit",
+          "Coolers: food generally at 4°C or below. Freezers: frozen solid",
+          "Call 403-970-6988: cooler or freezer, temperature, symptoms",
         ],
       },
       {
-        heading: "How a walk-in works",
-        body: [
-          "Inside the box, an evaporator coil and fans pull heat out of the air. Outside, usually on the roof or a wall, a condensing unit with a compressor and fan gets rid of that heat. Refrigerant lines connect the two, and controls tell the system when to run and when to defrost.",
-          "A problem anywhere in that loop shows up as a warm box. That's why we diagnose the whole system rather than guessing at one part.",
+        heading: "Call early if you see",
+        body: [],
+        bullets: [
+          "Temperature creeping up after deliveries",
+          "Ice on the evaporator coil",
+          "Frost around the door frame",
+          "Water or ice on the floor",
+          "Condensing unit running non-stop",
+          "New fan or compressor noises",
+          "Torn gaskets or a door that won't close",
         ],
       },
       {
-        heading: "Freezer-specific problems",
-        body: [
-          "Walk-in freezers run far below zero, so defrost is critical. Defrost heaters and timers or controls melt ice off the evaporator coil on a schedule. When defrost fails, the coil turns into a block of ice, airflow stops and the box warms up.",
-          "Freezer doors have heated frames to stop them freezing shut. A failed door heater can leave the door iced up or let warm, moist air in. Drain lines need heat too, or the defrost water freezes in the line and backs up.",
+        heading: "How it works",
+        body: [],
+        bullets: [
+          "Inside: evaporator coil and fans pull heat out",
+          "Outside: condensing unit dumps the heat",
+          "Controls: tell it when to run and defrost",
+          "Problem anywhere = warm box, so we check the whole system",
+        ],
+      },
+      {
+        heading: "Freezer-specific",
+        body: [],
+        bullets: [
+          "Defrost: heaters and timers melt coil ice on schedule",
+          "Failed defrost: coil turns to ice, airflow stops",
+          "Door heaters: stop doors freezing shut",
+          "Drain heaters: stop defrost water freezing in the line",
         ],
       },
       {
         heading: "What we check",
         body: [],
         bullets: [
-          "Thermostat, controls and temperature sensors",
+          "Thermostat, controls and sensors",
           "Evaporator coil and fans",
-          "Defrost heaters, timers and drain line heaters",
-          "Condensing unit, compressor and condenser fan",
-          "Refrigerant charge and operating pressures",
-          "Condenser coil condition (dirty coils are a common cause)",
-          "Door gaskets, hinges, closers and door frame heaters",
+          "Defrost heaters, timers, drain heaters",
+          "Condensing unit, compressor, condenser fan",
+          "Refrigerant charge and pressures",
+          "Condenser coil condition",
+          "Gaskets, hinges, closers, door heaters",
         ],
       },
       {
         heading: "Maintenance",
-        body: [
-          "Most walk-in failures build up over weeks: coils getting dirtier, a fan motor starting to fail, a gasket letting warm air in. A scheduled maintenance visit catches those early and keeps the system running efficiently. We'll recommend a schedule that suits your equipment and your kitchen, and work around your opening hours.",
+        body: [],
+        bullets: [
+          "Catches dirty coils, failing fans and bad gaskets early",
+          "Schedule that suits your kitchen",
+          "Worked around opening hours",
         ],
       },
     ],
@@ -909,54 +983,67 @@ export const SERVICES: ServicePage[] = [
     h1: "Ice Machine Repair in Calgary",
     lede: "Commercial ice machines repaired, cleaned and maintained for Calgary restaurants, bars, cafés and hotels.",
     intro: [
-      "Running out of ice on a busy Friday night means watered-down service, unhappy customers and staff running to the store for bags. An ice machine that's producing slowly, making poor ice or leaking needs attention before it stops completely.",
-      "GBL HVAC LTD repairs and maintains commercial ice machines across Calgary for restaurants, bars, cafés, hotels, convenience stores and anyone else who depends on a steady supply of ice. We answer 24 hours a day, 7 days a week.",
+      "Out of ice on a Friday night? We repair, clean and maintain commercial ice machines, 24/7.",
     ],
     sections: [
       {
-        heading: "Common ice machine problems",
+        heading: "Common problems",
         body: [],
         bullets: [
-          "Not making ice at all",
-          "Making ice much more slowly than it used to",
-          "Small, thin, cloudy or misshapen cubes",
+          "Not making ice",
+          "Making ice slowly",
+          "Small, thin or cloudy cubes",
           "Ice that tastes or smells off",
-          "Water leaking around the machine or bin",
-          "The machine runs constantly or keeps shutting off",
-          "Scale or slime visible on the evaporator or water parts",
+          "Leaks around the machine or bin",
+          "Running constantly or shutting off",
+          "Scale or slime on water parts",
         ],
       },
       {
-        heading: "Calgary water and scale",
-        body: [
-          "Calgary's water is moderately hard. As an ice machine freezes water over and over, the minerals stay behind as scale on the evaporator plate, water distribution tubes, pump and valves. Scale makes the machine slower, makes harvest unreliable and eventually causes breakdowns.",
-          "Regular cleaning and descaling, along with a properly maintained water filter, keeps scale under control. If your machine has never been descaled, it's worth having it looked at.",
+        heading: "Calgary water & scale",
+        body: [],
+        bullets: [
+          "Moderately hard water leaves scale behind",
+          "Scale slows production and causes breakdowns",
+          "Fix: regular descaling and a good water filter",
         ],
       },
       {
         heading: "Ice is food",
-        body: [
-          "Health inspectors treat ice as food. The inside of an ice machine is cold, damp and dark, which is exactly where slime and mould like to grow. Bins, chutes and water parts need regular cleaning and sanitizing, following the manufacturer's procedure.",
-          "If you see pink or black slime, or the ice tastes off, the machine needs a thorough clean. We'll clean and sanitize it and check that everything is working properly at the same time.",
+        body: [],
+        bullets: [
+          "Health inspectors treat it that way",
+          "Cold, damp, dark: slime and mould love it",
+          "Pink or black slime: needs a full clean and sanitize",
         ],
       },
       {
-        heading: "How we diagnose a machine",
-        body: [
-          "An ice machine is a small refrigeration system with a water system and a harvest cycle on top. When ice production drops, the cause can be on the refrigeration side (a dirty condenser, a failing fan or compressor, a refrigerant problem), the water side (scale, a clogged filter, a failing inlet valve or pump) or the controls (sensors, the harvest cycle or the bin level control).",
-          "We check all three so the fix actually solves the problem, rather than just getting the machine running for a few days.",
+        heading: "How we diagnose",
+        body: [],
+        bullets: [
+          "Refrigeration side: condenser, fans, compressor, refrigerant",
+          "Water side: scale, filter, inlet valve, pump",
+          "Controls: sensors, harvest cycle, bin control",
         ],
       },
       {
         heading: "Placement matters",
-        body: [
-          "Air-cooled ice machines need room to breathe. Jammed into a hot corner of a kitchen next to the fryers, or with the condenser blocked by boxes, they produce less ice and work harder. We'll tell you if your machine's location is costing you ice and what can be done about it.",
+        body: [],
+        bullets: [
+          "Air-cooled machines need room to breathe",
+          "Next to fryers or boxed in = less ice",
+          "We'll tell you if location is costing you",
         ],
       },
       {
-        heading: "Maintenance",
-        body: [
-          "A maintenance visit typically includes cleaning and descaling the water system, sanitizing the bin and food-contact parts, cleaning the condenser, checking the water filter, and confirming the harvest cycle and bin control work. We'll recommend how often based on your machine, water and how much ice you use.",
+        heading: "Maintenance visit",
+        body: [],
+        bullets: [
+          "Clean and descale water system",
+          "Sanitize bin and food-contact parts",
+          "Clean condenser",
+          "Check water filter",
+          "Test harvest cycle and bin control",
         ],
       },
     ],
@@ -1001,53 +1088,61 @@ export const SERVICES: ServicePage[] = [
     h1: "Hood Fan & Make-Up Air Unit Repair in Calgary",
     lede: "Kitchen exhaust hood fans and the make-up air units that feed them, repaired and maintained for Calgary restaurants and food businesses.",
     intro: [
-      "A commercial kitchen can't run without its hood fan. It pulls smoke, heat and grease-laden air away from the cooking line. Every bit of air it removes has to be replaced, and that's the job of the make-up air unit. The two work as a pair, so a problem with one shows up as a problem with both.",
-      "GBL HVAC LTD repairs and maintains kitchen exhaust hood fans and make-up air units for restaurants, cafés, food trucks with commissary kitchens, institutional kitchens and other food businesses across Calgary. We answer 24 hours a day.",
+      "Your hood fan pulls smoke and heat out. Your make-up air unit replaces that air. When one fails, both feel it.",
     ],
     sections: [
       {
-        heading: "Signs of a hood fan or make-up air problem",
+        heading: "Signs of trouble",
         body: [],
         bullets: [
-          "Smoke rolling out from under the hood instead of being captured",
-          "The kitchen getting hotter or smokier than usual",
-          "Front doors that are hard to open or slam shut",
-          "Cold drafts in the kitchen or dining room in winter",
-          "Squealing, rattling or grinding from the exhaust fan on the roof",
-          "The make-up air unit not heating, so the kitchen fills with freezing air",
-          "The hood fan or make-up air unit not starting when switched on",
+          "Smoke rolling out from under the hood",
+          "Kitchen hotter or smokier than usual",
+          "Front doors hard to open or slamming",
+          "Cold drafts in winter",
+          "Squealing or grinding from the roof fan",
+          "Make-up air not heating: freezing air in the kitchen",
+          "Fans not starting",
         ],
       },
       {
         heading: "Hood exhaust fans",
-        body: [
-          "Most kitchen exhaust fans sit on the roof above the hood. They're often belt-driven, and belts stretch, wear and slip. Motors and bearings wear out, and grease build-up on the fan wheel throws it out of balance, causing vibration and noise.",
-          "We repair and replace exhaust fan motors, belts, pulleys and bearings, and troubleshoot the switches and controls that run them. Grease cleaning of hoods and ducts and the fire-suppression system are separate specialties. If you're not sure who handles what, ask us and we'll point you in the right direction.",
+        body: [],
+        bullets: [
+          "Belts: stretch, wear and slip",
+          "Motors and bearings: wear out",
+          "Grease on the fan wheel: causes vibration and noise",
+          "We repair: motors, belts, pulleys, bearings, switches, controls",
+          "Separate specialties: hood/duct grease cleaning and fire suppression. Ask us who to call",
         ],
       },
       {
         heading: "Make-up air units",
-        body: [
-          "When the hood fan pulls air out, the same amount of air has to come back in. Without enough make-up air, the building goes into negative pressure: doors become hard to open, the hood stops capturing smoke properly and appliances with flues may not vent as they should.",
-          "In a Calgary winter, that replacement air can be well below freezing, so make-up air units usually heat it as it comes in, often with a gas burner. A make-up air unit that isn't heating dumps freezing air into the kitchen. We service burners, igniters, flame safety controls, blowers, belts, filters, dampers and controls.",
+        body: [],
+        bullets: [
+          "Replaces air the hood removes",
+          "Too little: hard doors, poor smoke capture, venting problems",
+          "Winter: heats incoming air, often with a gas burner",
+          "We service: burners, igniters, flame safety, blowers, belts, filters, dampers, controls",
         ],
       },
       {
         heading: "Working as a pair",
-        body: [
-          "Hood fans and make-up air units are usually interlocked so they start and stop together. If the interlock, a switch or a control fails, one may run without the other. We test the whole system together so the kitchen is balanced, not just each unit on its own.",
+        body: [],
+        bullets: [
+          "Usually interlocked to start and stop together",
+          "Failed interlock or switch: one runs without the other",
+          "We test the whole system so the kitchen is balanced",
         ],
       },
       {
         heading: "Maintenance",
-        body: ["Kitchen exhaust and make-up air equipment works hard every service. Regular maintenance usually includes:"],
+        body: [],
         bullets: [
-          "Inspecting and adjusting or replacing belts",
-          "Checking motors, bearings and fan wheels",
-          "Replacing make-up air filters",
-          "Inspecting the make-up air burner and safety controls before winter",
-          "Checking dampers, interlocks and controls",
-          "Confirming the hood and make-up air are running together properly",
+          "Inspect and replace belts",
+          "Check motors, bearings and fan wheels",
+          "Replace make-up air filters",
+          "Check burner and safety controls before winter",
+          "Test dampers, interlocks and controls",
         ],
       },
     ],

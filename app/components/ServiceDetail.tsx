@@ -7,6 +7,17 @@ import JsonLd from "./JsonLd";
 import { SERVICE_AREAS, SERVICE_CITIES, SITE, siteUrl } from "@/lib/site";
 import { childrenOf, getService, type ServicePage } from "@/lib/services";
 
+// "Label: detail" bullets render the label in bold so the list can be skimmed.
+function Bullet({ text }: { text: string }) {
+  const i = text.indexOf(": ");
+  if (i < 1 || i > 40) return <span>{text}</span>;
+  return (
+    <span>
+      <strong className="font-bold text-white">{text.slice(0, i)}:</strong> {text.slice(i + 2)}
+    </span>
+  );
+}
+
 // Long-form service page: hero, sections, what's included, FAQ, related, quote form.
 export default function ServiceDetail({ page }: { page: ServicePage }) {
   const parent = page.parent ? getService(page.parent) : undefined;
@@ -105,11 +116,20 @@ export default function ServiceDetail({ page }: { page: ServicePage }) {
       <div className="px-4 py-16 sm:px-6 md:py-20">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-3">
           <article className="lg:col-span-2">
-            <div className="space-y-5 text-lg leading-relaxed text-white/85">
+            <div className="space-y-4 text-lg leading-relaxed text-white/85">
               {page.intro.map((p) => (
                 <p key={p.slice(0, 32)}>{p}</p>
               ))}
             </div>
+
+            {/* At a glance */}
+            <ul className="mt-6 flex flex-wrap gap-2">
+              {["Open 24/7", "Talk directly to Quinn", "Homes & businesses", "Calgary & area"].map((chip) => (
+                <li key={chip} className="flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-sm font-semibold">
+                  <CheckCircle2 className="h-4 w-4 text-emerald-400" aria-hidden /> {chip}
+                </li>
+              ))}
+            </ul>
 
             {spokes.length > 0 && (
               <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -125,36 +145,44 @@ export default function ServiceDetail({ page }: { page: ServicePage }) {
               </div>
             )}
 
-            {page.sections.map((s) => (
-              <section key={s.heading} className="mt-12">
-                <h2 className="text-2xl font-extrabold md:text-3xl">{s.heading}</h2>
-                <div className="mt-4 space-y-4 text-lg leading-relaxed text-white/80">
+            {/* Point-form sections: short heading, optional one-liner, bullets */}
+            <div className="mt-10 grid gap-5 md:grid-cols-2">
+              {page.sections.map((s) => (
+                <section key={s.heading} className={`card p-6 ${(s.bullets?.length ?? 0) > 5 ? "md:col-span-2" : ""}`}>
+                  <h2 className="text-xl font-extrabold md:text-2xl">{s.heading}</h2>
                   {s.body.map((p) => (
-                    <p key={p.slice(0, 32)}>{p}</p>
+                    <p key={p.slice(0, 32)} className="mt-2 text-white/75">
+                      {p}
+                    </p>
                   ))}
-                </div>
-                {s.bullets && (
-                  <ul className="mt-4 space-y-2.5">
-                    {s.bullets.map((b) => (
-                      <li key={b} className="flex items-start gap-3 text-white/85">
-                        <CheckCircle2 className={`mt-1 h-5 w-5 shrink-0 ${warm ? "text-flame" : "text-ice"}`} aria-hidden />
-                        {b}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </section>
-            ))}
+                  {s.bullets && (
+                    <ul className={`mt-4 grid gap-2.5 ${(s.bullets.length ?? 0) > 5 ? "sm:grid-cols-2 sm:gap-x-6" : ""}`}>
+                      {s.bullets.map((b) => (
+                        <li key={b} className="flex items-start gap-2.5 text-white/85">
+                          <CheckCircle2 className={`mt-1 h-5 w-5 shrink-0 ${warm ? "text-flame" : "text-ice"}`} aria-hidden />
+                          <Bullet text={b} />
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </section>
+              ))}
+            </div>
 
             <section className="mt-12">
               <h2 className="text-2xl font-extrabold md:text-3xl">Areas we serve</h2>
-              <p className="mt-4 text-lg leading-relaxed text-white/80">
-                We cover all of Calgary ({SERVICE_AREAS.slice(0, 4).join(", ")}) plus {SERVICE_AREAS.slice(4).join(", ")}. Not sure if
-                you&apos;re in range?{" "}
+              <ul className="mt-4 flex flex-wrap gap-2">
+                {SERVICE_AREAS.map((a) => (
+                  <li key={a} className="rounded-full border border-white/15 px-3 py-1.5 text-sm font-semibold text-white/85">
+                    {a}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 text-white/75">
+                Not sure if you&apos;re covered?{" "}
                 <a href={SITE.tel} className="font-bold text-flame underline-offset-4 hover:underline">
                   Call {SITE.phone}
                 </a>
-                .
               </p>
             </section>
 

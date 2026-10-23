@@ -43,6 +43,7 @@ All page content lives in `lib/services.ts`. Adding an entry there creates the p
 - **Not included yet, on purpose:** `geo`, `sameAs`, `aggregateRating`, `review`, `priceRange`. Each needs real data from the client (see below)
 
 ### Content rules followed
+- **Point form, not walls of text** (client preference): 1–2 sentence intro, section cards with bullets, "Label: detail" bullets show the label in bold. Pages run roughly 550–750 words including FAQs. Add depth as more bullets or FAQ questions, not paragraphs
 - No pricing claims, no "best/cheapest", no invented years, warranties or response times
 - No licence or certification claims until confirmed
 - No doorway pages: surrounding towns are mentioned in body copy, not given their own pages
