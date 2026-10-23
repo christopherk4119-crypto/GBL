@@ -47,10 +47,14 @@ export const SERVICE_AREAS = [
 export const SERVICE_CITIES = ["Calgary", ...SERVICE_AREAS.filter((a) => !a.includes("Calgary"))];
 
 export const SERVICE_OPTIONS = [
-  "Heating",
+  "Heating / Furnace",
   "Air Conditioning",
+  "Rooftop Unit",
   "Refrigeration",
+  "Walk-in Cooler / Freezer",
+  "Ice Machine",
   "Ventilation",
+  "Hood Fan / Make-Up Air",
   "Water Heater",
   "Maintenance",
   "Other",

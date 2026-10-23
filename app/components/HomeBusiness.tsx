@@ -11,6 +11,7 @@ const PANELS = [
     image: "/images/gbl-hvac-service-van-calgary.jpg",
     items: [
       { label: "Furnace installation & repair", href: "/heating" },
+      { label: "24/7 no-heat calls", href: "/heating/24-hour-furnace-repair" },
       { label: "AC installation & repair", href: "/air-conditioning" },
       { label: "Seasonal tune-ups", href: "/maintenance-plans" },
       { label: "Water heaters (tank & tankless)", href: "/water-heaters" },
@@ -27,10 +28,11 @@ const PANELS = [
     // Placeholder illustration: replace with a real project photo in /public/images/
     image: "/images/commercial.svg",
     items: [
-      { label: "Rooftop units (RTUs)", href: "/air-conditioning" },
+      { label: "Rooftop units (RTUs)", href: "/rooftop-units" },
+      { label: "Walk-in coolers & freezers", href: "/refrigeration/walk-in-coolers-freezers" },
+      { label: "Ice machines", href: "/refrigeration/ice-machines" },
+      { label: "Hood fans & make-up air units", href: "/ventilation/hood-fans-make-up-air" },
       { label: "Commercial refrigeration", href: "/refrigeration" },
-      { label: "Walk-in coolers & freezers", href: "/refrigeration" },
-      { label: "Commercial ventilation", href: "/ventilation" },
       { label: "Maintenance contracts", href: "/maintenance-plans" },
     ],
     cta: "Request Commercial Quote",

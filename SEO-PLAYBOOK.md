@@ -21,6 +21,10 @@ Follows the Local SEO Field Manual (built on yayageneralservice.com).
 | `/ventilation` | HRV / ventilation Calgary | Hub |
 | `/water-heaters` | water heater Calgary | Hub |
 | `/maintenance-plans` | furnace/AC maintenance Calgary | Hub |
+| `/rooftop-units` | rooftop unit repair Calgary | Hub (commercial heating + cooling) |
+| `/refrigeration/walk-in-coolers-freezers` | walk-in cooler / freezer repair Calgary | Spoke under Refrigeration (one page for both, to avoid cannibalization) |
+| `/refrigeration/ice-machines` | ice machine repair Calgary | Spoke under Refrigeration |
+| `/ventilation/hood-fans-make-up-air` | hood fan / make up air unit Calgary | Spoke under Ventilation (the two work as a pair) |
 
 All page content lives in `lib/services.ts`. Adding an entry there creates the page, adds it to the sitemap, the footer and the Service schema automatically. Spokes set `parent` to nest under a hub.
 
@@ -56,6 +60,7 @@ All page content lives in `lib/services.ts`. Adding an entry there creates the p
 - 1 Google review exists (text not supplied yet)
 - No social media profiles, no current website, no year established given
 - Preferred vibe: Friendly
+- Also does (told to us directly): rooftop units, hood fans, make-up air units, ice machines, furnaces, walk-in coolers, walk-in freezers
 
 ## Waiting on the client (do not invent)
 
@@ -91,7 +96,7 @@ All page content lives in `lib/services.ts`. Adding an entry there creates the p
 **Ship in waves.** One batch of changes, resubmit the sitemap, wait 1–2 weeks for recrawl, check, then the next batch.
 
 ### Next spokes (only once Search Console shows demand)
-`/heating/furnace-installation`, `/heating/boiler-repair`, `/air-conditioning/ac-repair`, `/refrigeration/walk-in-cooler-repair`, `/water-heaters/tankless-water-heaters`. Each needs 800–1200 real words, its own FAQ and, ideally, real photos.
+`/heating/furnace-installation`, `/heating/boiler-repair`, `/air-conditioning/ac-repair`, `/water-heaters/tankless-water-heaters`. Split walk-in coolers and freezers, or hood fans and make-up air, into separate pages only if Search Console shows each term getting its own impressions. Each needs 800–1200 real words, its own FAQ and, ideally, real photos.
 
 ## Commands
 

@@ -5,7 +5,7 @@ import LightStreak from "./LightStreak";
 import { NAV, SITE } from "@/lib/site";
 import { SERVICES } from "@/lib/services";
 
-const SERVICE_LIST = ["Install", "Maintenance", "Commercial", "Residential", "Heating", "Air Conditioning", "Refrigeration", "Ventilation", "Water Heater"];
+const SERVICE_LIST = ["Install", "Maintenance", "Commercial", "Residential", "Heating", "Air Conditioning", "Refrigeration", "Ventilation", "Water Heater", "Rooftop Units", "Walk-in Coolers & Freezers", "Ice Machines", "Hood Fans", "Make-Up Air"];
 
 export default function Footer() {
   return (

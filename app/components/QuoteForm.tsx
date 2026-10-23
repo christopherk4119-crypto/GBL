@@ -89,7 +89,7 @@ export default function QuoteForm() {
 
       <label className="block">
         <span className="mb-2 block text-sm font-semibold text-ice">Service Needed</span>
-        <select name="service" className="field appearance-none" defaultValue="Heating">
+        <select name="service" className="field appearance-none" defaultValue="Heating / Furnace">
           {SERVICE_OPTIONS.map((s) => (
             <option key={s} value={s} className="bg-navy-dark">
               {s}

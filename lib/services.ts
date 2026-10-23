@@ -121,7 +121,7 @@ export const SERVICES: ServicePage[] = [
         a: "Yes. We service furnaces, boilers, unit heaters and rooftop unit heating sections for restaurants, stores, offices and other businesses in Calgary.",
       },
     ],
-    related: ["heating/24-hour-furnace-repair", "maintenance-plans", "ventilation", "water-heaters"],
+    related: ["heating/24-hour-furnace-repair", "rooftop-units", "maintenance-plans", "water-heaters"],
     image: VAN,
   },
   {
@@ -315,7 +315,7 @@ export const SERVICES: ServicePage[] = [
         a: "Yes. We work on commercial split systems and rooftop units for offices, stores and restaurants across Calgary.",
       },
     ],
-    related: ["maintenance-plans", "ventilation", "heating", "refrigeration"],
+    related: ["rooftop-units", "maintenance-plans", "ventilation", "heating"],
     image: VAN,
   },
   {
@@ -409,7 +409,7 @@ export const SERVICES: ServicePage[] = [
         a: "Yes. One company for every system in your building: refrigeration, heating, air conditioning, ventilation and water heaters.",
       },
     ],
-    related: ["maintenance-plans", "ventilation", "air-conditioning", "heating/24-hour-furnace-repair"],
+    related: ["refrigeration/walk-in-coolers-freezers", "refrigeration/ice-machines", "maintenance-plans", "ventilation/hood-fans-make-up-air"],
     image: VAN,
   },
   {
@@ -499,7 +499,7 @@ export const SERVICES: ServicePage[] = [
         a: "Yes. We add and modify duct runs for renovations and basement developments so new rooms get proper heating and airflow.",
       },
     ],
-    related: ["heating", "air-conditioning", "maintenance-plans", "water-heaters"],
+    related: ["rooftop-units", "heating", "air-conditioning", "maintenance-plans"],
     image: VAN,
   },
   {
@@ -685,7 +685,403 @@ export const SERVICES: ServicePage[] = [
         a: "It depends on the filter type, pets and how much the system runs. Check it monthly during heating season and replace it when it looks dirty. Your filter's packaging gives the maximum interval.",
       },
     ],
-    related: ["heating", "air-conditioning", "refrigeration", "ventilation"],
+    related: ["heating", "air-conditioning", "rooftop-units", "refrigeration/walk-in-coolers-freezers"],
+    image: VAN,
+  },
+  {
+    slug: "rooftop-units",
+    name: "Rooftop Units",
+    serviceType: "Commercial rooftop unit (RTU) repair, installation and maintenance",
+    tone: "cool",
+    title: "Rooftop Unit Repair Calgary | Commercial RTU Service",
+    description:
+      "Commercial rooftop unit (RTU) repair, replacement and maintenance in Calgary. Heating and cooling for businesses, answered 24/7. Call 403-970-6988.",
+    h1: "Rooftop Unit Repair & Service in Calgary",
+    lede: "Heating and cooling for stores, restaurants, offices and warehouses. Rooftop units repaired, replaced and maintained, with calls answered 24/7.",
+    intro: [
+      "Most commercial buildings in Calgary are heated and cooled by rooftop units. One box on the roof handles heat in January, cooling in July and fresh air all year. When it stops working, the whole space feels it: staff, customers, product and equipment.",
+      "GBL HVAC LTD repairs, replaces and maintains rooftop units for strip malls, restaurants, retail stores, offices, shops and light industrial buildings. We answer 24 hours a day, so a unit that quits overnight or on a weekend gets a real answer, not a voicemail.",
+    ],
+    sections: [
+      {
+        heading: "Signs your rooftop unit needs service",
+        body: [],
+        bullets: [
+          "No heat, or the space can't hold temperature on cold days",
+          "No cooling, or warm air from the vents in summer",
+          "The unit short-cycles, starting and stopping over and over",
+          "Squealing belts, grinding fan motors or banging on the roof",
+          "Water leaking through the ceiling under the unit",
+          "Ice on the refrigerant lines or coil",
+          "Higher energy bills with no change in hours or use",
+          "Areas of the building that are always too hot or too cold",
+        ],
+      },
+      {
+        heading: "Heating side",
+        body: [
+          "Most rooftop units in Calgary have a gas-fired heating section. Over a long winter it runs hard, and the common failures are similar to a furnace: igniters, flame sensors, inducer motors, pressure switches, gas valves and limit switches. We diagnose the cause, explain it in plain language and get the heat back on as soon as it's safe.",
+          "Snow and ice matter on a roof too. Drifting snow can block fresh-air and combustion openings, and ice can build up around the unit. We check those as part of any winter call.",
+        ],
+      },
+      {
+        heading: "Cooling side",
+        body: [
+          "In summer the same unit cools the building. We service compressors, condenser fans, contactors, capacitors, refrigerant circuits and coils. Dirty condenser coils are one of the most common reasons a rooftop unit struggles on hot days, especially on roofs near cottonwoods or dusty lots.",
+          "If the system is low on refrigerant, there's a leak. We'll explain the options for finding and fixing it rather than just topping it up.",
+        ],
+      },
+      {
+        heading: "Fresh air, economizers and controls",
+        body: [
+          "Rooftop units also bring in outside air for the people inside. Many have an economizer that uses cool outdoor air instead of running the compressor when the weather allows. A stuck economizer damper can let freezing air pour in during winter or waste energy in summer.",
+          "We check dampers, actuators, sensors and thermostats or building controls so the unit is bringing in the right amount of air and responding to the space properly.",
+        ],
+      },
+      {
+        heading: "Replacement",
+        body: [
+          "When a rooftop unit is old and needs a major component, replacement can make more sense than another repair. We'll give you an honest comparison. Replacing a rooftop unit usually means planning a crane lift, checking the curb and connections, and scheduling around your business hours. We'll walk you through what's involved before you decide.",
+        ],
+      },
+      {
+        heading: "Maintenance that prevents shutdowns",
+        body: [
+          "Rooftop units are out of sight, so they're often out of mind until something fails. Scheduled maintenance catches the small problems first. A typical visit includes:",
+        ],
+        bullets: [
+          "Replacing filters and checking belts and pulleys",
+          "Cleaning condenser and evaporator coils",
+          "Inspecting the heating section, burners and venting",
+          "Checking refrigerant operating pressures",
+          "Testing economizer dampers and controls",
+          "Clearing condensate drains to prevent roof leaks",
+          "Checking electrical connections, contactors and capacitors",
+        ],
+      },
+    ],
+    included: [
+      "24/7 rooftop unit service calls",
+      "Heating section diagnosis and repair",
+      "Cooling and refrigerant repair",
+      "Economizer and controls troubleshooting",
+      "Rooftop unit replacement",
+      "Scheduled commercial maintenance",
+    ],
+    faqs: [
+      {
+        q: "Do you answer rooftop unit calls after hours?",
+        a: "Yes. GBL HVAC LTD is open 24 hours, 7 days a week. Call 403-970-6988 any time your unit stops heating or cooling.",
+      },
+      {
+        q: "Why is water leaking through my ceiling under the rooftop unit?",
+        a: "Often a blocked condensate drain, damaged curb seal or failed roof flashing around the unit. A blocked drain is something we check and clear on every maintenance visit. If the leak is in the roof itself, you may also need a roofer.",
+      },
+      {
+        q: "How often should a rooftop unit be maintained?",
+        a: "At least twice a year is common: once before heating season and once before cooling season. Filters may need changing more often, depending on the building and the environment.",
+      },
+      {
+        q: "Should I repair or replace my rooftop unit?",
+        a: "It depends on the unit's age and condition and what the repair involves. We'll give you both options with the trade-offs so you can decide.",
+      },
+      {
+        q: "Can you service the rooftop unit over a restaurant kitchen?",
+        a: "Yes. We also work on kitchen hood fans and make-up air units, which often sit on the same roof and affect how the building's heating and cooling perform.",
+      },
+    ],
+    related: ["ventilation/hood-fans-make-up-air", "air-conditioning", "heating", "maintenance-plans"],
+    image: VAN,
+  },
+  {
+    slug: "refrigeration/walk-in-coolers-freezers",
+    parent: "refrigeration",
+    name: "Walk-In Coolers & Freezers",
+    serviceType: "Walk-in cooler and walk-in freezer repair and maintenance",
+    tone: "cool",
+    title: "Walk-In Cooler & Freezer Repair Calgary | 24/7",
+    description:
+      "Walk-in cooler and walk-in freezer repair in Calgary, answered 24/7. Restaurants, grocery and convenience stores. Call GBL HVAC LTD at 403-970-6988.",
+    h1: "Walk-In Cooler & Freezer Repair in Calgary",
+    lede: "When a walk-in starts warming up, every hour counts. We answer 24/7 for restaurants, grocers and food businesses across Calgary.",
+    intro: [
+      "A walk-in cooler or freezer holds most of the stock in a restaurant, café, grocery store or catering kitchen. When it fails, the cost isn't just the repair. It's the product inside, and potentially a day of business.",
+      "GBL HVAC LTD repairs and maintains walk-in coolers and walk-in freezers across Calgary. We're open 24 hours, so when the box starts warming up at closing time, on a Sunday or in the middle of the night, you can call 403-970-6988 and talk to Quinn directly.",
+    ],
+    sections: [
+      {
+        heading: "If your walk-in is failing right now",
+        body: [
+          "Keep the door shut. Every opening lets cold air out. Put a thermometer inside so you know the real temperature, not just what the display says, and write down readings and times.",
+          "Move the most valuable or most perishable product to another working cooler or freezer if you have one. Cold-held food generally needs to stay at 4°C or below, and frozen food should stay frozen solid. Your health inspector can advise on product that has warmed up.",
+          "Then call us. Tell us whether it's a cooler or a freezer, what temperature it's at and what you see and hear, and we'll go from there.",
+        ],
+      },
+      {
+        heading: "Warning signs to call about early",
+        body: [],
+        bullets: [
+          "Temperature creeping up, or slow to recover after deliveries",
+          "Ice building up on the evaporator coil in the box",
+          "Frost or ice around the door frame, or a door that won't seal",
+          "Water on the floor, or ice on the floor of a freezer",
+          "The condensing unit running non-stop or short cycling",
+          "New noises from the evaporator fans or condensing unit",
+          "Torn door gaskets or a door that doesn't close by itself",
+        ],
+      },
+      {
+        heading: "How a walk-in works",
+        body: [
+          "Inside the box, an evaporator coil and fans pull heat out of the air. Outside, usually on the roof or a wall, a condensing unit with a compressor and fan gets rid of that heat. Refrigerant lines connect the two, and controls tell the system when to run and when to defrost.",
+          "A problem anywhere in that loop shows up as a warm box. That's why we diagnose the whole system rather than guessing at one part.",
+        ],
+      },
+      {
+        heading: "Freezer-specific problems",
+        body: [
+          "Walk-in freezers run far below zero, so defrost is critical. Defrost heaters and timers or controls melt ice off the evaporator coil on a schedule. When defrost fails, the coil turns into a block of ice, airflow stops and the box warms up.",
+          "Freezer doors have heated frames to stop them freezing shut. A failed door heater can leave the door iced up or let warm, moist air in. Drain lines need heat too, or the defrost water freezes in the line and backs up.",
+        ],
+      },
+      {
+        heading: "What we check",
+        body: [],
+        bullets: [
+          "Thermostat, controls and temperature sensors",
+          "Evaporator coil and fans",
+          "Defrost heaters, timers and drain line heaters",
+          "Condensing unit, compressor and condenser fan",
+          "Refrigerant charge and operating pressures",
+          "Condenser coil condition (dirty coils are a common cause)",
+          "Door gaskets, hinges, closers and door frame heaters",
+        ],
+      },
+      {
+        heading: "Maintenance",
+        body: [
+          "Most walk-in failures build up over weeks: coils getting dirtier, a fan motor starting to fail, a gasket letting warm air in. A scheduled maintenance visit catches those early and keeps the system running efficiently. We'll recommend a schedule that suits your equipment and your kitchen, and work around your opening hours.",
+        ],
+      },
+    ],
+    included: [
+      "24/7 emergency walk-in calls",
+      "Walk-in cooler repair",
+      "Walk-in freezer repair",
+      "Defrost and drain line repair",
+      "Door gasket, closer and heater repair",
+      "Scheduled preventive maintenance",
+    ],
+    faqs: [
+      {
+        q: "Can you come out at night or on a weekend?",
+        a: "Yes. GBL HVAC LTD is open 24 hours, 7 days a week. Call 403-970-6988 as soon as you notice the temperature rising.",
+      },
+      {
+        q: "Why is my walk-in freezer's coil covered in ice?",
+        a: "Usually a defrost problem: a failed heater, timer or control. A door that isn't sealing, a failing evaporator fan or low refrigerant can also cause it. Heavy ice blocks airflow, so the box warms up. Call us before it gets worse.",
+      },
+      {
+        q: "There's water on the floor of my walk-in cooler. What's wrong?",
+        a: "Commonly a blocked or frozen drain line, or ice on the coil melting during defrost faster than the drain can handle. We'll find the cause and clear it.",
+      },
+      {
+        q: "What temperature should my walk-in be at?",
+        a: "Coolers holding food generally need to keep it at 4°C or below. Freezers should keep food frozen solid; many operators aim for around -18°C. Check your local health requirements for your operation.",
+      },
+      {
+        q: "Do you also service reach-ins and ice machines?",
+        a: "Yes. We service reach-in coolers and freezers, display cases, prep tables and ice machines as well.",
+      },
+    ],
+    related: ["refrigeration/ice-machines", "ventilation/hood-fans-make-up-air", "rooftop-units", "maintenance-plans"],
+    image: VAN,
+  },
+  {
+    slug: "refrigeration/ice-machines",
+    parent: "refrigeration",
+    name: "Ice Machines",
+    serviceType: "Commercial ice machine repair and maintenance",
+    tone: "cool",
+    title: "Ice Machine Repair Calgary | Commercial Service",
+    description:
+      "Commercial ice machine repair, cleaning and maintenance in Calgary for restaurants, bars and hotels. Answered 24/7. Call GBL HVAC LTD at 403-970-6988.",
+    h1: "Ice Machine Repair in Calgary",
+    lede: "Commercial ice machines repaired, cleaned and maintained for Calgary restaurants, bars, cafés and hotels.",
+    intro: [
+      "Running out of ice on a busy Friday night means watered-down service, unhappy customers and staff running to the store for bags. An ice machine that's producing slowly, making poor ice or leaking needs attention before it stops completely.",
+      "GBL HVAC LTD repairs and maintains commercial ice machines across Calgary for restaurants, bars, cafés, hotels, convenience stores and anyone else who depends on a steady supply of ice. We answer 24 hours a day, 7 days a week.",
+    ],
+    sections: [
+      {
+        heading: "Common ice machine problems",
+        body: [],
+        bullets: [
+          "Not making ice at all",
+          "Making ice much more slowly than it used to",
+          "Small, thin, cloudy or misshapen cubes",
+          "Ice that tastes or smells off",
+          "Water leaking around the machine or bin",
+          "The machine runs constantly or keeps shutting off",
+          "Scale or slime visible on the evaporator or water parts",
+        ],
+      },
+      {
+        heading: "Calgary water and scale",
+        body: [
+          "Calgary's water is moderately hard. As an ice machine freezes water over and over, the minerals stay behind as scale on the evaporator plate, water distribution tubes, pump and valves. Scale makes the machine slower, makes harvest unreliable and eventually causes breakdowns.",
+          "Regular cleaning and descaling, along with a properly maintained water filter, keeps scale under control. If your machine has never been descaled, it's worth having it looked at.",
+        ],
+      },
+      {
+        heading: "Ice is food",
+        body: [
+          "Health inspectors treat ice as food. The inside of an ice machine is cold, damp and dark, which is exactly where slime and mould like to grow. Bins, chutes and water parts need regular cleaning and sanitizing, following the manufacturer's procedure.",
+          "If you see pink or black slime, or the ice tastes off, the machine needs a thorough clean. We'll clean and sanitize it and check that everything is working properly at the same time.",
+        ],
+      },
+      {
+        heading: "How we diagnose a machine",
+        body: [
+          "An ice machine is a small refrigeration system with a water system and a harvest cycle on top. When ice production drops, the cause can be on the refrigeration side (a dirty condenser, a failing fan or compressor, a refrigerant problem), the water side (scale, a clogged filter, a failing inlet valve or pump) or the controls (sensors, the harvest cycle or the bin level control).",
+          "We check all three so the fix actually solves the problem, rather than just getting the machine running for a few days.",
+        ],
+      },
+      {
+        heading: "Placement matters",
+        body: [
+          "Air-cooled ice machines need room to breathe. Jammed into a hot corner of a kitchen next to the fryers, or with the condenser blocked by boxes, they produce less ice and work harder. We'll tell you if your machine's location is costing you ice and what can be done about it.",
+        ],
+      },
+      {
+        heading: "Maintenance",
+        body: [
+          "A maintenance visit typically includes cleaning and descaling the water system, sanitizing the bin and food-contact parts, cleaning the condenser, checking the water filter, and confirming the harvest cycle and bin control work. We'll recommend how often based on your machine, water and how much ice you use.",
+        ],
+      },
+    ],
+    included: [
+      "Ice machine diagnosis and repair",
+      "Cleaning, descaling and sanitizing",
+      "Water filter checks and replacement",
+      "Condenser cleaning",
+      "Leak and drain repair",
+      "Scheduled maintenance",
+    ],
+    faqs: [
+      {
+        q: "Why is my ice machine making less ice than it used to?",
+        a: "Common causes are scale build-up, a dirty condenser, a clogged water filter or a hot location. Low production can also point to a refrigeration or water valve problem. We'll find the actual cause.",
+      },
+      {
+        q: "How often should an ice machine be cleaned?",
+        a: "Follow the manufacturer's schedule as a minimum. Many machines need cleaning and sanitizing every few months, and more often in busy kitchens, warm locations or with hard water.",
+      },
+      {
+        q: "Why does my ice taste or smell bad?",
+        a: "Usually slime or mould in the water system or bin, an overdue water filter, or the machine picking up odours from nearby food. A full clean and sanitize normally fixes it.",
+      },
+      {
+        q: "My ice machine is leaking. What should I do?",
+        a: "Turn off the water supply to the machine if you can do so safely, and call 403-970-6988. Common causes are a blocked drain, a cracked water line or a failing water valve.",
+      },
+    ],
+    related: ["refrigeration/walk-in-coolers-freezers", "refrigeration", "maintenance-plans", "water-heaters"],
+    image: VAN,
+  },
+  {
+    slug: "ventilation/hood-fans-make-up-air",
+    parent: "ventilation",
+    name: "Hood Fans & Make-Up Air",
+    serviceType: "Kitchen hood fan and make-up air unit repair and maintenance",
+    tone: "cool",
+    title: "Hood Fan & Make-Up Air Unit Repair Calgary",
+    description:
+      "Commercial kitchen hood fan and make-up air unit repair and maintenance in Calgary. Restaurants and food businesses, answered 24/7. Call 403-970-6988.",
+    h1: "Hood Fan & Make-Up Air Unit Repair in Calgary",
+    lede: "Kitchen exhaust hood fans and the make-up air units that feed them, repaired and maintained for Calgary restaurants and food businesses.",
+    intro: [
+      "A commercial kitchen can't run without its hood fan. It pulls smoke, heat and grease-laden air away from the cooking line. Every bit of air it removes has to be replaced, and that's the job of the make-up air unit. The two work as a pair, so a problem with one shows up as a problem with both.",
+      "GBL HVAC LTD repairs and maintains kitchen exhaust hood fans and make-up air units for restaurants, cafés, food trucks with commissary kitchens, institutional kitchens and other food businesses across Calgary. We answer 24 hours a day.",
+    ],
+    sections: [
+      {
+        heading: "Signs of a hood fan or make-up air problem",
+        body: [],
+        bullets: [
+          "Smoke rolling out from under the hood instead of being captured",
+          "The kitchen getting hotter or smokier than usual",
+          "Front doors that are hard to open or slam shut",
+          "Cold drafts in the kitchen or dining room in winter",
+          "Squealing, rattling or grinding from the exhaust fan on the roof",
+          "The make-up air unit not heating, so the kitchen fills with freezing air",
+          "The hood fan or make-up air unit not starting when switched on",
+        ],
+      },
+      {
+        heading: "Hood exhaust fans",
+        body: [
+          "Most kitchen exhaust fans sit on the roof above the hood. They're often belt-driven, and belts stretch, wear and slip. Motors and bearings wear out, and grease build-up on the fan wheel throws it out of balance, causing vibration and noise.",
+          "We repair and replace exhaust fan motors, belts, pulleys and bearings, and troubleshoot the switches and controls that run them. Grease cleaning of hoods and ducts and the fire-suppression system are separate specialties. If you're not sure who handles what, ask us and we'll point you in the right direction.",
+        ],
+      },
+      {
+        heading: "Make-up air units",
+        body: [
+          "When the hood fan pulls air out, the same amount of air has to come back in. Without enough make-up air, the building goes into negative pressure: doors become hard to open, the hood stops capturing smoke properly and appliances with flues may not vent as they should.",
+          "In a Calgary winter, that replacement air can be well below freezing, so make-up air units usually heat it as it comes in, often with a gas burner. A make-up air unit that isn't heating dumps freezing air into the kitchen. We service burners, igniters, flame safety controls, blowers, belts, filters, dampers and controls.",
+        ],
+      },
+      {
+        heading: "Working as a pair",
+        body: [
+          "Hood fans and make-up air units are usually interlocked so they start and stop together. If the interlock, a switch or a control fails, one may run without the other. We test the whole system together so the kitchen is balanced, not just each unit on its own.",
+        ],
+      },
+      {
+        heading: "Maintenance",
+        body: ["Kitchen exhaust and make-up air equipment works hard every service. Regular maintenance usually includes:"],
+        bullets: [
+          "Inspecting and adjusting or replacing belts",
+          "Checking motors, bearings and fan wheels",
+          "Replacing make-up air filters",
+          "Inspecting the make-up air burner and safety controls before winter",
+          "Checking dampers, interlocks and controls",
+          "Confirming the hood and make-up air are running together properly",
+        ],
+      },
+    ],
+    included: [
+      "Hood exhaust fan repair and replacement",
+      "Fan belts, motors and bearings",
+      "Make-up air unit heating repair",
+      "Make-up air filters, dampers and controls",
+      "Hood and make-up air interlock troubleshooting",
+      "Scheduled kitchen ventilation maintenance",
+    ],
+    faqs: [
+      {
+        q: "Why are my restaurant's doors hard to open?",
+        a: "Usually the kitchen exhaust is pulling out more air than is coming back in, often because the make-up air unit isn't running or isn't bringing in enough air. We'll check both units and the controls that link them.",
+      },
+      {
+        q: "Why is freezing air coming into my kitchen in winter?",
+        a: "The make-up air unit is most likely running without heating the air. Common causes are an igniter, flame sensor, gas valve or control problem. Call us and we'll get it heating again.",
+      },
+      {
+        q: "My hood fan is squealing. Is that urgent?",
+        a: "A squeal often means a slipping or worn belt, or failing bearings. It's best dealt with soon, before the belt breaks or the motor fails mid-service.",
+      },
+      {
+        q: "Do you clean grease out of hoods and ducts?",
+        a: "Grease cleaning of hoods and ducts is a separate specialty from fan and make-up air repair. Ask us if you're not sure who to call and we'll point you in the right direction.",
+      },
+      {
+        q: "Can you come out during or after service hours?",
+        a: "Yes. We're open 24 hours, 7 days a week, so we can work around your kitchen's schedule.",
+      },
+    ],
+    related: ["rooftop-units", "refrigeration/walk-in-coolers-freezers", "ventilation", "maintenance-plans"],
     image: VAN,
   },
 ];
