@@ -38,23 +38,28 @@ Services and descriptions match the website. If something changes on the site, c
 
 ## 2. Categories
 
-Pick **one primary** and **up to 9 secondary** categories. Type each one into the category box and choose it **only if it appears in Google's dropdown with the same wording**. Google's list changes, and some names below may be worded slightly differently.
+Pick **one primary** and **up to 9 secondary** categories. Google only accepts names from its own list:
+**type the first few letters and click a suggestion from the dropdown.** Typing a full name and pressing enter gives
+"We didn't understand your category".
 
 **Primary (most important ranking signal):**
 - `HVAC contractor`
 
-**Secondary, in priority order (all match services on the website):**
+**Secondary, in priority order:**
 
-| Category | Why | Website page |
+| Type this | Pick | Website page |
 | --- | --- | --- |
-| `Heating contractor` | Furnaces, boilers | /heating |
-| `Furnace repair service` | Core winter search, 24/7 | /heating, /heating/24-hour-furnace-repair |
-| `Air conditioning contractor` | AC installation | /air-conditioning |
-| `Air conditioning repair service` | AC repair | /air-conditioning |
-| `Commercial refrigeration` | Walk-ins, ice machines, coolers | /refrigeration |
-| `Refrigeration repair service` | If it appears | /refrigeration |
-| `Water heater installation service` | If it appears | /water-heaters |
-| `Ventilating equipment` / `Air duct` options | **Only** a repair or install type, never "cleaning" or "manufacturer" | /ventilation |
+| `heating` | Heating contractor | /heating |
+| `furnace` | Furnace repair service | /heating, /heating/24-hour-furnace-repair |
+| `air cond` | Air conditioning contractor | /air-conditioning |
+| `air cond` | Air conditioning repair service | /air-conditioning |
+| `commercial refrig` | Commercial refrigeration | /refrigeration and its sub-pages |
+| `mechanical` | Mechanical contractor (if it appears) | /rooftop-units, /ventilation/hood-fans-make-up-air |
+| `water heat` | Only a *repair* or *installation* service if one appears; skip if only store/supplier options show | /water-heaters |
+
+**Tried and rejected by Google** (not real category names): "Refrigeration repair service", "Water heater installation service", "Ventilating equipment".
+
+**No matching category? That's fine.** List the work as services under `HVAC contractor` (section 5). It still shows on the profile, and the website covers it.
 
 **Avoid these categories:**
 - Anything ending in **store, supplier, wholesaler or manufacturer**. Those mean selling products.
@@ -150,7 +155,7 @@ On the profile, services don't compete with each other the way website pages do,
 **Commercial Air Conditioning** (site: /air-conditioning, /rooftop-units)
 > Cooling for offices, stores and restaurants: commercial split systems and rooftop unit cooling, plus scheduled maintenance so your system is checked before summer.
 
-### Under: Commercial refrigeration / Refrigeration repair service
+### Under: Commercial refrigeration (or HVAC contractor if that category isn't available)
 
 **Commercial Refrigeration Repair** (site: /refrigeration)
 > Commercial refrigeration repair for restaurants, cafés, grocery and convenience stores, bars and caterers. Reach-in coolers and freezers, display cases, prep tables and condensing units. Answered 24/7.
@@ -170,7 +175,7 @@ On the profile, services don't compete with each other the way website pages do,
 **Refrigeration Preventive Maintenance** (site: /refrigeration)
 > Scheduled maintenance for walk-ins, reach-ins and ice machines: condenser coils cleaned, refrigerant and pressures checked, fans, defrost and controls tested, door gaskets inspected and drains cleared.
 
-### Under: Water heater installation service (or HVAC contractor if that category isn't available)
+### Under: HVAC contractor (or a water heater repair/installation category if Google offers one)
 
 **Hot Water Tank Repair** (site: /water-heaters)
 > Hot water tank repair for homes and businesses: no hot water, pilot won't stay lit, leaks, rusty water or rumbling noises. We repair burners, thermocouples, gas valves, venting and elements. Answered 24/7.
@@ -184,7 +189,7 @@ On the profile, services don't compete with each other the way website pages do,
 **Tankless Water Heater Service** (site: /water-heaters)
 > Tankless water heater repair and descaling. Calgary's hard water builds scale inside tankless units, so regular descaling keeps them running efficiently.
 
-### Under: Ventilation (HVAC contractor if no ventilation category is available)
+### Under: HVAC contractor (or Mechanical contractor if you added it)
 
 **HRV & Air Exchanger Service** (site: /ventilation)
 > Heat recovery ventilator (HRV) and air exchanger service, repair and installation. We clean cores and filters, fix noise, icing and drainage problems, and clear outdoor hoods for fresh air without losing heat.
