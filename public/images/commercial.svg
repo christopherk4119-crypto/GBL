@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <!-- PLACEHOLDER ILLUSTRATION: replace with a real commercial HVAC / rooftop unit photo (e.g. commercial.jpg) -->
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E1529"/><stop offset="1" stop-color="#2A3A63"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky2)"/>
+  <g fill="#18213D">
+    <rect x="20" y="220" width="160" height="380"/>
+    <rect x="620" y="180" width="170" height="420"/>
+  </g>
+  <rect x="160" y="300" width="480" height="300" fill="#202C50"/>
+  <!-- rooftop units -->
+  <g fill="#2E3E68" stroke="#A8DDE8" stroke-opacity="0.5" stroke-width="2">
+    <rect x="200" y="240" width="120" height="60" rx="4"/>
+    <rect x="360" y="250" width="90" height="50" rx="4"/>
+    <rect x="490" y="235" width="120" height="65" rx="4"/>
+  </g>
+  <g fill="none" stroke="#A8DDE8" stroke-opacity="0.7" stroke-width="2">
+    <circle cx="260" cy="270" r="18"/><circle cx="550" cy="267" r="20"/>
+    <path d="M242 270 H278 M260 252 V288 M530 267 H570 M550 247 V287"/>
+  </g>
+  <g fill="#A8DDE8" opacity="0.25">
+    <rect x="190" y="340" width="70" height="40"/><rect x="290" y="340" width="70" height="40"/>
+    <rect x="390" y="340" width="70" height="40"/><rect x="490" y="340" width="70" height="40"/>
+    <rect x="190" y="420" width="70" height="40"/><rect x="290" y="420" width="70" height="40"/>
+    <rect x="390" y="420" width="70" height="40"/><rect x="490" y="420" width="70" height="40"/>
+  </g>
+  <g fill="#F07A2B" opacity="0.35">
+    <rect x="50" y="260" width="30" height="20"/><rect x="110" y="320" width="30" height="20"/>
+    <rect x="660" y="230" width="30" height="20"/><rect x="720" y="300" width="30" height="20"/>
+  </g>
+  <rect x="340" y="510" width="120" height="90" fill="#141C33"/>
+</svg>
