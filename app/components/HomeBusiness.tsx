@@ -1,4 +1,5 @@
 import { Building2, CheckCircle2, Home } from "lucide-react";
+import Link from "next/link";
 import Reveal from "./Reveal";
 
 const PANELS = [
@@ -7,9 +8,14 @@ const PANELS = [
     label: "Residential",
     icon: Home,
     title: "For Your Home",
-    // Placeholder illustration: replace with a real project photo in /public/images/
-    image: "/images/residential.svg",
-    items: ["Furnace installation & repair", "AC installation & repair", "Seasonal tune-ups", "Water heaters (tank & tankless)", "Ventilation & air exchangers"],
+    image: "/images/gbl-hvac-service-van-calgary.jpg",
+    items: [
+      { label: "Furnace installation & repair", href: "/heating" },
+      { label: "AC installation & repair", href: "/air-conditioning" },
+      { label: "Seasonal tune-ups", href: "/maintenance-plans" },
+      { label: "Water heaters (tank & tankless)", href: "/water-heaters" },
+      { label: "Ventilation & air exchangers", href: "/ventilation" },
+    ],
     cta: "Book Home Service",
     accent: "flame",
   },
@@ -20,7 +26,13 @@ const PANELS = [
     title: "For Your Business",
     // Placeholder illustration: replace with a real project photo in /public/images/
     image: "/images/commercial.svg",
-    items: ["Rooftop units (RTUs)", "Commercial refrigeration", "Walk-in coolers & freezers", "Commercial ventilation", "Maintenance contracts"],
+    items: [
+      { label: "Rooftop units (RTUs)", href: "/air-conditioning" },
+      { label: "Commercial refrigeration", href: "/refrigeration" },
+      { label: "Walk-in coolers & freezers", href: "/refrigeration" },
+      { label: "Commercial ventilation", href: "/ventilation" },
+      { label: "Maintenance contracts", href: "/maintenance-plans" },
+    ],
     cta: "Request Commercial Quote",
     accent: "ice",
   },
@@ -60,9 +72,11 @@ export default function HomeBusiness() {
                   <h3 className="text-3xl font-black md:text-4xl">{p.title}</h3>
                   <ul className="mt-5 grid gap-2.5 sm:grid-cols-2">
                     {p.items.map((it) => (
-                      <li key={it} className="flex items-start gap-2 text-white/85">
-                        <CheckCircle2 className={`mt-0.5 h-5 w-5 shrink-0 ${isFlame ? "text-flame" : "text-ice"}`} aria-hidden />
-                        {it}
+                      <li key={it.label}>
+                        <Link href={it.href} className="flex items-start gap-2 text-white/85 underline-offset-4 hover:text-white hover:underline">
+                          <CheckCircle2 className={`mt-0.5 h-5 w-5 shrink-0 ${isFlame ? "text-flame" : "text-ice"}`} aria-hidden />
+                          {it.label}
+                        </Link>
                       </li>
                     ))}
                   </ul>

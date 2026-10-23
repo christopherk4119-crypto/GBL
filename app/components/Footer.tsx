@@ -1,7 +1,9 @@
+import Link from "next/link";
 import { Clock, Mail, Phone } from "lucide-react";
 import Logo from "./Logo";
 import LightStreak from "./LightStreak";
 import { NAV, SITE } from "@/lib/site";
+import { SERVICES } from "@/lib/services";
 
 const SERVICE_LIST = ["Install", "Maintenance", "Commercial", "Residential", "Heating", "Air Conditioning", "Refrigeration", "Ventilation", "Water Heater"];
 
@@ -9,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="relative bg-[#0E1529] pb-28 md:pb-10">
       <LightStreak />
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 pt-6 sm:px-6 md:grid-cols-3">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 pt-6 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <Logo id="ftr" />
           <p className="mt-4 max-w-xs text-white/70">{SITE.tagline}</p>
@@ -27,13 +29,27 @@ export default function Footer() {
           </p>
         </div>
 
+        <nav aria-label="Services">
+          <h2 className="mb-3 text-sm font-bold uppercase tracking-widest text-ice">Services</h2>
+          <ul className="space-y-2">
+            {SERVICES.map((s) => (
+              <li key={s.slug}>
+                <Link href={`/${s.slug}`} className="text-white/80 hover:text-ice">
+                  {s.h1.replace(/ in Calgary$/, "")}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
         <nav aria-label="Footer">
+          <h2 className="mb-3 text-sm font-bold uppercase tracking-widest text-ice">Company</h2>
           <ul className="grid grid-cols-2 gap-2">
             {NAV.map((n) => (
               <li key={n.href}>
-                <a href={n.href} className="text-white/80 hover:text-ice">
+                <Link href={n.href} className="text-white/80 hover:text-ice">
                   {n.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

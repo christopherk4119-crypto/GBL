@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { Menu, Phone, X } from "lucide-react";
 import Logo from "./Logo";
 import { NAV, SITE } from "@/lib/site";
@@ -77,9 +78,9 @@ export default function Header() {
         <ul className="mx-auto flex max-w-7xl items-center justify-center gap-8 px-6 py-2 text-sm font-semibold">
           {NAV.map((item) => (
             <li key={item.href}>
-              <a href={item.href} className="text-white/80 transition hover:text-ice">
+              <Link href={item.href} className="text-white/80 transition hover:text-ice">
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -91,13 +92,13 @@ export default function Header() {
           <ul className="flex flex-col">
             {NAV.map((item) => (
               <li key={item.href}>
-                <a
+                <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
                   className="block border-b border-white/5 py-4 text-lg font-semibold text-white/90 hover:text-ice"
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

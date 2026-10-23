@@ -1,6 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Montserrat } from "next/font/google";
-import { SITE } from "@/lib/site";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import MobileCallBar from "./components/MobileCallBar";
+import QuotePopup from "./components/QuotePopup";
+import JsonLd from "./components/JsonLd";
+import { SERVICE_AREAS, SITE, siteUrl } from "@/lib/site";
+import { HUBS } from "@/lib/services";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -11,22 +17,18 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
-const title = "GBL HVAC | 24/7 Furnace, AC & Refrigeration Repair Calgary";
+const title = "24/7 HVAC Calgary | Furnace & AC | GBL HVAC LTD";
 const description =
-  "Calgary HVAC company open 24 hours. Heating, air conditioning, refrigeration, ventilation and water heater installation, repair and maintenance for homes and businesses. Call 403-970-6988.";
+  "Calgary HVAC open 24/7. Furnace, AC, refrigeration, ventilation and water heater service for homes and businesses. Call 403-970-6988.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE.url),
+  metadataBase: new URL(siteUrl),
   title,
   description,
-  keywords: [
-    "furnace repair Calgary",
-    "HVAC Calgary",
-    "24 hour furnace repair Calgary",
-    "AC installation Calgary",
-    "commercial refrigeration Calgary",
-    "water heater Calgary",
-  ],
+  applicationName: SITE.name,
+  authors: [{ name: SITE.name }],
+  creator: SITE.name,
+  publisher: SITE.name,
   alternates: { canonical: "/" },
   openGraph: {
     title,
@@ -36,6 +38,7 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
   },
+  twitter: { card: "summary_large_image", title, description },
   formatDetection: { telephone: true },
 };
 
@@ -45,46 +48,38 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-// LocalBusiness / HVACBusiness structured data
-const jsonLd = {
+// Global LocalBusiness schema. Rendered once here so every page inherits it.
+const businessSchema = {
   "@context": "https://schema.org",
-  "@type": "HVACBusiness",
+  "@type": ["LocalBusiness", "HVACBusiness"],
+  "@id": `${siteUrl}/#business`,
   name: SITE.name,
   description,
-  url: SITE.url,
-  logo: `${SITE.url}/logo-icon.svg`,
-  image: `${SITE.url}/logo-icon.svg`,
+  url: siteUrl,
+  logo: `${siteUrl}/icon.png`,
+  image: [`${siteUrl}/images/gbl-hvac-service-van-calgary.jpg`, `${siteUrl}/opengraph-image.png`],
   telephone: "+1-403-970-6988",
   email: SITE.email,
   founder: { "@type": "Person", name: SITE.owner },
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Calgary",
-    addressRegion: "AB",
-    addressCountry: "CA",
-  },
-  areaServed: [
-    "Calgary",
-    "Airdrie",
-    "Cochrane",
-    "Chestermere",
-    "Okotoks",
-  ].map((name) => ({ "@type": "City", name })),
-  openingHours: "Mo-Su 00:00-23:59",
+  // Service-area business: city-level address only, no street address shown.
+  address: { "@type": "PostalAddress", addressLocality: "Calgary", addressRegion: "AB", addressCountry: "CA" },
+  areaServed: ["Calgary", ...SERVICE_AREAS.filter((a) => !a.includes("Calgary"))].map((name) => ({ "@type": "City", name })),
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
     opens: "00:00",
     closes: "23:59",
   },
-  makesOffer: [
-    "Heating",
-    "Air Conditioning",
-    "Refrigeration",
-    "Ventilation",
-    "Water Heater",
-    "Maintenance Plans",
-  ].map((name) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name } })),
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "HVAC services",
+    itemListElement: HUBS.map((s) => ({
+      "@type": "Offer",
+      itemOffered: { "@type": "Service", name: s.h1, url: `${siteUrl}/${s.slug}` },
+    })),
+  },
+  // TODO(client): add real profile URLs only (Google Business Profile, Yelp business page, Facebook...).
+  // sameAs: [],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -94,11 +89,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <noscript>
           <style>{`.reveal{opacity:1!important;transform:none!important}`}</style>
         </noscript>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        {children}
+        <JsonLd data={businessSchema} />
+        <Header />
+        <main>{children}</main>
+        <Footer />
+        <MobileCallBar />
+        <QuotePopup />
       </body>
     </html>
   );

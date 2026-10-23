@@ -34,6 +34,10 @@ const config: Config = {
           "0%": { strokeDashoffset: "1600" },
           "100%": { strokeDashoffset: "0" },
         },
+        popupIn: {
+          "0%": { opacity: "0", transform: "translateY(24px) scale(0.98)" },
+          "100%": { opacity: "1", transform: "none" },
+        },
         glowPulse: {
           "0%, 100%": { boxShadow: "0 0 0 0 rgba(240,122,43,0.55)" },
           "50%": { boxShadow: "0 0 24px 6px rgba(240,122,43,0.45)" },
@@ -43,6 +47,7 @@ const config: Config = {
         shimmer: "shimmer 5s ease-in-out infinite",
         sweep: "sweep 9s linear infinite",
         "glow-pulse": "glowPulse 1.6s ease-in-out infinite",
+        "popup-in": "popupIn 0.35s ease-out",
       },
     },
   },

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { logoSvgInner } from "@/lib/logo-svg.mjs";
 import { SITE } from "@/lib/site";
 
@@ -21,7 +22,7 @@ export function LogoMark({ id = "gbl", className = "h-12 w-12" }: { id?: string;
 
 export default function Logo({ id = "gbl" }: { id?: string }) {
   return (
-    <a href="#home" className="flex h-[56px] max-w-[200px] items-center gap-2.5 md:h-[80px]" aria-label={`${SITE.name} home`}>
+    <Link href="/" className="flex h-[56px] max-w-[200px] items-center gap-2.5 md:h-[80px]" aria-label={`${SITE.name} home`}>
       {LOGO_PNG ? (
         <Image src={LOGO_PNG} alt={SITE.name} width={200} height={80} priority className="h-full w-auto object-contain" />
       ) : (
@@ -33,6 +34,6 @@ export default function Logo({ id = "gbl" }: { id?: string }) {
           </span>
         </>
       )}
-    </a>
+    </Link>
   );
 }

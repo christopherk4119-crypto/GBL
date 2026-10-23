@@ -1,6 +1,6 @@
 # GBL HVAC LTD: Website
 
-Single-page site for GBL HVAC LTD (Calgary, AB). Built with Next.js 15 (App Router) and Tailwind CSS. Ready for Vercel.
+Website for GBL HVAC LTD (Calgary, AB). Built with Next.js 15 (App Router) and Tailwind CSS. Ready for Vercel.
 
 ## Run locally
 
@@ -8,6 +8,7 @@ Single-page site for GBL HVAC LTD (Calgary, AB). Built with Next.js 15 (App Rout
 npm install
 npm run dev      # http://localhost:3000
 npm run build    # production build
+npm run lint && npm run typecheck
 ```
 
 ## Deploy to Vercel
@@ -37,11 +38,18 @@ Until one is configured, the form logs leads in development and **refuses in pro
 - [ ] Pricing or financing
 - [ ] Real customer reviews: `app/components/Testimonials.tsx` has 3 empty slots
 - [ ] Google Business Profile link
-- [ ] Real project photos: `public/images/residential.svg` and `commercial.svg` are placeholder illustrations. Replace with real photos and update the paths in `app/components/HomeBusiness.tsx`
-- [ ] Production domain: `SITE.url` in `lib/site.ts` (used for canonical URL and schema)
+- [ ] More real project photos: `public/images/commercial.svg` is still a placeholder illustration (`app/components/HomeBusiness.tsx`)
+- [ ] Production domain: set `NEXT_PUBLIC_SITE_URL` in Vercel (used for canonicals, sitemap and schema; see `lib/site.ts`)
+
+## SEO
+
+See `SEO-PLAYBOOK.md` for the full setup, client to-dos, Search Console steps and pre-ship checks.
 
 ## Where things live
 
 - `lib/site.ts`: phone, email, nav, service areas, service list
 - `app/layout.tsx`: SEO metadata and HVACBusiness JSON-LD schema
+- `lib/services.ts`: content for every service page (adding an entry creates the page)
+- `app/[...slug]/page.tsx`: service page route
 - `app/components/`: one file per page section
+- `app/components/QuotePopup.tsx`: 4-second call / quote popup
