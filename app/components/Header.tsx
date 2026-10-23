@@ -6,6 +6,10 @@ import { Menu, Phone, X } from "lucide-react";
 import Logo from "./Logo";
 import { NAV, SITE } from "@/lib/site";
 
+const MOBILE_BAR_LABELS = ["Home", "Services", "Contact"];
+const MOBILE_BAR = NAV.filter((n) => MOBILE_BAR_LABELS.includes(n.label));
+const MENU_ONLY = NAV.filter((n) => !MOBILE_BAR_LABELS.includes(n.label));
+
 function OpenBadge({ className = "" }: { className?: string }) {
   return (
     <span className={`inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-400/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-emerald-300 ${className}`}>
@@ -18,7 +22,7 @@ function OpenBadge({ className = "" }: { className?: string }) {
   );
 }
 
-export default function Header() {
+export default function Header({ services }: { services: { name: string; href: string }[] }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -75,10 +79,10 @@ export default function Header() {
 
       {/* Desktop nav */}
       <nav className="hidden border-t border-white/5 md:block" aria-label="Main">
-        <ul className="mx-auto flex max-w-7xl items-center justify-center gap-8 px-6 py-2 text-sm font-semibold">
+        <ul className="mx-auto flex max-w-7xl items-center justify-center gap-10 px-6 py-3 text-lg font-bold lg:gap-14 lg:text-xl">
           {NAV.map((item) => (
             <li key={item.href}>
-              <Link href={item.href} className="text-white/80 transition hover:text-ice">
+              <Link href={item.href} className="text-white/85 transition hover:text-ice">
                 {item.label}
               </Link>
             </li>
@@ -86,11 +90,28 @@ export default function Header() {
         </ul>
       </nav>
 
-      {/* Mobile nav drawer */}
+      {/* Mobile: main links always visible, the rest live in the menu */}
+      <nav className="border-t border-white/5 md:hidden" aria-label="Main">
+        <ul className="grid grid-cols-3 text-center text-base font-bold">
+          {MOBILE_BAR.map((item) => (
+            <li key={item.href}>
+              <Link href={item.href} onClick={() => setOpen(false)} className="block py-3 text-white/85 transition hover:text-ice">
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      {/* Mobile menu drawer */}
       {open && (
-        <nav id="mobile-nav" className="border-t border-white/10 bg-navy-dark px-4 pb-8 pt-4 md:hidden" aria-label="Mobile">
+        <nav
+          id="mobile-nav"
+          className="max-h-[calc(100dvh-8rem)] overflow-y-auto border-t border-white/10 bg-navy-dark px-4 pb-8 pt-2 md:hidden"
+          aria-label="More"
+        >
           <ul className="flex flex-col">
-            {NAV.map((item) => (
+            {MENU_ONLY.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
@@ -98,6 +119,20 @@ export default function Header() {
                   className="block border-b border-white/5 py-4 text-lg font-semibold text-white/90 hover:text-ice"
                 >
                   {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-6 text-sm font-bold uppercase tracking-widest text-ice">Our services</p>
+          <ul className="mt-1 flex flex-col">
+            {services.map((s) => (
+              <li key={s.href}>
+                <Link
+                  href={s.href}
+                  onClick={() => setOpen(false)}
+                  className="block border-b border-white/5 py-3 font-semibold text-white/80 hover:text-ice"
+                >
+                  {s.name}
                 </Link>
               </li>
             ))}

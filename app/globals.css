@@ -5,7 +5,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 7rem;
+    scroll-padding-top: 8.5rem;
   }
   body {
     @apply bg-navy text-white font-sans antialiased;
