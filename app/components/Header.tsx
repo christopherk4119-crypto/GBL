@@ -2,13 +2,23 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import Logo from "./Logo";
-import { NAV, SITE } from "@/lib/site";
+import { NAV, SITE, type MenuKey, type MenuLink } from "@/lib/site";
 
 const MOBILE_BAR_LABELS = ["Home", "Services", "Contact"];
 const MOBILE_BAR = NAV.filter((n) => MOBILE_BAR_LABELS.includes(n.label));
 const MENU_ONLY = NAV.filter((n) => !MOBILE_BAR_LABELS.includes(n.label));
+
+// Splits a flat menu into [item, ...its sub-items] groups.
+function groupMenu(menu: MenuLink[]): MenuLink[][] {
+  const groups: MenuLink[][] = [];
+  for (const m of menu) {
+    if (m.sub && groups.length) groups[groups.length - 1].push(m);
+    else groups.push([m]);
+  }
+  return groups;
+}
 
 function OpenBadge({ className = "" }: { className?: string }) {
   return (
@@ -22,7 +32,7 @@ function OpenBadge({ className = "" }: { className?: string }) {
   );
 }
 
-export default function Header({ services }: { services: { name: string; href: string }[] }) {
+export default function Header({ menus }: { menus: Record<MenuKey, MenuLink[]> }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -84,14 +94,48 @@ export default function Header({ services }: { services: { name: string; href: s
 
       {/* Desktop nav */}
       <nav className="hidden border-t border-white/5 md:block" aria-label="Main">
-        <ul className="mx-auto flex max-w-7xl items-center justify-center gap-10 px-6 py-3 text-lg font-bold lg:gap-14 lg:text-xl">
-          {NAV.map((item) => (
-            <li key={item.href}>
-              <Link href={item.href} className="text-white/85 transition hover:text-ice">
-                {item.label}
-              </Link>
-            </li>
-          ))}
+        <ul className="mx-auto flex max-w-7xl items-center justify-center gap-6 px-6 text-base font-bold lg:gap-9 lg:text-lg xl:gap-12 xl:text-xl">
+          {NAV.map((item) => {
+            const menu = item.menu ? menus[item.menu] : undefined;
+            const wide = menu && menu.length > 8;
+            return (
+              <li key={item.href} className="group relative">
+                <Link href={item.href} className="flex items-center gap-1 py-3 text-white/85 transition hover:text-ice group-hover:text-ice">
+                  {item.label}
+                  {menu && <ChevronDown className="h-4 w-4 transition group-hover:rotate-180 group-focus-within:rotate-180" aria-hidden />}
+                </Link>
+                {menu && (
+                  // Opens on hover and on keyboard focus; pt-2 bridges the gap so the menu doesn't close mid-move
+                  <div className="invisible absolute left-1/2 top-full z-50 -translate-x-1/2 pt-1 opacity-0 transition duration-150 group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+                    <div
+                      className={`rounded-2xl border border-ice/20 bg-navy-dark p-2 text-base font-semibold shadow-2xl shadow-black/60 ${
+                        wide ? "w-[34rem] columns-2 gap-2" : "w-72"
+                      }`}
+                    >
+                      {/* Each service stays in one column with its sub-pages */}
+                      {groupMenu(menu).map((group) => (
+                        <ul key={group[0].href} className="break-inside-avoid">
+                          {group.map((m) => (
+                            <li key={m.href}>
+                              <Link
+                                href={m.href}
+                                className={`block rounded-lg px-3 py-2.5 transition hover:bg-white/5 hover:text-ice ${
+                                  m.sub ? "pl-7 text-[0.95rem] text-white/70" : "text-white/90"
+                                }`}
+                              >
+                                {m.sub && <span className="mr-1 text-flame">›</span>}
+                                {m.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </nav>
 
@@ -130,13 +174,14 @@ export default function Header({ services }: { services: { name: string; href: s
           </ul>
           <p className="mt-6 text-sm font-bold uppercase tracking-widest text-ice">Our services</p>
           <ul className="mt-1 flex flex-col">
-            {services.map((s) => (
+            {menus.services.map((s) => (
               <li key={s.href}>
                 <Link
                   href={s.href}
                   onClick={() => setOpen(false)}
-                  className="block border-b border-white/5 py-3 font-semibold text-white/80 hover:text-ice"
+                  className={`block border-b border-white/5 py-3 font-semibold hover:text-ice ${s.sub ? "pl-5 text-white/65" : "text-white/80"}`}
                 >
+                  {s.sub && <span className="mr-1 text-flame">›</span>}
                   {s.name}
                 </Link>
               </li>

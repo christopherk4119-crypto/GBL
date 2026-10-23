@@ -7,6 +7,7 @@ import QuotePopup from "./components/QuotePopup";
 import JsonLd from "./components/JsonLd";
 import { SERVICE_CITIES, SITE, siteUrl } from "@/lib/site";
 import { HUBS } from "@/lib/services";
+import { navMenus } from "@/lib/nav";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -90,7 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <style>{`.reveal{opacity:1!important;transform:none!important}`}</style>
         </noscript>
         <JsonLd data={businessSchema} />
-        <Header services={HUBS.map((s) => ({ name: s.name, href: `/${s.slug}` }))} />
+        <Header menus={navMenus()} />
         <main>{children}</main>
         <Footer />
         <MobileCallBar />

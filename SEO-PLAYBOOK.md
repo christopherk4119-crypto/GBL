@@ -25,6 +25,8 @@ Follows the Local SEO Field Manual (built on yayageneralservice.com).
 | `/refrigeration/walk-in-coolers-freezers` | walk-in cooler / freezer repair Calgary | Spoke under Refrigeration (one page for both, to avoid cannibalization) |
 | `/refrigeration/ice-machines` | ice machine repair Calgary | Spoke under Refrigeration |
 | `/ventilation/hood-fans-make-up-air` | hood fan / make up air unit Calgary | Spoke under Ventilation (the two work as a pair) |
+| `/faq` | HVAC FAQ Calgary | All service FAQs grouped, linking to each page. Only the general questions carry FAQPage schema (service questions already have it on their own pages) |
+| `/gallery` | — | Real job photos from `lib/gallery.ts`. Add photos there as Quinn sends them |
 
 All page content lives in `lib/services.ts`. Adding an entry there creates the page, adds it to the sitemap, the footer and the Service schema automatically. Spokes set `parent` to nest under a hub.
 

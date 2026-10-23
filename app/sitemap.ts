@@ -8,6 +8,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   return [
     { url: siteUrl, lastModified: now, changeFrequency: "monthly", priority: 1 },
+    { url: `${siteUrl}/faq`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${siteUrl}/gallery`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     ...SERVICES.map((s) => ({
       url: `${siteUrl}/${s.slug}`,
       lastModified: now,

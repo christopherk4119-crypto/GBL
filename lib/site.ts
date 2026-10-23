@@ -23,13 +23,19 @@ export const siteUrl = (
     : "http://localhost:3000")
 ).replace(/\/$/, "");
 
-export const NAV = [
+export type MenuKey = "services" | "residential" | "commercial";
+export type MenuLink = { name: string; href: string; sub?: boolean };
+
+// `menu` adds a hover dropdown on desktop; the label itself stays a link.
+export const NAV: readonly { label: string; href: string; menu?: MenuKey }[] = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/#services" },
-  { label: "Residential", href: "/#residential" },
-  { label: "Commercial", href: "/#commercial" },
+  { label: "Services", href: "/#services", menu: "services" },
+  { label: "Residential", href: "/#residential", menu: "residential" },
+  { label: "Commercial", href: "/#commercial", menu: "commercial" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/#contact" },
-] as const;
+];
 
 export const SERVICE_AREAS = [
   "NW Calgary",

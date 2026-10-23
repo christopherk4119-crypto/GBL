@@ -3,7 +3,10 @@ import JsonLd from "./JsonLd";
 import type { Faq } from "@/lib/services";
 
 // FAQ accordion with automatic FAQPage schema.
-export default function FaqSection({ faqs, heading = "Frequently Asked Questions" }: { faqs: Faq[]; heading?: string }) {
+type Props = { faqs: Faq[]; heading?: string; schema?: boolean };
+
+// schema=false when the same questions already carry FAQPage markup on their own service page.
+export default function FaqSection({ faqs, heading = "Frequently Asked Questions", schema: withSchema = true }: Props) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -15,7 +18,7 @@ export default function FaqSection({ faqs, heading = "Frequently Asked Questions
   };
   return (
     <section className="mt-16">
-      <JsonLd data={schema} />
+      {withSchema && <JsonLd data={schema} />}
       <h2 className="text-2xl font-extrabold md:text-3xl">{heading}</h2>
       <div className="mt-6 space-y-3">
         {faqs.map((f) => (
