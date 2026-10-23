@@ -85,6 +85,38 @@ For each category below:
 
 Every description matches the website page shown in brackets. No phone numbers, links or prices (Google can reject them).
 
+### Google's pre-set services
+
+Google adds these automatically from your categories. Open each one (the **>** arrow) and paste the description.
+
+**A/C system maintenance** (/air-conditioning, /maintenance-plans, 233 chars)
+> Spring AC tune-ups for homes and businesses: condenser coil cleaned, refrigerant pressures checked, capacitor, contactor and fan motor tested, condensate drain cleared and cooling confirmed. Catch weak parts before the first hot day.
+
+**A/C system repair** (/air-conditioning, 223 chars)
+> Air conditioning repair for homes and businesses, answered 24/7. Warm air, outdoor unit not running, ice on the lines, water leaks or noisy units. We test the capacitor, contactor, fans, compressor, refrigerant and airflow.
+
+**Heating system installation** (/heating, 204 chars)
+> High-efficiency furnace and hot water boiler installation for homes and commercial buildings. Sized for your actual space, ductwork and venting, with honest repair-versus-replace advice before you decide.
+
+**Heating system maintenance** (/maintenance-plans, 213 chars)
+> Fall furnace and boiler tune-ups before the cold arrives: burners and flame sensor cleaned, igniter, inducer and switches checked, venting and safety controls tested, blower checked. Fewer breakdowns, lower bills.
+
+**Heating system repair** (/heating, /heating/24-hour-furnace-repair, 197 chars)
+> Furnace, boiler and unit heater repair, answered 24 hours a day, 7 days a week. No heat, cold air, short cycling or strange noises? We diagnose the real cause and explain it before any work starts.
+
+**HVAC system maintenance** (/maintenance-plans, /rooftop-units, 212 chars)
+> Scheduled maintenance for furnaces, air conditioners, boilers, HRVs, rooftop units and make-up air. Homes get seasonal tune-ups; businesses get maintenance timed around opening hours, with every visit documented.
+
+**Install AC** (/air-conditioning, 217 chars)
+> Central air conditioning installation for Calgary homes and businesses. Most homes with a forced-air furnace can add AC using existing ductwork. Sized to your space, with the outdoor unit placed for airflow and quiet.
+
+**Repair HVAC** (/, 225 chars)
+> One call for any system, any hour: furnaces, boilers, air conditioners, rooftop units, ventilation, make-up air, walk-in coolers, ice machines and water heaters. Open 24/7 for homes and businesses. Talk directly to the owner.
+
+If more pre-set services show up as you scroll (or later), send me a screenshot and I'll write those too.
+
+---
+
 ### HVAC contractor
 
 _Primary category. Whole-business and cross-system services, plus water heaters and home ventilation (no separate category for those)._
