@@ -49,7 +49,10 @@ export default function Header({ services }: { services: { name: string; href: s
         {/* Centre: open badge + phone */}
         <div className="hidden flex-col items-center gap-1 md:flex lg:flex-row lg:gap-4">
           <OpenBadge />
-          <a href={SITE.tel} className="flex items-center gap-2 text-xl font-extrabold tracking-tight text-white transition hover:text-ice lg:text-2xl">
+          <a
+            href={SITE.tel}
+            className="flex items-center gap-2 rounded-xl border border-flame/60 bg-flame/10 px-4 py-2 text-xl font-extrabold tracking-tight text-white shadow-lg shadow-flame/30 transition hover:animate-glow-pulse hover:bg-flame/20 lg:text-2xl"
+          >
             <Phone className="h-5 w-5 text-flame" aria-hidden />
             {SITE.phone}
           </a>
@@ -62,7 +65,9 @@ export default function Header({ services }: { services: { name: string; href: s
           {/* Mobile: compact call + menu */}
           <a href={SITE.tel} className="flex flex-col items-end leading-tight md:hidden" aria-label={`Call ${SITE.phone}`}>
             <OpenBadge className="px-2 py-0.5 text-[10px]" />
-            <span className="mt-1 text-sm font-extrabold text-white">{SITE.phone}</span>
+            <span className="mt-1 rounded-lg border border-flame/60 bg-flame/10 px-2 py-0.5 text-sm font-extrabold text-white shadow-md shadow-flame/30">
+              {SITE.phone}
+            </span>
           </a>
           <button
             type="button"
