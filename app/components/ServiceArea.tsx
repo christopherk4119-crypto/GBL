@@ -10,9 +10,9 @@ export default function ServiceArea() {
         <h2 className="section-title">Serving Calgary &amp; Surrounding Areas</h2>
 
         <Reveal>
-          <ul className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <ul className="mt-12 flex flex-wrap justify-center gap-3">
             {SERVICE_AREAS.map((a) => (
-              <li key={a} className="card flex items-center justify-center gap-2 px-4 py-4 font-semibold">
+              <li key={a} className="card flex w-[calc(50%-0.375rem)] items-center justify-center gap-2 px-4 py-4 font-semibold sm:w-[calc(33.333%-0.5rem)] md:w-[calc(25%-0.5625rem)]">
                 <MapPin className="h-5 w-5 shrink-0 text-flame" aria-hidden />
                 {a}
               </li>

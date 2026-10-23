@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import MobileCallBar from "./components/MobileCallBar";
 import QuotePopup from "./components/QuotePopup";
 import JsonLd from "./components/JsonLd";
-import { SERVICE_AREAS, SITE, siteUrl } from "@/lib/site";
+import { SERVICE_CITIES, SITE, siteUrl } from "@/lib/site";
 import { HUBS } from "@/lib/services";
 import "./globals.css";
 
@@ -63,7 +63,7 @@ const businessSchema = {
   founder: { "@type": "Person", name: SITE.owner },
   // Service-area business: city-level address only, no street address shown.
   address: { "@type": "PostalAddress", addressLocality: "Calgary", addressRegion: "AB", addressCountry: "CA" },
-  areaServed: ["Calgary", ...SERVICE_AREAS.filter((a) => !a.includes("Calgary"))].map((name) => ({ "@type": "City", name })),
+  areaServed: SERVICE_CITIES.map((name) => ({ "@type": "City", name })),
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],

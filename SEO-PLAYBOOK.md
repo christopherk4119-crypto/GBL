@@ -45,20 +45,31 @@ All page content lives in `lib/services.ts`. Adding an entry there creates the p
 ### Conversion
 - Quote popup after 4 seconds (`app/components/QuotePopup.tsx`): Call or Request a Free Quote. Once per browser session, never while someone is typing in the form. On phones it's a bottom sheet, not a full-screen overlay, because Google can rank pages lower for intrusive interstitials on mobile.
 
+## Confirmed by the client (intake form, Oct 22, 2026)
+
+- Phone (403) 970-6988, email gblhvac@hotmail.com
+- Open 24 hours, 7 days (the form showed Friday "Closed" and odd open/close times; client confirmed that was an error)
+- Primary category HVAC, secondary Refrigeration
+- Service-area business ("I travel to customers"): Calgary and surrounding areas, plus Red Deer
+- A street address was given. It is **not** shown on the site or in schema, because a business that travels to customers should hide its address on the Google Business Profile too
+- 1 Google review exists (text not supplied yet)
+- No social media profiles, no current website, no year established given
+- Preferred vibe: Friendly
+
 ## Waiting on the client (do not invent)
 
-- [ ] **Exact business name on the Google Business Profile.** The site uses `GBL HVAC LTD` everywhere. If GBP differs by even one character, change `SITE.name` in `lib/site.ts`
+- [ ] **Exact business name on the Google Business Profile.** The intake form says `GBL HVAC`; the van, business card and site say `GBL HVAC LTD`. They must match character for character. Whichever is on the GBP wins: change `SITE.name` in `lib/site.ts` (and the GBP if needed)
 - [ ] **Domain**, and whether it's www or not. Then set `NEXT_PUBLIC_SITE_URL` in Vercel
 - [ ] **Licences / tickets** (Gas Fitter, Refrigeration Mechanic, etc.). Once confirmed, add a credentials banner below the hero and on each hub. Until then, gas-related copy avoids any credential claims
 - [ ] Insurance / WCB coverage
 - [ ] After-hours fee policy (the 24-hour page FAQ currently says "ask when you call")
-- [ ] Real reviews → on-page cards plus `aggregateRating`/`review` schema, kept verbatim
-- [ ] Profile URLs for `sameAs`: Google Business Profile, Yelp business page, Facebook, etc.
+- [ ] Real reviews → on-page cards plus `aggregateRating`/`review` schema, kept verbatim. The one existing Google review: need its exact text, reviewer name and star rating
+- [ ] Profile URLs for `sameAs`: Google Business Profile link (needed for the review button too), Yelp business page
 - [ ] More real job photos: furnaces, rooftop units, walk-in coolers. Replace `public/images/commercial.svg`
 
 ## Off-site
 
-1. **Google Business Profile:** name identical to the site, primary category "HVAC contractor", service areas (Calgary, Airdrie, Cochrane, Chestermere, Okotoks), hours 24/7, phone, website, real photos, regular posts, reply to every review.
+1. **Google Business Profile:** name identical to the site, primary category "HVAC contractor", service areas (Calgary, Airdrie, Cochrane, Chestermere, Okotoks, Red Deer), hours 24/7, phone, website, real photos, regular posts, reply to every review.
 2. **Citations:** same name and phone (403-970-6988) on Yelp, Facebook and any directory. Add each URL to `sameAs`.
 3. **Reviews:** ask every happy customer. The site's review button links to Yelp; add a Google review link once the GBP is live.
 

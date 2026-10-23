@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle2, ChevronRight, Phone } from "lucide-react";
 import Contact from "./Contact";
 import FaqSection from "./FaqSection";
 import JsonLd from "./JsonLd";
-import { SERVICE_AREAS, SITE, siteUrl } from "@/lib/site";
+import { SERVICE_AREAS, SERVICE_CITIES, SITE, siteUrl } from "@/lib/site";
 import { childrenOf, getService, type ServicePage } from "@/lib/services";
 
 // Long-form service page: hero, sections, what's included, FAQ, related, quote form.
@@ -24,7 +24,7 @@ export default function ServiceDetail({ page }: { page: ServicePage }) {
     description: page.description,
     url,
     provider: { "@type": "HVACBusiness", "@id": `${siteUrl}/#business`, name: SITE.name, telephone: "+1-403-970-6988" },
-    areaServed: ["Calgary", "Airdrie", "Cochrane", "Chestermere", "Okotoks"].map((name) => ({ "@type": "City", name })),
+    areaServed: SERVICE_CITIES.map((name) => ({ "@type": "City", name })),
     hoursAvailable: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],

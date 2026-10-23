@@ -40,7 +40,11 @@ export const SERVICE_AREAS = [
   "Cochrane",
   "Chestermere",
   "Okotoks",
+  "Red Deer",
 ] as const;
+
+// Cities for schema areaServed (Calgary quadrants collapse into "Calgary").
+export const SERVICE_CITIES = ["Calgary", ...SERVICE_AREAS.filter((a) => !a.includes("Calgary"))];
 
 export const SERVICE_OPTIONS = [
   "Heating",

@@ -1,6 +1,6 @@
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import QuoteForm from "./QuoteForm";
-import { SITE } from "@/lib/site";
+import { SERVICE_AREAS, SITE } from "@/lib/site";
 
 export default function Contact() {
   return (
@@ -38,7 +38,7 @@ export default function Contact() {
               <MapPin className="mt-0.5 h-6 w-6 shrink-0 text-flame" aria-hidden />
               <span>
                 <span className="block text-lg font-semibold">Calgary, AB &amp; surrounding areas</span>
-                <span className="text-white/70">NW, NE, SW, SE Calgary, Airdrie, Cochrane, Chestermere, Okotoks</span>
+                <span className="text-white/70">{SERVICE_AREAS.join(", ")}</span>
               </span>
             </div>
           </aside>
