@@ -41,7 +41,7 @@ After replacing any of these, run `node scripts/build-icons.mjs` to regenerate t
 - [ ] Insurance / WCB coverage
 - [ ] Whether emergency calls carry an after-hours fee
 - [ ] Pricing or financing
-- [ ] Real customer reviews: `app/components/Testimonials.tsx` has 3 empty slots
+- [ ] Real customer reviews: add them to `REVIEWS` in `app/components/Testimonials.tsx` (cards stay hidden while it is empty)
 - [ ] Google Business Profile link
 - [ ] More real project photos: `public/images/commercial.svg` is still a placeholder illustration (`app/components/HomeBusiness.tsx`)
 - [ ] Production domain: set `NEXT_PUBLIC_SITE_URL` in Vercel (used for canonicals, sitemap and schema; see `lib/site.ts`)
