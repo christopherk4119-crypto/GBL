@@ -13,16 +13,14 @@ npm run lint && npm run typecheck
 
 ## Deploy to Vercel
 
-Import the repo in Vercel. No build settings needed. Then add the form environment variable below.
+Import the repo in Vercel. No build settings needed. Set `NEXT_PUBLIC_SITE_URL` once the domain is connected (see `SEO-PLAYBOOK.md`).
 
-## Quote form setup (required before launch)
+## Quote form
 
-Search the code for `REPLACE WITH YOUR FORM ENDPOINT`. Pick one option:
-
-- **Formspree (easiest):** create a form at formspree.io and set `NEXT_PUBLIC_FORM_ENDPOINT=https://formspree.io/f/xxxxxxx` in Vercel. The browser posts straight to Formspree.
-- **Built-in API route:** leave `NEXT_PUBLIC_FORM_ENDPOINT` unset. The form posts to `/api/quote`, which forwards each lead as JSON to `FORM_FORWARD_URL`. You can also swap that block for an email provider (Resend, Postmark).
-
-Until one is configured, the form logs leads in development and **refuses in production** with a "please call 403-970-6988" message, so no lead is silently lost.
+Quote requests go to Formspree (`https://formspree.io/f/xjyygnjj`), which emails each one. Emergency requests get "EMERGENCY" at the start of the subject line.
+- **First submission:** Formspree may ask the form owner to confirm by email before it starts forwarding. Send one test after deploying.
+- **Change where emails go:** in the Formspree dashboard, not in the code.
+- **Use a different service:** set `NEXT_PUBLIC_FORM_ENDPOINT` in Vercel. Setting it to `/api/quote` uses the built-in route, which forwards to `FORM_FORWARD_URL`.
 
 ## Logo
 

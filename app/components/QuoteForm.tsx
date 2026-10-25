@@ -4,11 +4,10 @@ import { useState } from "react";
 import { AlertTriangle, CheckCircle2, Phone, Send } from "lucide-react";
 import { SERVICE_OPTIONS, SITE } from "@/lib/site";
 
-// REPLACE WITH YOUR FORM ENDPOINT
-// Option A (Formspree): set NEXT_PUBLIC_FORM_ENDPOINT=https://formspree.io/f/xxxxxxx in Vercel.
-// Option B (default): leave it unset and the form posts to the built-in API route
-// at /api/quote, which forwards to FORM_FORWARD_URL (see app/api/quote/route.ts).
-const FORM_ENDPOINT = process.env.NEXT_PUBLIC_FORM_ENDPOINT || "/api/quote";
+// Quote requests go to GBL HVAC LTD's Formspree form, which emails each one.
+// To send them somewhere else, set NEXT_PUBLIC_FORM_ENDPOINT in Vercel (e.g. "/api/quote"
+// to use the built-in route in app/api/quote/route.ts).
+const FORM_ENDPOINT = process.env.NEXT_PUBLIC_FORM_ENDPOINT || "https://formspree.io/f/xjyygnjj";
 
 type Status = "idle" | "sending" | "success" | "error";
 
@@ -23,6 +22,8 @@ export default function QuoteForm() {
     const data = Object.fromEntries(new FormData(form).entries());
     data.propertyType = property;
     data.emergency = emergency ? "Yes" : "No";
+    // Formspree uses _subject as the email subject line; emergencies stand out in the inbox.
+    data._subject = `${emergency ? "EMERGENCY - " : ""}New quote request: ${data.service} (${property})`;
 
     setStatus("sending");
     try {
