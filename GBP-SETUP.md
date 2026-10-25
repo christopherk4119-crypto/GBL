@@ -25,7 +25,7 @@ Services and descriptions match the website. If something changes on the site, c
 | **Primary category** | `HVAC contractor` |
 | **Do you want to add a location customers can visit?** | **No.** He travels to customers |
 | **Business address** (asked for verification only) | 27 Pantego Rise NW, Calgary, AB T3K 6J2. It is **hidden** from the public because he travels to customers |
-| **Service areas** | Calgary · Airdrie · Cochrane · Chestermere · Okotoks · Red Deer |
+| **Service areas** | Calgary (NW, NE, SW, SE) · Airdrie · Cochrane · Chestermere · Okotoks · High River · Strathmore · Canmore · Banff · Red Deer. On the profile, add each town by name; for Calgary add "Calgary" (the quadrants are covered by it) |
 | **Phone** | `(403) 970-6988` |
 | **Website** | the real domain, e.g. `https://gblhvac.ca` (must match `NEXT_PUBLIC_SITE_URL` exactly, www or not) |
 
@@ -70,7 +70,7 @@ Services and descriptions match the website. If something changes on the site, c
 Paste this. No phone numbers, links or prices; Google may reject descriptions that include them.
 
 ```
-GBL HVAC LTD is a Calgary heating, cooling and refrigeration company, open 24 hours a day, 7 days a week. We install, repair and maintain furnaces, boilers, air conditioners, rooftop units, HRVs and ventilation, kitchen hood fans and make-up air units, hot water tanks and tankless water heaters. For restaurants, stores and other businesses, we service walk-in coolers, walk-in freezers, ice machines and commercial refrigeration. One call covers any system, at any hour, for homes and businesses across Calgary, Airdrie, Cochrane, Chestermere, Okotoks and Red Deer. When you call, you talk directly to the owner, Quinn, not a call centre. Furnace out at 2am, AC down in a heat wave or walk-in cooler warming up? We pick up.
+GBL HVAC LTD is a Calgary heating, cooling and refrigeration company, open 24 hours a day, 7 days a week. We install, repair and maintain furnaces, boilers, air conditioners, rooftop units, HRVs and ventilation, kitchen hood fans and make-up air units, and hot water tanks. For restaurants, stores and other businesses, we service walk-in coolers, walk-in freezers, ice machines and commercial refrigeration. One call covers any system, at any hour, for homes and businesses across Calgary, Airdrie, Cochrane, Chestermere, Okotoks, High River, Strathmore, Canmore, Banff and Red Deer. When you call, you talk directly to the owner, Quinn. Furnace out at 2am or walk-in cooler warming up? We pick up.
 ```
 
 ---
@@ -79,7 +79,7 @@ GBL HVAC LTD is a Calgary heating, cooling and refrigeration company, open 24 ho
 
 Your categories are set. In **Edit profile → Services**, Google shows each category with its own list.
 For each category below:
-1. **Tick Google's suggested services** only where they're true. Skip anything he doesn't do (duct cleaning, appliance repair, plumbing).
+1. **Tick Google's suggested services** only where they're true. Skip anything he doesn't do: **duct cleaning, tankless water heaters**, appliance repair, plumbing.
 2. **Add custom service** for each one listed, then paste the description.
 3. **Leave the price blank.** No pricing has been confirmed.
 
@@ -150,12 +150,6 @@ _Primary category. Whole-business and cross-system services, plus water heaters 
 
 **Hot Water Tank Replacement** (/water-heaters, 192 chars)
 > Hot water tank replacement when the tank has reached the end of its life, typically around 8 to 12 years. Sized for your household so you don't run out of hot water or heat more than you need.
-
-**Tankless Water Heater Installation** (/water-heaters, 186 chars)
-> Tankless water heater installation for endless hot water and a smaller footprint. We check your gas line, venting and electrical first and tell you honestly whether tankless makes sense.
-
-**Tankless Water Heater Service & Descaling** (/water-heaters, 153 chars)
-> Tankless water heater repair and descaling. Calgary's hard water builds scale inside tankless units, so regular descaling keeps them running efficiently.
 
 **Commercial Water Heater Service** (/water-heaters, 190 chars)
 > Service and replacement of commercial water heaters for restaurants, salons, gyms and other businesses that use a lot of hot water. We'll check whether your system is keeping up with demand.
@@ -418,6 +412,6 @@ Keep it under about 2 minutes. Don't edit or cut the video. Approval can take a 
 | Phone | 403-970-6988 | (403) 970-6988 (same number, format doesn't matter) |
 | Hours | 24/7 | Open 24 hours, every day |
 | Address | Hidden (Calgary, AB only) | Hidden, service-area business |
-| Service areas | Calgary, Airdrie, Cochrane, Chestermere, Okotoks, Red Deer | Same |
+| Service areas | Calgary (NW, NE, SW, SE), Airdrie, Cochrane, Chestermere, Okotoks, High River, Strathmore, Canmore, Banff, Red Deer | Same |
 | Services | 12 service pages | Section 5 above |
 | Website | `NEXT_PUBLIC_SITE_URL` | Same URL, same www-or-not |

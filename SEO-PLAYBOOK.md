@@ -63,6 +63,8 @@ All page content lives in `lib/services.ts`. Adding an entry there creates the p
 - 1 Google review exists (text not supplied yet)
 - No social media profiles, no current website, no year established given
 - Preferred vibe: Friendly
+- Does NOT do (told to us directly): tankless water heaters, duct cleaning. Never list or imply them
+- Service areas expanded: High River, Strathmore, Canmore, Banff added
 - Also does (told to us directly): rooftop units, hood fans, make-up air units, ice machines, furnaces, walk-in coolers, walk-in freezers
 
 ## Waiting on the client (do not invent)
@@ -77,7 +79,7 @@ All page content lives in `lib/services.ts`. Adding an entry there creates the p
 
 ## Off-site
 
-1. **Google Business Profile:** name identical to the site, primary category "HVAC contractor", service areas (Calgary, Airdrie, Cochrane, Chestermere, Okotoks, Red Deer), hours 24/7, phone, website, real photos, regular posts, reply to every review.
+1. **Google Business Profile:** name identical to the site, primary category "HVAC contractor", service areas (Calgary (NW, NE, SW, SE), Airdrie, Cochrane, Chestermere, Okotoks, High River, Strathmore, Canmore, Banff, Red Deer), hours 24/7, phone, website, real photos, regular posts, reply to every review.
 2. **Citations:** same name and phone (403-970-6988) on Yelp, Facebook and any directory. Add each URL to `sameAs`.
 3. **Reviews:** ask every happy customer. The site's review button links to Yelp; add a Google review link once the GBP is live.
 
@@ -99,7 +101,7 @@ All page content lives in `lib/services.ts`. Adding an entry there creates the p
 **Ship in waves.** One batch of changes, resubmit the sitemap, wait 1–2 weeks for recrawl, check, then the next batch.
 
 ### Next spokes (only once Search Console shows demand)
-`/heating/furnace-installation`, `/heating/boiler-repair`, `/air-conditioning/ac-repair`, `/water-heaters/tankless-water-heaters`. Split walk-in coolers and freezers, or hood fans and make-up air, into separate pages only if Search Console shows each term getting its own impressions. Each needs 800–1200 real words, its own FAQ and, ideally, real photos.
+`/heating/furnace-installation`, `/heating/boiler-repair`, `/air-conditioning/ac-repair`. (No tankless page: Quinn doesn't do tankless.) Split walk-in coolers and freezers, or hood fans and make-up air, into separate pages only if Search Console shows each term getting its own impressions. Each needs 800–1200 real words, its own FAQ and, ideally, real photos.
 
 ## Commands
 

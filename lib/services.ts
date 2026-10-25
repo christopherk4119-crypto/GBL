@@ -551,11 +551,11 @@ export const SERVICES: ServicePage[] = [
     name: "Water Heater",
     serviceType: "Water heater installation and repair",
     tone: "warm",
-    title: "Water Heater Calgary | Tank & Tankless Install",
+    title: "Hot Water Tank Repair Calgary | Water Heaters",
     description:
-      "Hot water tank and tankless water heater installation and repair in Calgary. Homes and businesses, open 24/7. Call GBL HVAC LTD at 403-970-6988.",
-    h1: "Water Heater Installation & Repair in Calgary",
-    lede: "Hot water tank and tankless water heater installation and repair for Calgary homes and businesses.",
+      "Hot water tank repair and replacement in Calgary for homes and businesses. Leaks and no hot water answered 24/7. Call GBL HVAC LTD at 403-970-6988.",
+    h1: "Hot Water Tank Repair & Replacement in Calgary",
+    lede: "Hot water tank repair and replacement for Calgary homes and businesses.",
     intro: [
       "No hot water means no showers, no laundry, and for some businesses, no opening. We fix it 24/7.",
     ],
@@ -594,13 +594,13 @@ export const SERVICES: ServicePage[] = [
         ],
       },
       {
-        heading: "Tankless water heaters",
+        heading: "Choosing a new tank",
         body: [],
         bullets: [
-          "Endless hot water, small footprint",
-          "Not for every home: gas line, venting and electrical must support it",
-          "Honest advice on whether it fits",
-          "Regular descaling: important with Calgary water",
+          "Gas or electric: matched to what your home is set up for",
+          "Right size: based on how many people and bathrooms you have",
+          "Too small: you run out. Too big: you heat water you don't use",
+          "Honest repair vs. replace advice first",
         ],
       },
       {
@@ -616,8 +616,7 @@ export const SERVICES: ServicePage[] = [
     included: [
       "Hot water tank repair",
       "Hot water tank replacement",
-      "Tankless water heater installation",
-      "Tankless descaling and service",
+      "Gas and electric tanks",
       "Commercial water heater service",
       "24/7 response for leaks and no hot water",
     ],
@@ -627,8 +626,8 @@ export const SERVICES: ServicePage[] = [
         a: "Typically somewhere around 8 to 12 years, depending on water quality, usage and maintenance. If yours is in that range and starting to show problems, it's worth planning a replacement before it fails.",
       },
       {
-        q: "Is a tankless water heater worth it?",
-        a: "For many households it is: endless hot water and a smaller footprint. It depends on your gas line, venting and how you use hot water. We'll look at your setup and give you an honest recommendation.",
+        q: "Do you install tankless water heaters?",
+        a: "No. We focus on hot water tanks: repair, replacement and commercial water heaters. If your tank is failing, we'll give you an honest repair-or-replace answer.",
       },
       {
         q: "Why does my water heater make popping noises?",

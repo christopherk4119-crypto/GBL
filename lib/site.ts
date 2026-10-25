@@ -46,6 +46,10 @@ export const SERVICE_AREAS = [
   "Cochrane",
   "Chestermere",
   "Okotoks",
+  "High River",
+  "Strathmore",
+  "Canmore",
+  "Banff",
   "Red Deer",
 ] as const;
 

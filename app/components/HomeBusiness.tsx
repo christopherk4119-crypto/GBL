@@ -14,7 +14,7 @@ const PANELS = [
       { label: "24/7 no-heat calls", href: "/heating/24-hour-furnace-repair" },
       { label: "AC installation & repair", href: "/air-conditioning" },
       { label: "Seasonal tune-ups", href: "/maintenance-plans" },
-      { label: "Water heaters (tank & tankless)", href: "/water-heaters" },
+      { label: "Hot water tanks", href: "/water-heaters" },
       { label: "Ventilation & air exchangers", href: "/ventilation" },
     ],
     cta: "Book Home Service",

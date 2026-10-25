@@ -10,7 +10,7 @@ const SERVICES: Service[] = [
   { title: "Air Conditioning", href: "/air-conditioning", icon: Snowflake, tone: "cool", text: "AC installation, repair and tune-ups so you're ready for summer heat." },
   { title: "Refrigeration", href: "/refrigeration", icon: Refrigerator, tone: "cool", text: "Commercial refrigeration and walk-in cooler service for restaurants, stores and businesses." },
   { title: "Ventilation", href: "/ventilation", icon: Fan, tone: "cool", text: "Ventilation, air exchangers and ductwork for cleaner, healthier air." },
-  { title: "Water Heater", href: "/water-heaters", icon: Droplets, tone: "warm", text: "Hot water tank and tankless water heater installation and repair." },
+  { title: "Water Heater", href: "/water-heaters", icon: Droplets, tone: "warm", text: "Hot water tank repair and replacement for homes and businesses." },
   { title: "Maintenance Plans", href: "/maintenance-plans", icon: CalendarCheck, tone: "warm", text: "Seasonal furnace and AC tune-ups that prevent breakdowns and lower energy bills." },
 ];
 
