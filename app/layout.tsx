@@ -57,7 +57,7 @@ const businessSchema = {
   name: SITE.name,
   description,
   url: siteUrl,
-  logo: `${siteUrl}/icon.png`,
+  logo: `${siteUrl}/logo.png`,
   image: [`${siteUrl}/images/gbl-hvac-service-van-calgary.jpg`, `${siteUrl}/opengraph-image.png`],
   telephone: "+1-403-970-6988",
   email: SITE.email,

@@ -1,39 +1,37 @@
 import Image from "next/image";
 import Link from "next/link";
-import { logoSvgInner } from "@/lib/logo-svg.mjs";
 import { SITE } from "@/lib/site";
 
-// REPLACE WITH LOGO PNG — transparent background
-// Drop the client's logo at /public/logo.png and set this to "/logo.png".
-// It renders inside a reserved 200x80px slot in the header and footer.
-const LOGO_PNG: string | null = null;
+// Client's real logo (transparent PNGs cut from their artwork):
+//   /logo-mark.png      fire-and-ice ring only
+//   /logo-wordmark.png  "GBL HVAC LTD" lettering only
+//   /logo.png           full stacked logo (ring above lettering)
 
-export function LogoMark({ id = "gbl", className = "h-12 w-12" }: { id?: string; className?: string }) {
-  return (
-    <svg
-      viewBox="-8 -8 136 136"
-      className={className}
-      role="img"
-      aria-label={`${SITE.name} logo`}
-      dangerouslySetInnerHTML={{ __html: logoSvgInner(id) }}
-    />
-  );
+export function LogoMark({ className = "h-12 w-12" }: { className?: string }) {
+  return <Image src="/logo-mark.png" alt="" width={400} height={407} className={`object-contain ${className}`} />;
 }
 
-export default function Logo({ id = "gbl" }: { id?: string }) {
+// Header: ring beside the wordmark so the name stays readable at header size.
+// Footer: the full stacked logo.
+export default function Logo({ variant = "inline" }: { variant?: "inline" | "stacked" }) {
+  if (variant === "stacked") {
+    return (
+      <Link href="/" aria-label={`${SITE.name} home`} className="inline-block">
+        <Image src="/logo.png" alt={`${SITE.name} logo`} width={800} height={491} className="h-auto w-48" />
+      </Link>
+    );
+  }
   return (
-    <Link href="/" className="flex h-[56px] max-w-[200px] items-center gap-2.5 md:h-[80px]" aria-label={`${SITE.name} home`}>
-      {LOGO_PNG ? (
-        <Image src={LOGO_PNG} alt={SITE.name} width={200} height={80} priority className="h-full w-auto object-contain" />
-      ) : (
-        <>
-          <LogoMark id={id} className="h-12 w-12 shrink-0 md:h-14 md:w-14" />
-          <span className="font-display text-lg font-extrabold leading-none tracking-tight text-ice md:text-xl">
-            GBL HVAC
-            <span className="block text-xs font-bold tracking-[0.35em] text-ice/80">LTD</span>
-          </span>
-        </>
-      )}
+    <Link href="/" className="flex h-[56px] items-center gap-2.5 md:h-[80px]" aria-label={`${SITE.name} home`}>
+      <LogoMark className="h-12 w-12 shrink-0 md:h-[68px] md:w-[68px]" />
+      <Image
+        src="/logo-wordmark.png"
+        alt={SITE.name}
+        width={800}
+        height={84}
+        priority
+        className="h-auto w-24 sm:w-32 md:w-40 lg:w-44"
+      />
     </Link>
   );
 }

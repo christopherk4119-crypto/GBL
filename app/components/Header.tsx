@@ -54,7 +54,7 @@ export default function Header({ menus }: { menus: Record<MenuKey, MenuLink[]> }
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-2 sm:px-6">
-        <Logo id="hdr" />
+        <Logo />
 
         {/* Centre: open badge + phone */}
         <div className="hidden flex-col items-center gap-1 md:flex lg:flex-row lg:gap-4">

@@ -13,7 +13,7 @@ export default function Footer() {
       <LightStreak />
       <div className="mx-auto grid max-w-7xl gap-10 px-4 pt-6 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <Logo id="ftr" />
+          <Logo variant="stacked" />
           <p className="mt-4 max-w-xs text-white/70">{SITE.tagline}</p>
         </div>
 

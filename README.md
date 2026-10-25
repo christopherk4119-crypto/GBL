@@ -26,8 +26,13 @@ Until one is configured, the form logs leads in development and **refuses in pro
 
 ## Logo
 
-- The fire-and-ice logo mark is an SVG in `lib/logo-svg.mjs`. Edit it there, then run `node scripts/build-icons.mjs` to regenerate the favicon (`app/icon.svg`) and `public/logo-icon.svg`.
-- To use the client's real logo: drop a transparent PNG at `public/logo.png` and set `LOGO_PNG = "/logo.png"` in `app/components/Logo.tsx` (look for `REPLACE WITH LOGO PNG — transparent background`). It fills a reserved 200x80px slot.
+The client's real logo, cut from their artwork with a transparent background:
+- `public/logo.png`: full stacked logo (footer, schema)
+- `public/logo-mark.png`: fire-and-ice ring only (header, popup, icons)
+- `public/logo-wordmark.png`: "GBL HVAC LTD" lettering (header)
+- `public/images/gbl-hvac-logo-square.png`: 720×720 on white, for the Google Business Profile
+
+After replacing any of these, run `node scripts/build-icons.mjs` to regenerate the favicon, app icons and social share image.
 
 ## Content to confirm with the client (not invented)
 

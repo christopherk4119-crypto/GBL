@@ -69,7 +69,7 @@ export default function QuotePopup() {
         </button>
 
         <div className="flex items-center gap-3">
-          <LogoMark id="pop" className="h-12 w-12 shrink-0" />
+          <LogoMark className="h-14 w-14 shrink-0" />
           <span className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-400/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-emerald-300">
             <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" /> Open 24/7
           </span>

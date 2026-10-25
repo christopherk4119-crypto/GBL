@@ -363,7 +363,7 @@ Upload real photos only, never stock. Add new ones regularly; active profiles ou
 
 | Slot | What to use | File |
 | --- | --- | --- |
-| **Logo** | Square fire-and-ice logo | `app/icon.png` (512×512) in this repo, or the client's PNG logo |
+| **Logo** | The real fire-and-ice ring, square, on white | `public/images/gbl-hvac-logo-square.png` (720×720) |
 | **Cover** | The van side view, branded | `public/images/gbl-hvac-service-van-calgary.jpg` |
 | **Exterior** | Van rear view (shows 24/7) | `public/images/gbl-hvac-van-24-7-emergency-service.jpg` |
 | **At work** | Furnace installs, rooftop units, walk-in coolers, ice machines, hood fans, water heaters | Ask Quinn to snap 2–3 photos on every job |
