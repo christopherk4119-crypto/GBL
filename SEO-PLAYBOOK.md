@@ -3,6 +3,30 @@
 How search visibility is set up on this site, what's still waiting on the client, and how to grow it.
 Follows the Local SEO Field Manual (built on yayageneralservice.com).
 
+## Launch progress (updated Oct 26, 2026)
+
+**Search Console** (Domain property `gblhvac.ca`, verified by DNS TXT record; keep that record forever)
+- [x] Sitemap `https://www.gblhvac.ca/sitemap.xml` submitted: **Success**, 14 pages
+- [x] Request indexing, done: `/`, `/heating`, `/heating/24-hour-furnace-repair`, `/refrigeration`, `/refrigeration/walk-in-coolers-freezers`, `/rooftop-units`, `/air-conditioning`, `/water-heaters`, `/ventilation/hood-fans-make-up-air`, `/refrigeration/ice-machines`
+- [ ] **Request indexing, next session** (stopped at ventilation):
+  - `https://www.gblhvac.ca/ventilation`
+  - `https://www.gblhvac.ca/maintenance-plans`
+  - `https://www.gblhvac.ca/faq`
+  - `https://www.gblhvac.ca/gallery`
+- [ ] Rich Results Test on `/heating` (expect Breadcrumbs + FAQ, 0 errors)
+- [ ] Bing Webmaster Tools → Import from Google Search Console
+- [ ] Live test of the quote form (activate Formspree if asked)
+
+**Vercel domains (checked, correct):** `www.gblhvac.ca` = Production; `gblhvac.ca` and `gbl-theta.vercel.app` both 308-redirect to it.
+
+**Google Business Profile**
+- [x] Categories set: HVAC contractor (primary), Heating contractor, Furnace repair service, Air conditioning contractor, Air conditioning repair service, Commercial refrigeration, Mechanical contractor
+- [ ] Services: paste the 70 from `GBP-paste-into-Claude.txt` / `GBP-SETUP.md` section 5
+- [ ] Verification
+- [ ] Then send: Maps link, review link, existing review (exact text, name, stars), map embed code
+
+**Later:** directory listings (Yelp, Facebook, HomeStars, BBB), job photos, weekly Search Console check, export data after ~4 weeks.
+
 ## Before you start: lessons that apply here
 
 - **Code pushed ≠ live.** After every push, open the live URL in Vercel and check the newest deployment's commit hash matches and is marked Production.
