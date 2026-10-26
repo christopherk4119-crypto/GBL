@@ -6,7 +6,7 @@ Follows the Local SEO Field Manual (built on yayageneralservice.com).
 ## Before you start: lessons that apply here
 
 - **Code pushed ≠ live.** After every push, open the live URL in Vercel and check the newest deployment's commit hash matches and is marked Production.
-- **One canonical host.** The origin lives in exactly one place: `siteUrl` in `lib/site.ts`. Set `NEXT_PUBLIC_SITE_URL` in Vercel to the real domain, matching Vercel's own www-or-not setting. Never add a host redirect in code; Vercel's domain settings handle www ↔ non-www.
+- **One canonical host: `https://www.gblhvac.ca`.** It lives in exactly one place: `siteUrl` in `lib/site.ts`. In Vercel → Domains, `www.gblhvac.ca` must be primary and `gblhvac.ca` must redirect to it. Never add a host redirect in code.
 - **Test the click.** Homepage service cards are real links (whole card is clickable). Verified in a browser, not just by reading the code.
 
 ## What's built
@@ -69,7 +69,6 @@ All page content lives in `lib/services.ts`. Adding an entry there creates the p
 
 ## Waiting on the client (do not invent)
 
-- [ ] **Domain**, and whether it's www or not. Then set `NEXT_PUBLIC_SITE_URL` in Vercel
 - [ ] **Licences / tickets** (Gas Fitter, Refrigeration Mechanic, etc.). Once confirmed, add a credentials banner below the hero and on each hub. Until then, gas-related copy avoids any credential claims
 - [ ] Insurance / WCB coverage
 - [ ] After-hours fee policy (the 24-hour page FAQ currently says "ask when you call")
@@ -92,7 +91,7 @@ All page content lives in `lib/services.ts`. Adding an entry there creates the p
 
 | What you see | What to do |
 | --- | --- |
-| Same page twice at different positions | Canonical split: check `NEXT_PUBLIC_SITE_URL` and Vercel's domain settings agree |
+| Same page twice at different positions | Canonical split: check Vercel's primary domain is `www.gblhvac.ca` and matches `siteUrl` in `lib/site.ts` |
 | High impressions, position 60–90, no clicks | Build a dedicated spoke for that term |
 | Position 5–15, low CTR | Rewrite that page's title and description |
 | Position 8–20 | Top priority: small improvements move these to page one |

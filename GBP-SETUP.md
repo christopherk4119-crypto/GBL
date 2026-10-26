@@ -11,7 +11,7 @@ Services and descriptions match the website. If something changes on the site, c
 ## 0. Before you start
 
 - [ ] **Use Quinn's Google account** (or a business Gmail he owns), the same one used for Search Console. Add yourself as a **Manager** afterwards (Profile → ⋮ → Business Profile settings → People and access). The business should own its own profile.
-- [ ] **The website is live on its real domain**, with `NEXT_PUBLIC_SITE_URL` set (see the Search Console steps).
+- [ ] **The website is live at https://www.gblhvac.ca.**
 - [ ] **Search Google Maps for "GBL HVAC"** first. If a profile already exists, **claim it** instead of creating a new one. Two profiles for one business is a guideline violation.
 - [ ] **Have these ready for verification:** the branded van, tools, and a business document (incorporation papers, a business licence or a utility bill in the business name).
 
@@ -27,7 +27,7 @@ Services and descriptions match the website. If something changes on the site, c
 | **Business address** (asked for verification only) | 27 Pantego Rise NW, Calgary, AB T3K 6J2. It is **hidden** from the public because he travels to customers |
 | **Service areas** | Calgary (NW, NE, SW, SE) · Airdrie · Cochrane · Chestermere · Okotoks · High River · Strathmore · Canmore · Banff · Red Deer. On the profile, add each town by name; for Calgary add "Calgary" (the quadrants are covered by it) |
 | **Phone** | `(403) 970-6988` |
-| **Website** | the real domain, e.g. `https://gblhvac.ca` (must match `NEXT_PUBLIC_SITE_URL` exactly, www or not) |
+| **Website** | `https://www.gblhvac.ca` |
 
 **Do NOT:**
 - Add keywords to the name ("GBL HVAC LTD – Furnace Repair Calgary"). It's a guideline violation and the fastest way to get suspended.
@@ -349,7 +349,7 @@ _Rooftop units, kitchen exhaust, make-up air and commercial ventilation._
 
 | Setting | Value |
 | --- | --- |
-| **Appointment / booking link** | `https://<domain>/#contact` (opens the quote form) |
+| **Appointment / booking link** | `https://www.gblhvac.ca/#contact` (opens the quote form) |
 | **Opening date** | Leave blank until Quinn confirms the year he started |
 | **Attributes** | Tick only what's true: *Onsite services*, *Online estimates*. Ask Quinn before ticking any ownership attributes (e.g. "Identifies as…") |
 | **Languages** | English (add others only if Quinn speaks them with customers) |
@@ -414,4 +414,4 @@ Keep it under about 2 minutes. Don't edit or cut the video. Approval can take a 
 | Address | Hidden (Calgary, AB only) | Hidden, service-area business |
 | Service areas | Calgary (NW, NE, SW, SE), Airdrie, Cochrane, Chestermere, Okotoks, High River, Strathmore, Canmore, Banff, Red Deer | Same |
 | Services | 12 service pages | Section 5 above |
-| Website | `NEXT_PUBLIC_SITE_URL` | Same URL, same www-or-not |
+| Website | https://www.gblhvac.ca | https://www.gblhvac.ca |

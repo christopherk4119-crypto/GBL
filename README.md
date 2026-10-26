@@ -13,7 +13,7 @@ npm run lint && npm run typecheck
 
 ## Deploy to Vercel
 
-Import the repo in Vercel. No build settings needed. Set `NEXT_PUBLIC_SITE_URL` once the domain is connected (see `SEO-PLAYBOOK.md`).
+Import the repo in Vercel. No build settings needed. The official address is `https://www.gblhvac.ca` (set in `lib/site.ts`); in Vercel → Domains, `www.gblhvac.ca` must be the primary domain and `gblhvac.ca` must redirect to it.
 
 ## Quote form
 
@@ -42,7 +42,6 @@ After replacing any of these, run `node scripts/build-icons.mjs` to regenerate t
 - [ ] Real customer reviews: add them to `REVIEWS` in `app/components/Testimonials.tsx` (cards stay hidden while it is empty)
 - [ ] Google Business Profile link
 - [ ] More real project photos: `public/images/commercial.svg` is still a placeholder illustration (`app/components/HomeBusiness.tsx`)
-- [ ] Production domain: set `NEXT_PUBLIC_SITE_URL` in Vercel (used for canonicals, sitemap and schema; see `lib/site.ts`)
 
 ## SEO
 

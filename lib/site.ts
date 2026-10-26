@@ -11,17 +11,11 @@ export const SITE = {
   yelpReviewUrl: "https://www.yelp.ca/writeareview/biz/uK8jaFmgDz_fgQrOtT1WDg",
 } as const;
 
-// The ONE canonical origin. Used by metadataBase, canonicals, sitemap, robots and JSON-LD.
-// Set NEXT_PUBLIC_SITE_URL in Vercel once the real domain is connected (e.g. https://gblhvac.ca,
-// matching exactly the www-or-not choice in Vercel's domain settings). Until then it falls back
-// to the Vercel production URL, so canonicals never point at a domain that isn't configured.
+// The ONE canonical origin: https://www.gblhvac.ca (www is the primary domain in Vercel;
+// gblhvac.ca redirects to it). Used by metadataBase, canonicals, sitemap, robots and JSON-LD.
+// NEXT_PUBLIC_SITE_URL can override it, but must always match Vercel's primary domain exactly.
 // Do not add a code-level host redirect: Vercel's domain settings handle www <-> non-www.
-export const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "http://localhost:3000")
-).replace(/\/$/, "");
+export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.gblhvac.ca").replace(/\/$/, "");
 
 export type MenuKey = "services" | "residential" | "commercial";
 export type MenuLink = { name: string; href: string; sub?: boolean };
