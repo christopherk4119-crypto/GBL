@@ -1,6 +1,7 @@
 // Regenerates the icons and social share image from the client's logo PNGs in /public:
 //   app/icon.png 512x512, app/apple-icon.png 180x180  (ring on navy, square as Google requires)
 //   app/opengraph-image.png 1200x630                  (full logo + phone, for link previews)
+// app/favicon.ico (16/32/48, ring on a navy rounded square) is made separately with Pillow, see README.
 // Run: node scripts/build-icons.mjs   (needs Playwright + Chromium)
 import { readFileSync } from "node:fs";
 

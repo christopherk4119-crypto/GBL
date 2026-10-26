@@ -30,7 +30,7 @@ The client's real logo, cut from their artwork with a transparent background:
 - `public/logo-wordmark.png`: "GBL HVAC LTD" lettering (header)
 - `public/images/gbl-hvac-logo-square.png`: 720×720 on white, for the Google Business Profile
 
-After replacing any of these, run `node scripts/build-icons.mjs` to regenerate the favicon, app icons and social share image.
+After replacing any of these, run `node scripts/build-icons.mjs` to regenerate the app icons and social share image, and rebuild `app/favicon.ico` (16/32/48 px) from `public/logo-mark.png`, e.g. with Pillow: `Image.save('app/favicon.ico', sizes=[(16,16),(32,32),(48,48)])`.
 
 ## Content to confirm with the client (not invented)
 
