@@ -15,6 +15,9 @@ Follows the Local SEO Field Manual (built on yayageneralservice.com).
   - `https://www.gblhvac.ca/gallery`
 - [ ] Rich Results Test on `/heating` (expect Breadcrumbs + FAQ, 0 errors)
 - [x] Bing Webmaster Tools → imported from Google Search Console (Oct 28, 2026). Old projects may show up there too; they don't affect this site
+- [ ] Bing: the import didn't bring the sitemap. **Sitemaps → Submit sitemap →** `https://www.gblhvac.ca/sitemap.xml` (expect Success, ~14 URLs)
+- [ ] Bing (optional, speeds things up): **URL Submission → Submit URLs**, paste all 14 page URLs at once
+- [ ] Bing check in 1–2 weeks: search `site:gblhvac.ca` on bing.com
 - [ ] Live test of the quote form (activate Formspree if asked)
 
 **Vercel domains (checked, correct):** `www.gblhvac.ca` = Production; `gblhvac.ca` and `gbl-theta.vercel.app` both 308-redirect to it.
