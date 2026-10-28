@@ -3,7 +3,7 @@
 How search visibility is set up on this site, what's still waiting on the client, and how to grow it.
 Follows the Local SEO Field Manual (built on yayageneralservice.com).
 
-## Launch progress (updated Oct 26, 2026)
+## Launch progress (updated Oct 28, 2026)
 
 **Search Console** (Domain property `gblhvac.ca`, verified by DNS TXT record; keep that record forever)
 - [x] Sitemap `https://www.gblhvac.ca/sitemap.xml` submitted: **Success**, 14 pages
@@ -14,7 +14,7 @@ Follows the Local SEO Field Manual (built on yayageneralservice.com).
   - `https://www.gblhvac.ca/faq`
   - `https://www.gblhvac.ca/gallery`
 - [ ] Rich Results Test on `/heating` (expect Breadcrumbs + FAQ, 0 errors)
-- [ ] Bing Webmaster Tools → Import from Google Search Console
+- [x] Bing Webmaster Tools → imported from Google Search Console (Oct 28, 2026). Old projects may show up there too; they don't affect this site
 - [ ] Live test of the quote form (activate Formspree if asked)
 
 **Vercel domains (checked, correct):** `www.gblhvac.ca` = Production; `gblhvac.ca` and `gbl-theta.vercel.app` both 308-redirect to it.
