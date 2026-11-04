@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ServiceDetail from "../components/ServiceDetail";
 import { SERVICES, getService } from "@/lib/services";
-import { SITE } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 
 type Params = { slug: string[] };
 
@@ -16,14 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const { slug } = await params;
   const page = getService(slug.join("/"));
   if (!page) return {};
-  const path = `/${page.slug}`;
-  return {
-    title: { absolute: page.title },
-    description: page.description,
-    alternates: { canonical: path },
-    openGraph: { title: page.title, description: page.description, url: path, siteName: SITE.name, locale: "en_CA", type: "website" },
-    twitter: { card: "summary_large_image", title: page.title, description: page.description },
-  };
+  return pageMetadata({ title: page.title, description: page.description, path: `/${page.slug}` });
 }
 
 export default async function Page({ params }: { params: Promise<Params> }) {

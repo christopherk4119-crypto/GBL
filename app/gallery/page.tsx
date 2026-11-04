@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import { Camera, Phone } from "lucide-react";
 import Contact from "../components/Contact";
@@ -8,12 +9,7 @@ import { SITE } from "@/lib/site";
 const title = "HVAC Work Photos Calgary | Gallery | GBL HVAC LTD";
 const description = "Photos from GBL HVAC LTD jobs around Calgary: furnaces, AC, rooftop units, refrigeration and more. Open 24/7. Call 403-970-6988.";
 
-export const metadata: Metadata = {
-  title: { absolute: title },
-  description,
-  alternates: { canonical: "/gallery" },
-  openGraph: { title, description, url: "/gallery", siteName: SITE.name, locale: "en_CA", type: "website" },
-};
+export const metadata: Metadata = pageMetadata({ title, description, path: "/gallery" });
 
 export default function GalleryPage() {
   return (

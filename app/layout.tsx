@@ -41,6 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: { card: "summary_large_image", title, description },
   formatDetection: { telephone: true },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
 };
 
 export const viewport: Viewport = {

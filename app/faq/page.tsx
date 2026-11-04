@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
 import Contact from "../components/Contact";
@@ -10,12 +11,7 @@ const title = "HVAC FAQ Calgary | Furnace, AC & Refrigeration";
 const description =
   "Answers to common Calgary heating, cooling, refrigeration and water heater questions from GBL HVAC LTD. Open 24/7. Call 403-970-6988.";
 
-export const metadata: Metadata = {
-  title: { absolute: title },
-  description,
-  alternates: { canonical: "/faq" },
-  openGraph: { title, description, url: "/faq", siteName: SITE.name, locale: "en_CA", type: "website" },
-};
+export const metadata: Metadata = pageMetadata({ title, description, path: "/faq" });
 
 // Questions about the business itself. Only these carry FAQPage schema on this page;
 // service questions already have it on their own pages.
