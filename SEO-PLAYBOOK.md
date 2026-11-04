@@ -18,6 +18,16 @@ Follows the Local SEO Field Manual (built on yayageneralservice.com).
 - [ ] Bing: the import didn't bring the sitemap. **Sitemaps → Submit sitemap →** `https://www.gblhvac.ca/sitemap.xml` (expect Success, ~14 URLs)
 - [ ] Bing (optional, speeds things up): **URL Submission → Submit URLs**, paste all 14 page URLs at once
 - [ ] Bing check in 1–2 weeks: search `site:gblhvac.ca` on bing.com
+
+**Wave 2 (Nov 4, 2026): 10 new pages, 24 total in the sitemap. Request indexing on Google + submit on Bing:**
+- [ ] `/heating/furnace-repair`, `/heating/furnace-installation`, `/heating/boilers`
+- [ ] `/air-conditioning/ac-repair`, `/air-conditioning/ac-installation`
+- [ ] `/water-heaters/hot-water-tank-replacement`, `/ventilation/hrv`
+- [ ] `/commercial`, `/service-areas`, `/about`
+- [ ] Re-request the reshaped hubs: `/`, `/heating`, `/air-conditioning`, `/water-heaters`, `/ventilation`
+
+**Draft pages (written, NOT live) — publish only when Quinn confirms he offers them** (remove `draft: true` in `lib/services.ts`):
+heat pumps (`/heating/heat-pumps`), ductless mini-splits (`/air-conditioning/ductless-mini-splits`), humidifiers (`/ventilation/humidifiers`), garage heaters (`/heating/garage-heaters`). Never add tankless.
 - [ ] Live test of the quote form (activate Formspree if asked)
 
 **Vercel domains (checked, correct):** `www.gblhvac.ca` = Production; `gblhvac.ca` and `gbl-theta.vercel.app` both 308-redirect to it.
@@ -52,6 +62,16 @@ Follows the Local SEO Field Manual (built on yayageneralservice.com).
 | `/refrigeration/walk-in-coolers-freezers` | walk-in cooler / freezer repair Calgary | Spoke under Refrigeration (one page for both, to avoid cannibalization) |
 | `/refrigeration/ice-machines` | ice machine repair Calgary | Spoke under Refrigeration |
 | `/ventilation/hood-fans-make-up-air` | hood fan / make up air unit Calgary | Spoke under Ventilation (the two work as a pair) |
+| `/heating/furnace-repair` | furnace repair Calgary | Spoke (the Heating hub is now the general "Heating & Furnace Service" page) |
+| `/heating/furnace-installation` | furnace replacement Calgary | Spoke |
+| `/heating/boilers` | boiler repair Calgary | Spoke |
+| `/air-conditioning/ac-repair` | AC repair Calgary | Spoke (AC hub is now general "Air Conditioning in Calgary") |
+| `/air-conditioning/ac-installation` | AC installation Calgary | Spoke |
+| `/water-heaters/hot-water-tank-replacement` | hot water tank replacement Calgary | Spoke |
+| `/ventilation/hrv` | HRV service Calgary | Spoke (Ventilation hub renamed "Ventilation & Ductwork") |
+| `/commercial` | commercial HVAC Calgary | Hub for all business services |
+| `/service-areas` | HVAC service areas | Replaces the repeated town list on service pages |
+| `/about` | — | Licences, insurance, WCB, years and story to add once Quinn confirms (see TODO comments) |
 | `/faq` | HVAC FAQ Calgary | All service FAQs grouped, linking to each page. Only the general questions carry FAQPage schema (service questions already have it on their own pages) |
 | `/gallery` | — | Real job photos from `lib/gallery.ts`. Add photos there as Quinn sends them |
 

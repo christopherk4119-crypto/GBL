@@ -46,11 +46,10 @@ export default function Hero() {
           <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-ice/30 bg-ice/5 px-4 py-1.5 text-sm font-semibold text-ice">
             <span className="text-flame">●</span> {SITE.tagline}
           </p>
-          <h1 className="text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-            No Heat? No Problem.
-            <span className="mt-2 block bg-gradient-to-r from-flame-light via-white to-ice bg-clip-text text-transparent">
-              Calgary&apos;s 24/7 HVAC Experts.
-            </span>
+          <p className="font-display text-2xl font-black text-flame-light sm:text-3xl">No Heat? No Problem.</p>
+          <h1 className="mt-2 text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+            24/7 Furnace &amp; HVAC Repair
+            <span className="mt-2 block bg-gradient-to-r from-flame-light via-white to-ice bg-clip-text text-transparent">in Calgary</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
             Heating, Air Conditioning, Refrigeration, Ventilation &amp; Water Heaters. Installation, Maintenance &amp; Repair for

@@ -25,9 +25,10 @@ export const NAV: readonly { label: string; href: string; menu?: MenuKey }[] = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/#services", menu: "services" },
   { label: "Residential", href: "/#residential", menu: "residential" },
-  { label: "Commercial", href: "/#commercial", menu: "commercial" },
+  { label: "Commercial", href: "/commercial", menu: "commercial" },
   { label: "Gallery", href: "/gallery" },
   { label: "FAQ", href: "/faq" },
+  { label: "About", href: "/about" },
   { label: "Contact", href: "/#contact" },
 ];
 

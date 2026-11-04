@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, ChevronRight, Phone } from "lucide-react";
+import { AlertTriangle, ArrowRight, CheckCircle2, ChevronRight, MapPin, Phone } from "lucide-react";
 import Contact from "./Contact";
 import FaqSection from "./FaqSection";
 import JsonLd from "./JsonLd";
-import { SERVICE_AREAS, SERVICE_CITIES, SITE, siteUrl } from "@/lib/site";
+import { SERVICE_CITIES, SITE, siteUrl } from "@/lib/site";
 import { childrenOf, getService, type ServicePage } from "@/lib/services";
 
 // "Label: detail" bullets render the label in bold so the list can be skimmed.
@@ -169,22 +169,52 @@ export default function ServiceDetail({ page }: { page: ServicePage }) {
               ))}
             </div>
 
-            <section className="mt-12">
-              <h2 className="text-2xl font-extrabold md:text-3xl">Areas we serve</h2>
-              <ul className="mt-4 flex flex-wrap gap-2">
-                {SERVICE_AREAS.map((a) => (
-                  <li key={a} className="rounded-full border border-white/15 px-3 py-1.5 text-sm font-semibold text-white/85">
-                    {a}
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-4 text-white/75">
-                Not sure if you&apos;re covered?{" "}
+            {page.steps && (
+              <section className="mt-12">
+                <h2 className="text-2xl font-extrabold md:text-3xl">How the job runs</h2>
+                <ol className="mt-5 grid gap-3">
+                  {page.steps.map((step, i) => (
+                    <li key={step} className="card flex items-start gap-4 p-4">
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-flame font-black text-white">{i + 1}</span>
+                      <span className="pt-1.5 text-white/85">
+                        <Bullet text={step} />
+                      </span>
+                    </li>
+                  ))}
+                </ol>
+              </section>
+            )}
+
+            {page.notes && (
+              <section className="mt-10 rounded-2xl border-2 border-flame/50 bg-flame/10 p-6">
+                <h2 className="flex items-center gap-2 text-xl font-extrabold">
+                  <AlertTriangle className="h-6 w-6 text-flame" aria-hidden /> {page.notes.heading}
+                </h2>
+                <ul className="mt-3 space-y-2">
+                  {page.notes.bullets.map((b) => (
+                    <li key={b} className="flex items-start gap-2.5 text-white/85">
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-flame" aria-hidden />
+                      <Bullet text={b} />
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            <p className="mt-10 flex items-start gap-2 text-white/80">
+              <MapPin className="mt-1 h-5 w-5 shrink-0 text-flame" aria-hidden />
+              <span>
+                Serving all of Calgary and nearby towns.{" "}
+                <Link href="/service-areas" className="font-bold text-ice underline-offset-4 hover:underline">
+                  See our service areas
+                </Link>{" "}
+                or{" "}
                 <a href={SITE.tel} className="font-bold text-flame underline-offset-4 hover:underline">
-                  Call {SITE.phone}
+                  call {SITE.phone}
                 </a>
-              </p>
-            </section>
+                .
+              </span>
+            </p>
 
             <FaqSection faqs={page.faqs} />
 

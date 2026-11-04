@@ -94,7 +94,7 @@ export default function Header({ menus }: { menus: Record<MenuKey, MenuLink[]> }
 
       {/* Desktop nav */}
       <nav className="hidden border-t border-white/5 md:block" aria-label="Main">
-        <ul className="mx-auto flex max-w-7xl items-center justify-center gap-6 px-6 text-base font-bold lg:gap-9 lg:text-lg xl:gap-12 xl:text-xl">
+        <ul className="mx-auto flex max-w-7xl items-center justify-center gap-4 px-6 text-base font-bold lg:gap-7 lg:text-lg xl:gap-10 xl:text-xl">
           {NAV.map((item) => {
             const menu = item.menu ? menus[item.menu] : undefined;
             const wide = menu && menu.length > 8;

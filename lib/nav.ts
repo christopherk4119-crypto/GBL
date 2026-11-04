@@ -3,7 +3,18 @@ import { SERVICES, getService } from "./services";
 
 // Dropdown contents for the header. Built on the server so the client bundle
 // only gets names and links, not page content.
-const RESIDENTIAL = ["heating", "heating/24-hour-furnace-repair", "air-conditioning", "water-heaters", "ventilation", "maintenance-plans"];
+const RESIDENTIAL = [
+  "heating/furnace-repair",
+  "heating/24-hour-furnace-repair",
+  "heating/furnace-installation",
+  "heating/boilers",
+  "air-conditioning/ac-repair",
+  "air-conditioning/ac-installation",
+  "water-heaters",
+  "water-heaters/hot-water-tank-replacement",
+  "ventilation/hrv",
+  "maintenance-plans",
+];
 const COMMERCIAL = [
   "rooftop-units",
   "refrigeration",
@@ -30,5 +41,9 @@ function allServices(): MenuLink[] {
 }
 
 export function navMenus(): Record<MenuKey, MenuLink[]> {
-  return { services: allServices(), residential: links(RESIDENTIAL), commercial: links(COMMERCIAL) };
+  return {
+    services: allServices(),
+    residential: links(RESIDENTIAL),
+    commercial: [{ name: "All Commercial Services", href: "/commercial" }, ...links(COMMERCIAL)],
+  };
 }

@@ -20,6 +20,11 @@ export type ServicePage = {
   related: string[]; // slugs of related pages (cross-links)
   parent?: string; // hub slug, for spokes
   image: { src: string; alt: string };
+  steps?: string[]; // "How the job runs", in order
+  notes?: { heading: string; bullets: string[] }; // safety notes / what we don't do
+  // Draft pages are written but NOT published (no route, sitemap, nav or links) until
+  // Quinn confirms he offers the service. Remove `draft: true` to publish.
+  draft?: boolean;
 };
 
 const VAN = {
@@ -27,17 +32,17 @@ const VAN = {
   alt: "GBL HVAC LTD service van in a Calgary residential neighbourhood",
 };
 
-export const SERVICES: ServicePage[] = [
+const ALL_SERVICES: ServicePage[] = [
   {
     slug: "heating",
     name: "Heating",
     serviceType: "Furnace and boiler installation, repair and maintenance",
     tone: "warm",
-    title: "Furnace Repair Calgary | 24/7 Heating Service",
+    title: "Heating & Furnace Service Calgary | Open 24/7",
     description:
-      "Furnace and boiler repair, installation and maintenance in Calgary. Open 24 hours, 7 days, for homes and businesses. Call 403-970-6988.",
-    h1: "Furnace Repair in Calgary",
-    lede: "Furnace and boiler repair, installation and maintenance for Calgary homes and businesses. Open 24 hours, every day of the year.",
+      "Furnace and boiler repair, installation and maintenance in Calgary for homes and businesses. Open 24 hours, 7 days. Call GBL HVAC LTD at 403-970-6988.",
+    h1: "Heating & Furnace Service in Calgary",
+    lede: "Furnace repair, new furnaces, boilers and tune-ups for Calgary homes and businesses. Open 24 hours, every day of the year.",
     intro: [
       "Furnace dies on a January night? We pick up 24/7 and get your heat back on.",
     ],
@@ -53,26 +58,6 @@ export const SERVICES: ServicePage[] = [
           "No ignition: igniter clicks but burners don't light",
           "Rising gas bill: with no change in how you use heat",
           "Older unit: several repairs in the last few winters",
-        ],
-      },
-      {
-        heading: "Furnace repair",
-        body: [],
-        bullets: [
-          "Full diagnosis: thermostat, filter, igniter, flame sensor, switches, inducer, blower, venting, safety controls",
-          "Plain-language answer: what's wrong and what it takes, before work starts",
-          "Common culprit: snow or frost blocking the pipes on the outside wall",
-        ],
-      },
-      {
-        heading: "Installation & replacement",
-        body: [],
-        bullets: [
-          "Honest advice: repair vs. replace, your call",
-          "Typical lifespan: around 15 to 20 years, depending on maintenance",
-          "Sized right: for your actual home, ducts and venting",
-          "Boilers too: hot water boilers for homes and commercial buildings",
-          "Permits: some heating work needs a City permit. Ask us",
         ],
       },
       {
@@ -98,6 +83,21 @@ export const SERVICES: ServicePage[] = [
         ],
       },
     ],
+    steps: [
+      "Call 403-970-6988: you talk to Quinn, the owner, any hour",
+      "Quick questions: what the furnace is doing, any error lights, how old it is",
+      "On site: we check the whole system, not just the first part we see",
+      "Straight answer: what's wrong and your options, before any work starts",
+      "Fix and test: we run a full heating cycle and check the safety controls",
+    ],
+    notes: {
+      heading: "Safety first",
+      bullets: [
+        "Smell gas: leave the building and call 911 or your gas utility from outside",
+        "CO alarm sounding: get everyone out and call 911",
+        "Never heat the house with an oven, stove or barbecue",
+      ],
+    },
     included: [
       "Furnace diagnosis and repair",
       "High-efficiency furnace installation and replacement",
@@ -126,6 +126,10 @@ export const SERVICES: ServicePage[] = [
       {
         q: "Do you work on commercial heating?",
         a: "Yes. We service furnaces, boilers, unit heaters and rooftop unit heating sections for restaurants, stores, offices and other businesses in Calgary.",
+      },
+      {
+        q: "Do you install new furnaces too?",
+        a: "Yes. We replace old furnaces with high-efficiency units sized for your home. See our furnace installation page for how it works.",
       },
     ],
     related: ["heating/24-hour-furnace-repair", "rooftop-units", "maintenance-plans", "water-heaters"],
@@ -210,6 +214,13 @@ export const SERVICES: ServicePage[] = [
         ],
       },
     ],
+    steps: [
+      "Call any hour: Quinn answers, no answering service",
+      "Stay safe: we walk you through keeping the house warm and pipes safe",
+      "Diagnosis: we find the actual failed part",
+      "Heat back on: as soon as it's safe to do so",
+      "Follow-up: if a part has to be ordered, we tell you straight and plan the next step",
+    ],
     included: [
       "24/7 phone answer, 365 days a year",
       "Emergency diagnosis and repair",
@@ -239,8 +250,12 @@ export const SERVICES: ServicePage[] = [
         q: "Do you handle emergency calls for businesses?",
         a: "Yes. We answer commercial heating emergencies around the clock for restaurants, stores, offices and other businesses in Calgary.",
       },
+      {
+        q: "How do I know it's an emergency?",
+        a: "No heat in cold weather, a gas smell, a CO alarm, or water near the furnace are all reasons to call right away. If you're unsure, call and ask.",
+      },
     ],
-    related: ["heating", "maintenance-plans", "water-heaters", "refrigeration"],
+    related: ["heating/furnace-repair", "heating/furnace-installation", "maintenance-plans", "water-heaters"],
     image: {
       src: "/images/gbl-hvac-van-24-7-emergency-service.jpg",
       alt: "Rear of the GBL HVAC LTD van showing 24/7 emergency service and phone number 403-970-6988",
@@ -251,24 +266,15 @@ export const SERVICES: ServicePage[] = [
     name: "Air Conditioning",
     serviceType: "Air conditioning installation, repair and maintenance",
     tone: "cool",
-    title: "AC Installation Calgary | Repair & Tune-Ups",
+    title: "Air Conditioning Calgary | AC Repair & Install",
     description:
-      "Central air conditioning installation, repair and tune-ups in Calgary for homes and businesses. Open 24/7. Call GBL HVAC LTD at 403-970-6988.",
-    h1: "AC Installation & Repair in Calgary",
-    lede: "Central air conditioning installed, repaired and tuned up for Calgary homes and businesses, so you're ready before the heat arrives.",
+      "Central air conditioning repair, installation and tune-ups in Calgary for homes and businesses. Open 24/7. Call GBL HVAC LTD at 403-970-6988.",
+    h1: "Air Conditioning in Calgary",
+    lede: "AC repair, new central air and spring tune-ups for Calgary homes and businesses, so you're ready before the heat arrives.",
     intro: [
       "Calgary summers are short, but the hot stretches are real. Get your AC installed, fixed or tuned up before the heat hits.",
     ],
     sections: [
-      {
-        heading: "AC installation",
-        body: [],
-        bullets: [
-          "Uses your ducts: most homes with a forced-air furnace can add central air",
-          "Sized right: not too big, not too small, based on your home",
-          "Smart placement: level ground, airflow clearance, away from bedroom windows",
-        ],
-      },
       {
         heading: "Call us if",
         body: [],
@@ -280,16 +286,6 @@ export const SERVICES: ServicePage[] = [
           "Buzzing, clicking or grinding outside",
           "Breaker trips when AC starts",
           "Some rooms stay hot",
-        ],
-      },
-      {
-        heading: "What we check",
-        body: [],
-        bullets: [
-          "Thermostat, capacitor, contactor and fan motors",
-          "Compressor and refrigerant pressures",
-          "Condensate drain and airflow",
-          "Low refrigerant: means a leak, we find it instead of just topping up",
         ],
       },
       {
@@ -312,6 +308,21 @@ export const SERVICES: ServicePage[] = [
         ],
       },
     ],
+    steps: [
+      "Call or request a quote: tell us what the AC is doing",
+      "Quick checks by phone: thermostat, breaker, filter",
+      "On site: test electrical, refrigerant, airflow and drainage",
+      "Options explained: repair, tune-up or replacement, before work starts",
+      "Cooling confirmed: we check the temperature drop before we leave",
+    ],
+    notes: {
+      heading: "If you see ice",
+      bullets: [
+        "Turn the AC off at the thermostat. Running it frozen can damage the compressor",
+        "Set the fan to ON to help it thaw, and check the filter",
+        "Call us if it freezes again",
+      ],
+    },
     included: [
       "Central air conditioning installation",
       "AC diagnosis and repair",
@@ -340,6 +351,10 @@ export const SERVICES: ServicePage[] = [
       {
         q: "Do you service commercial air conditioning?",
         a: "Yes. We work on commercial split systems and rooftop units for offices, stores and restaurants across Calgary.",
+      },
+      {
+        q: "Do you fix hail-damaged AC units?",
+        a: "We can check the condenser coil and fins after a hailstorm and tell you whether it needs repair or replacement.",
       },
     ],
     related: ["rooftop-units", "maintenance-plans", "ventilation", "heating"],
@@ -417,6 +432,21 @@ export const SERVICES: ServicePage[] = [
         ],
       },
     ],
+    steps: [
+      "Call 403-970-6988 any hour: tell us the unit, the temperature and what it's doing",
+      "Protect product: we tell you what to do while we're on the way",
+      "Diagnose the system: controls, defrost, fans, coils, refrigerant, compressor",
+      "Repair and pull down: we fix it and watch the temperature come back",
+      "Prevent the next one: we recommend maintenance that fits your kitchen",
+    ],
+    notes: {
+      heading: "Food safety is your call",
+      bullets: [
+        "Keep a thermometer in every cooler and log temperatures",
+        "Cold-held food generally needs to stay at 4°C or below",
+        "Decisions about warmed product belong to you and your health inspector",
+      ],
+    },
     included: [
       "24/7 emergency refrigeration calls",
       "Walk-in cooler and freezer repair",
@@ -455,11 +485,11 @@ export const SERVICES: ServicePage[] = [
     name: "Ventilation",
     serviceType: "Ventilation, air exchanger and ductwork service",
     tone: "cool",
-    title: "Ventilation & HRV Service Calgary | Ductwork",
+    title: "Ventilation & Ductwork Calgary | Homes & Business",
     description:
       "HRV and air exchanger service, ventilation and ductwork for Calgary homes and businesses. Cleaner, healthier air. Call GBL HVAC LTD, open 24/7.",
-    h1: "Ventilation, HRVs & Ductwork in Calgary",
-    lede: "Air exchangers, ventilation and ductwork for cleaner, healthier air in Calgary homes and businesses.",
+    h1: "Ventilation & Ductwork in Calgary",
+    lede: "HRVs, ventilation and ductwork for cleaner, healthier air in Calgary homes and businesses.",
     intro: [
       "Tight new homes trap moisture and stale air. Good ventilation swaps it for fresh air without wasting heat.",
     ],
@@ -474,16 +504,6 @@ export const SERVICES: ServicePage[] = [
           "Mould near windows or in bathrooms",
           "HRV noisy, iced up or never cleaned",
           "Rooms always too hot or too cold",
-        ],
-      },
-      {
-        heading: "HRVs & air exchangers",
-        body: [],
-        bullets: [
-          "What it does: swaps stale air for fresh, keeps the heat",
-          "Needs care: filters, core, drain and outdoor hoods",
-          "Neglected units: can move very little air",
-          "We service, troubleshoot and install",
         ],
       },
       {
@@ -517,6 +537,20 @@ export const SERVICES: ServicePage[] = [
         ],
       },
     ],
+    steps: [
+      "Tell us the symptoms: condensation, smells, stuffy rooms, drafts",
+      "Inspect: HRV, fans, ductwork, hoods and airflow",
+      "Explain: what's not keeping up and what fixes it",
+      "Fix: clean, repair, seal or add ductwork",
+      "Balance: confirm air is moving where it should",
+    ],
+    notes: {
+      heading: "What we don't do",
+      bullets: [
+        "Duct cleaning: we don't offer it",
+        "Grease cleaning of kitchen hoods and ducts: a separate specialty",
+      ],
+    },
     included: [
       "HRV and air exchanger service and repair",
       "HRV installation",
@@ -542,6 +576,14 @@ export const SERVICES: ServicePage[] = [
         q: "Can you add ductwork for my basement development?",
         a: "Yes. We add and modify duct runs for renovations and basement developments so new rooms get proper heating and airflow.",
       },
+      {
+        q: "Do you do duct cleaning?",
+        a: "No. We repair, seal, modify and balance ductwork, but we don't offer duct cleaning.",
+      },
+      {
+        q: "Why do some rooms never get enough air?",
+        a: "Often leaky or undersized ducts, closed or blocked vents, or an unbalanced system. We check the ductwork and balance the airflow.",
+      },
     ],
     related: ["rooftop-units", "heating", "air-conditioning", "maintenance-plans"],
     image: VAN,
@@ -551,11 +593,11 @@ export const SERVICES: ServicePage[] = [
     name: "Water Heater",
     serviceType: "Water heater installation and repair",
     tone: "warm",
-    title: "Hot Water Tank Repair Calgary | Water Heaters",
+    title: "Water Heaters Calgary | Hot Water Tank Service",
     description:
       "Hot water tank repair and replacement in Calgary for homes and businesses. Leaks and no hot water answered 24/7. Call GBL HVAC LTD at 403-970-6988.",
-    h1: "Hot Water Tank Repair & Replacement in Calgary",
-    lede: "Hot water tank repair and replacement for Calgary homes and businesses.",
+    h1: "Water Heater Service in Calgary",
+    lede: "Hot water tank repair, replacement and commercial water heaters for Calgary homes and businesses.",
     intro: [
       "No hot water means no showers, no laundry, and for some businesses, no opening. We fix it 24/7.",
     ],
@@ -594,16 +636,6 @@ export const SERVICES: ServicePage[] = [
         ],
       },
       {
-        heading: "Choosing a new tank",
-        body: [],
-        bullets: [
-          "Gas or electric: matched to what your home is set up for",
-          "Right size: based on how many people and bathrooms you have",
-          "Too small: you run out. Too big: you heat water you don't use",
-          "Honest repair vs. replace advice first",
-        ],
-      },
-      {
         heading: "Commercial & permits",
         body: [],
         bullets: [
@@ -613,6 +645,19 @@ export const SERVICES: ServicePage[] = [
         ],
       },
     ],
+    steps: [
+      "Call: leaks and no hot water answered 24/7",
+      "Make it safe: we walk you through shutting off water and gas or power",
+      "Diagnose: burner, thermocouple, gas valve, venting, elements, the tank itself",
+      "Repair or replace: honest answer on which makes sense",
+      "Test: hot water confirmed before we leave",
+    ],
+    notes: {
+      heading: "What we don't do",
+      bullets: [
+        "Tankless water heaters: we don't install or service them",
+      ],
+    },
     included: [
       "Hot water tank repair",
       "Hot water tank replacement",
@@ -637,8 +682,12 @@ export const SERVICES: ServicePage[] = [
         q: "My water heater is leaking. What do I do?",
         a: "Shut off the cold water supply to the tank, turn the gas control to Off or Pilot (or switch off the breaker on an electric tank), and call 403-970-6988. We answer 24/7.",
       },
+      {
+        q: "Can a hot water tank be repaired?",
+        a: "Often, yes: burners, thermocouples, gas valves and elements can be replaced. A leak from the tank itself means it needs replacing.",
+      },
     ],
-    related: ["heating", "maintenance-plans", "ventilation", "heating/24-hour-furnace-repair"],
+    related: ["water-heaters/hot-water-tank-replacement", "heating/boilers", "maintenance-plans", "heating/24-hour-furnace-repair"],
     image: VAN,
   },
   {
@@ -714,6 +763,13 @@ export const SERVICES: ServicePage[] = [
         ],
       },
     ],
+    steps: [
+      "Book: fall for furnaces, spring for AC, or both",
+      "Inspect: the full checklist for each system",
+      "Clean and adjust: burners, sensors, coils, drains",
+      "Report: what we found and anything coming up",
+      "Next visit: we remind you before the next season",
+    ],
     included: [
       "Fall furnace tune-ups",
       "Spring AC tune-ups",
@@ -738,6 +794,10 @@ export const SERVICES: ServicePage[] = [
       {
         q: "How often should I change my furnace filter?",
         a: "It depends on the filter type, pets and how much the system runs. Check it monthly during heating season and replace it when it looks dirty. Your filter's packaging gives the maximum interval.",
+      },
+      {
+        q: "What happens if you find a problem during a tune-up?",
+        a: "We explain what we found and what it would take to fix, and you decide. Nothing is done without your OK.",
       },
     ],
     related: ["heating", "air-conditioning", "rooftop-units", "refrigeration/walk-in-coolers-freezers"],
@@ -822,6 +882,20 @@ export const SERVICES: ServicePage[] = [
         ],
       },
     ],
+    steps: [
+      "Call any hour: tell us what the space is doing",
+      "Roof access: we coordinate with you or your building",
+      "Diagnose: heating section, cooling, economizer, controls",
+      "Repair, or a straight repair-vs-replace answer",
+      "Test: heating or cooling confirmed from inside the space",
+    ],
+    notes: {
+      heading: "Good to know",
+      bullets: [
+        "Roof leaks from damaged curbs or flashing may also need a roofer",
+        "Replacing a rooftop unit usually means planning a crane lift",
+      ],
+    },
     included: [
       "24/7 rooftop unit service calls",
       "Heating section diagnosis and repair",
@@ -937,6 +1011,20 @@ export const SERVICES: ServicePage[] = [
         ],
       },
     ],
+    steps: [
+      "Call 403-970-6988: cooler or freezer, temperature, symptoms",
+      "Keep the door shut and move high-value product if you can",
+      "Diagnose the whole system, inside and out",
+      "Repair and pull down to temperature",
+      "Maintenance plan to stop repeat failures",
+    ],
+    notes: {
+      heading: "Don't",
+      bullets: [
+        "Chip ice off the evaporator coil with tools. You can puncture it",
+        "Prop the door open to 'let it breathe'",
+      ],
+    },
     included: [
       "24/7 emergency walk-in calls",
       "Walk-in cooler repair",
@@ -1046,6 +1134,20 @@ export const SERVICES: ServicePage[] = [
         ],
       },
     ],
+    steps: [
+      "Tell us the symptom: no ice, slow, bad taste, leaks",
+      "Diagnose: refrigeration, water system and controls",
+      "Repair what failed",
+      "Clean, descale and sanitize if needed",
+      "Confirm a full harvest cycle before we leave",
+    ],
+    notes: {
+      heading: "Don't",
+      bullets: [
+        "Chip ice off the evaporator with tools",
+        "Skip the water filter. Calgary's hard water scales machines fast",
+      ],
+    },
     included: [
       "Ice machine diagnosis and repair",
       "Cleaning, descaling and sanitizing",
@@ -1070,6 +1172,10 @@ export const SERVICES: ServicePage[] = [
       {
         q: "My ice machine is leaking. What should I do?",
         a: "Turn off the water supply to the machine if you can do so safely, and call 403-970-6988. Common causes are a blocked drain, a cracked water line or a failing water valve.",
+      },
+      {
+        q: "Do you service ice machines in bars and hotels?",
+        a: "Yes. We service commercial ice machines for restaurants, bars, cafés, hotels and convenience stores.",
       },
     ],
     related: ["refrigeration/walk-in-coolers-freezers", "refrigeration", "maintenance-plans", "water-heaters"],
@@ -1145,6 +1251,13 @@ export const SERVICES: ServicePage[] = [
         ],
       },
     ],
+    steps: [
+      "Call: tell us what the hood and kitchen are doing",
+      "Schedule around service, any hour",
+      "Check both units: exhaust fan and make-up air",
+      "Repair belts, motors, burners or controls",
+      "Test them together so the kitchen is balanced",
+    ],
     included: [
       "Hood exhaust fan repair and replacement",
       "Fan belts, motors and bearings",
@@ -1178,7 +1291,1068 @@ export const SERVICES: ServicePage[] = [
     related: ["rooftop-units", "refrigeration/walk-in-coolers-freezers", "ventilation", "maintenance-plans"],
     image: VAN,
   },
+  {
+    slug: "heating/furnace-repair",
+    parent: "heating",
+    name: "Furnace Repair",
+    serviceType: "Furnace repair",
+    tone: "warm",
+    title: "Furnace Repair Calgary | Open 24/7 | GBL HVAC",
+    description: "Furnace repair in Calgary for homes and businesses: igniters, flame sensors, blowers, pressure switches and more. Open 24/7. Call 403-970-6988.",
+    h1: "Furnace Repair in Calgary",
+    lede: "Furnace acting up? We find the real cause, explain it in plain language and fix it. Answered 24/7.",
+    intro: [
+      "Most furnace problems come down to a handful of parts. We find the one that actually failed instead of guessing.",
+    ],
+    sections: [
+      {
+        heading: "What we fix most",
+        body: [],
+        bullets: [
+          "Igniter: clicks or glows but the burners don't light",
+          "Flame sensor: lights, then shuts off after a few seconds",
+          "Inducer motor & pressure switch: starts up, then locks out",
+          "Blower motor & capacitor: runs but no air from the vents",
+          "Limit switch: overheats and shuts down",
+          "Control board: blinking error codes, nothing happens",
+          "Thermostat & wiring: furnace never gets the call for heat",
+          "Vent pipes: blocked by snow or frost on the outside wall",
+        ],
+      },
+      {
+        heading: "Symptoms and likely causes",
+        body: [],
+        bullets: [
+          "Cold air from the vents: ignition or gas supply problem",
+          "Lights then shuts off: dirty flame sensor",
+          "Short cycling: overheating, clogged filter or limit switch",
+          "Loud squeal or hum: blower motor or capacitor",
+          "Blinking light: the board is telling us where to look",
+          "Quits in cold snaps: blocked intake or exhaust pipe",
+        ],
+      },
+      {
+        heading: "Why Calgary furnaces fail when they do",
+        body: [],
+        bullets: [
+          "Cold snaps: furnaces run non-stop and weak parts fail first",
+          "Chinooks: big temperature swings mean more on-off cycling",
+          "Snow and frost: block high-efficiency pipes on the outside wall",
+          "Dry, dusty winter air: clogs filters faster than you'd think",
+        ],
+      },
+      {
+        heading: "Before you call",
+        body: [
+          "Two minutes, and sometimes it solves the problem.",
+        ],
+        bullets: [
+          "Thermostat on Heat and set above room temperature",
+          "Furnace switch on, breaker not tripped",
+          "Filter not clogged",
+          "Outside pipes clear of snow and frost",
+        ],
+      },
+    ],
+    steps: [
+      "Call 403-970-6988: you talk to Quinn, any hour",
+      "Describe it: what the furnace does, error lights, its age",
+      "Diagnose: we test the parts, not guess",
+      "Price and options before any work starts",
+      "Repair and test: full heating cycle and safety controls checked",
+    ],
+    notes: {
+      heading: "Safety first",
+      bullets: [
+        "Smell gas: leave the building and call 911 or your gas utility from outside",
+        "CO alarm sounding: get everyone out and call 911",
+        "Never heat the house with an oven, stove or barbecue",
+      ],
+    },
+    included: [
+      "Full furnace diagnosis",
+      "Igniter and flame sensor repair",
+      "Blower motor and capacitor repair",
+      "Pressure switch and inducer repair",
+      "Control board and thermostat troubleshooting",
+      "Residential and commercial furnaces",
+    ],
+    faqs: [
+      {
+        q: "What does furnace repair cost?",
+        a: "It depends on what failed. We diagnose first and tell you the cost before any work starts, so you can decide.",
+      },
+      {
+        q: "Why is my furnace blowing cold air?",
+        a: "Usually the burners aren't lighting or staying lit: a failed igniter, dirty flame sensor, gas supply problem or a safety lockout. We'll find which.",
+      },
+      {
+        q: "Can a dirty filter really stop my furnace?",
+        a: "Yes. A clogged filter can make the furnace overheat and shut itself off. Check it first, and replace it if it's dirty.",
+      },
+      {
+        q: "Is it worth repairing an old furnace?",
+        a: "A single failed part on an otherwise healthy furnace is usually worth fixing. If it's near 15 to 20 years old and needs a major part, replacement may make more sense. We'll give you both options.",
+      },
+      {
+        q: "Do you repair furnaces at night?",
+        a: "Yes. We're open 24 hours, 7 days a week. For a no-heat emergency, see our 24 hour furnace repair page or just call.",
+      },
+    ],
+    related: [
+      "heating/24-hour-furnace-repair",
+      "heating/furnace-installation",
+      "maintenance-plans",
+      "heating/boilers",
+    ],
+    image: VAN,
+  },
+  {
+    slug: "heating/furnace-installation",
+    parent: "heating",
+    name: "Furnace Installation",
+    serviceType: "Furnace installation and replacement",
+    tone: "warm",
+    title: "Furnace Replacement Calgary | New Furnace Install",
+    description: "New furnace installation and furnace replacement in Calgary, sized for your home. Honest repair-vs-replace advice. Call GBL HVAC LTD at 403-970-6988.",
+    h1: "Furnace Installation & Replacement in Calgary",
+    lede: "New high-efficiency furnaces, sized for your actual home, with an honest answer on whether you really need one.",
+    intro: [
+      "Replacing a furnace is a big decision. We start by telling you honestly whether a repair would do.",
+    ],
+    sections: [
+      {
+        heading: "Signs it's time to replace",
+        body: [],
+        bullets: [
+          "Age: around 15 to 20 years or more",
+          "Repairs piling up: several calls in the last few winters",
+          "Rising gas bills: with no change in how you use heat",
+          "Uneven heat: rooms that never get warm",
+          "Safety concern: found during an inspection",
+        ],
+      },
+      {
+        heading: "Repair or replace?",
+        body: [
+          "We lay out both options and let you decide.",
+        ],
+        bullets: [
+          "Age of the furnace and its overall condition",
+          "Cost of the repair compared to its remaining life",
+          "How often it has failed lately",
+          "Your plans: staying long term or selling soon",
+        ],
+      },
+      {
+        heading: "Sized right, not just copied",
+        body: [],
+        bullets: [
+          "Home size, insulation and windows",
+          "Existing ductwork and venting",
+          "How you use the space: basement suites, home offices",
+          "Too big or too small both cause problems",
+        ],
+      },
+      {
+        heading: "What's involved",
+        body: [],
+        bullets: [
+          "Remove the old furnace",
+          "Set the new high-efficiency unit",
+          "Venting, connections and condensate drain",
+          "Thermostat hookup",
+          "Start-up, testing and a walkthrough",
+        ],
+      },
+    ],
+    steps: [
+      "Assessment: we look at your furnace, ducts and venting",
+      "Options: repair vs. replace, and the right size",
+      "Schedule: a time that works, including in winter",
+      "Install: remove the old unit, set and connect the new one",
+      "Test and walkthrough: full heating cycle, then we show you the basics",
+    ],
+    notes: {
+      heading: "Permits",
+      bullets: [
+        "Some heating work in Calgary needs a City permit and inspection. Ask us whether yours does",
+      ],
+    },
+    included: [
+      "Repair vs. replace assessment",
+      "Furnace sizing",
+      "High-efficiency furnace installation",
+      "Venting and condensate drain",
+      "Thermostat hookup",
+      "Start-up and testing",
+    ],
+    faqs: [
+      {
+        q: "How long does a furnace last?",
+        a: "Most furnaces last around 15 to 20 years, depending on how well they've been maintained.",
+      },
+      {
+        q: "What size furnace do I need?",
+        a: "It depends on your home's size, insulation, windows and ductwork, not just the size of the old one. We work it out before recommending anything.",
+      },
+      {
+        q: "Can you replace a furnace in winter?",
+        a: "Yes. We install year-round. If your old furnace has failed, call and we'll talk through keeping the house warm in the meantime.",
+      },
+      {
+        q: "Should I replace my AC at the same time?",
+        a: "Sometimes it makes sense, since the AC coil sits on the furnace and shares the blower. If your AC is young and working well, there's no need. We'll tell you honestly.",
+      },
+      {
+        q: "Do I need a permit?",
+        a: "Some furnace work in Calgary needs a City permit and inspection. Ask us and we'll explain the steps for your job.",
+      },
+    ],
+    related: [
+      "heating/furnace-repair",
+      "heating",
+      "maintenance-plans",
+      "air-conditioning/ac-installation",
+    ],
+    image: VAN,
+  },
+  {
+    slug: "heating/boilers",
+    parent: "heating",
+    name: "Boilers",
+    serviceType: "Hot water boiler repair and installation",
+    tone: "warm",
+    title: "Boiler Repair Calgary | Hot Water Heating Service",
+    description: "Hot water boiler repair, installation and maintenance in Calgary for homes and commercial buildings. Open 24/7. Call GBL HVAC LTD at 403-970-6988.",
+    h1: "Boiler Repair & Installation in Calgary",
+    lede: "Hot water boilers repaired, installed and maintained for Calgary homes and commercial buildings.",
+    intro: [
+      "Boilers heat water and pump it through baseboards, radiators or in-floor heating. When one quits, the whole building goes cold.",
+    ],
+    sections: [
+      {
+        heading: "Signs your boiler needs service",
+        body: [],
+        bullets: [
+          "Cold radiators or baseboards",
+          "Banging, gurgling or kettling noises",
+          "Leaks around the boiler or pipes",
+          "Pressure gauge too high or too low",
+          "Pilot or burner won't stay lit",
+          "Some zones heating, others not",
+        ],
+      },
+      {
+        heading: "What we service",
+        body: [],
+        bullets: [
+          "Burners and ignition",
+          "Circulator pumps",
+          "Expansion tanks",
+          "Pressure relief valves",
+          "Zone valves and controls",
+          "Thermostats",
+        ],
+      },
+      {
+        heading: "Repair or replace",
+        body: [],
+        bullets: [
+          "Honest comparison based on age, condition and the repair",
+          "New boilers sized for your building",
+          "Homes and commercial buildings",
+        ],
+      },
+    ],
+    steps: [
+      "Call: tell us what's cold, noisy or leaking",
+      "Check pressure, burner, pump and valves",
+      "Find the cause: air, a failed pump, a zone valve, a control",
+      "Repair, or a straight repair-vs-replace answer",
+      "Confirm heat in every zone before we leave",
+    ],
+    notes: {
+      heading: "Safety first",
+      bullets: [
+        "Relief valve dripping or pressure climbing: call us, and never cap or plug the valve",
+        "Smell gas: leave and call 911 or your gas utility from outside",
+      ],
+    },
+    included: [
+      "Boiler diagnosis and repair",
+      "Circulator pump and zone valve repair",
+      "Expansion tank and relief valve service",
+      "New boiler installation",
+      "Boiler maintenance",
+      "Commercial boilers",
+    ],
+    faqs: [
+      {
+        q: "Why are some of my radiators cold?",
+        a: "Common causes are air trapped in the system, a stuck zone valve or a failing circulator pump. We'll find which.",
+      },
+      {
+        q: "What is boiler kettling?",
+        a: "A rumbling or kettle-like noise, often from scale or sediment causing water to boil in spots. It should be checked.",
+      },
+      {
+        q: "What pressure should my boiler be at?",
+        a: "Many home systems run around 12 to 15 psi when cold, but check the label on your boiler. Big swings or constant drips from the relief valve mean it needs service.",
+      },
+      {
+        q: "Do you install new boilers?",
+        a: "Yes. We install hot water boilers for homes and commercial buildings, sized for the space.",
+      },
+      {
+        q: "Do you work on commercial boilers?",
+        a: "Yes. We service boilers in commercial buildings as well as homes, and answer 24/7.",
+      },
+    ],
+    related: [
+      "heating",
+      "heating/furnace-repair",
+      "maintenance-plans",
+      "water-heaters",
+    ],
+    image: VAN,
+  },
+  {
+    slug: "air-conditioning/ac-repair",
+    parent: "air-conditioning",
+    name: "AC Repair",
+    serviceType: "Air conditioning repair",
+    tone: "cool",
+    title: "AC Repair Calgary | Air Conditioner Service 24/7",
+    description: "Air conditioner repair in Calgary: no cooling, outdoor unit not running, ice, leaks and noise. Homes and businesses, open 24/7. Call 403-970-6988.",
+    h1: "AC Repair in Calgary",
+    lede: "AC quit on a hot day? We find the real cause and get you cooling again. Answered 24/7.",
+    intro: [
+      "Most AC breakdowns come down to a few parts. We test them properly instead of just topping up refrigerant.",
+    ],
+    sections: [
+      {
+        heading: "Call us if",
+        body: [],
+        bullets: [
+          "Vents blow warm air",
+          "Outdoor unit won't run",
+          "Ice on the lines or indoor coil",
+          "Water pooling near the furnace",
+          "Buzzing, clicking or grinding outside",
+          "Breaker trips when the AC starts",
+          "Some rooms stay hot",
+        ],
+      },
+      {
+        heading: "What we check",
+        body: [],
+        bullets: [
+          "Capacitor and contactor: the top reasons an outdoor unit won't start",
+          "Fan motors and compressor",
+          "Refrigerant pressures: low means a leak",
+          "Condensate drain",
+          "Filter, coil and airflow",
+        ],
+      },
+      {
+        heading: "Calgary AC problems",
+        body: [],
+        bullets: [
+          "Cottonwood fluff: clogs the outdoor coil in early summer",
+          "Hail: can flatten the condenser fins",
+          "Short season: problems often show up on the first hot day",
+        ],
+      },
+      {
+        heading: "Before you call",
+        body: [],
+        bullets: [
+          "Thermostat on Cool and set below room temperature",
+          "Breaker and outdoor disconnect on",
+          "Filter not clogged",
+          "Outdoor unit clear of grass and debris",
+        ],
+      },
+    ],
+    steps: [
+      "Call or request a quote: tell us what the AC is doing",
+      "Quick phone checks: thermostat, breaker, filter",
+      "On site: electrical, refrigerant, airflow, drainage",
+      "Options explained before any work starts",
+      "Cooling confirmed: we check the temperature drop before leaving",
+    ],
+    notes: {
+      heading: "If you see ice",
+      bullets: [
+        "Turn the AC off. Running it frozen can damage the compressor",
+        "Set the fan to ON to help it thaw, and check the filter",
+      ],
+    },
+    included: [
+      "AC diagnosis",
+      "Capacitor and contactor replacement",
+      "Fan motor repair",
+      "Refrigerant leak options",
+      "Condensate drain clearing",
+      "Commercial AC repair",
+    ],
+    faqs: [
+      {
+        q: "Why is my AC running but not cooling?",
+        a: "Common causes are a dirty filter, a failed capacitor or contactor, low refrigerant from a leak, or a frozen coil. We'll find which.",
+      },
+      {
+        q: "Why won't my outdoor unit turn on?",
+        a: "Often a failed capacitor or contactor, a tripped breaker or a thermostat problem. A capacitor is usually a quick repair.",
+      },
+      {
+        q: "Can you just add refrigerant?",
+        a: "Low refrigerant means there's a leak. Topping up without finding it only buys time, so we explain the options for fixing it properly.",
+      },
+      {
+        q: "Do you repair AC at night or on weekends?",
+        a: "Yes. We're open 24 hours, 7 days a week.",
+      },
+      {
+        q: "Do you fix commercial AC?",
+        a: "Yes: commercial split systems and rooftop unit cooling for offices, stores and restaurants.",
+      },
+    ],
+    related: [
+      "air-conditioning",
+      "air-conditioning/ac-installation",
+      "maintenance-plans",
+      "rooftop-units",
+    ],
+    image: VAN,
+  },
+  {
+    slug: "air-conditioning/ac-installation",
+    parent: "air-conditioning",
+    name: "AC Installation",
+    serviceType: "Central air conditioning installation",
+    tone: "cool",
+    title: "AC Installation Calgary | Central Air for Homes",
+    description: "Central air conditioning installation in Calgary, sized for your home and using your existing ductwork. Book before summer. Call 403-970-6988.",
+    h1: "AC Installation in Calgary",
+    lede: "Central air for Calgary homes and businesses, sized properly and installed before the heat arrives.",
+    intro: [
+      "If your home has a forced-air furnace, you can usually add central air using the ductwork you already have.",
+    ],
+    sections: [
+      {
+        heading: "Can I add central AC?",
+        body: [],
+        bullets: [
+          "Forced-air furnace: usually yes, using existing ducts",
+          "Boiler or baseboard heat: a different setup is needed",
+          "We check your furnace, ducts and electrical first",
+        ],
+      },
+      {
+        heading: "Sized right",
+        body: [],
+        bullets: [
+          "Too small: runs non-stop and never catches up",
+          "Too big: cools fast, then cycles and leaves it clammy",
+          "We size it to your home, windows and layout",
+        ],
+      },
+      {
+        heading: "What's involved",
+        body: [],
+        bullets: [
+          "Outdoor condenser on a level pad",
+          "Indoor coil on top of your furnace",
+          "Refrigerant lines between them",
+          "Electrical disconnect and wiring",
+          "Condensate drain and thermostat",
+        ],
+      },
+      {
+        heading: "Where the outdoor unit goes",
+        body: [],
+        bullets: [
+          "Level ground with room to breathe",
+          "Away from bedroom windows",
+          "Clear of dryer vents and heavy cottonwood areas if possible",
+        ],
+      },
+    ],
+    steps: [
+      "Assessment: furnace, ductwork, electrical and layout",
+      "Recommendation: the right size and placement",
+      "Schedule: book in spring to beat the rush",
+      "Install: condenser, coil, lines, electrical, drain",
+      "Start-up: test cooling and walk you through it",
+    ],
+    notes: {
+      heading: "Permits",
+      bullets: [
+        "Some AC installs need a permit. Ask us and we'll explain the steps for your home",
+      ],
+    },
+    included: [
+      "Home assessment",
+      "System sizing",
+      "Condenser and coil installation",
+      "Refrigerant lines and electrical",
+      "Thermostat setup",
+      "Start-up and testing",
+    ],
+    faqs: [
+      {
+        q: "Can I add central AC to my house?",
+        a: "If your home has a forced-air furnace and ductwork, usually yes. We'll check your furnace, ducts and electrical and tell you what's involved.",
+      },
+      {
+        q: "When should I book AC installation?",
+        a: "Spring is best, before the first heat wave when demand jumps. We install year-round though.",
+      },
+      {
+        q: "How long does AC installation take?",
+        a: "It depends on the home and what's needed. We'll give you a clear plan and schedule before we start.",
+      },
+      {
+        q: "Do you install AC for businesses?",
+        a: "Yes: commercial split systems and rooftop unit cooling for offices, stores and restaurants.",
+      },
+      {
+        q: "How often does a new AC need service?",
+        a: "Once a year, ideally in spring. A tune-up keeps it efficient and catches weak parts early.",
+      },
+    ],
+    related: [
+      "air-conditioning",
+      "air-conditioning/ac-repair",
+      "heating/furnace-installation",
+      "maintenance-plans",
+    ],
+    image: VAN,
+  },
+  {
+    slug: "water-heaters/hot-water-tank-replacement",
+    parent: "water-heaters",
+    name: "Hot Water Tank Replacement",
+    serviceType: "Hot water tank replacement",
+    tone: "warm",
+    title: "Hot Water Tank Replacement Calgary | New Tanks",
+    description: "Hot water tank replacement in Calgary: gas and electric tanks sized for your household. Leaking tank? Call GBL HVAC LTD 24/7 at 403-970-6988.",
+    h1: "Hot Water Tank Replacement in Calgary",
+    lede: "Old or leaking hot water tank? We replace it with the right size for your household.",
+    intro: [
+      "A leaking tank can't be patched. When it's time, we replace it with one sized for how you actually use hot water.",
+    ],
+    sections: [
+      {
+        heading: "Signs it's time",
+        body: [],
+        bullets: [
+          "Water leaking from the tank itself",
+          "Rusty or discoloured hot water",
+          "Rumbling or popping from sediment",
+          "Running out of hot water much faster",
+          "Age: around 8 to 12 years or more",
+        ],
+      },
+      {
+        heading: "Choosing a new tank",
+        body: [],
+        bullets: [
+          "Gas or electric: matched to what your home is set up for",
+          "Right size: based on people and bathrooms",
+          "Too small: you run out. Too big: you heat water you don't use",
+        ],
+      },
+      {
+        heading: "What's involved",
+        body: [],
+        bullets: [
+          "Shut off and drain the old tank",
+          "Disconnect water, gas or power, and venting",
+          "Set and connect the new tank",
+          "Fill, light or power up, and test",
+        ],
+      },
+    ],
+    steps: [
+      "Call: leaks answered 24/7",
+      "Make it safe: shut-off steps over the phone",
+      "Confirm size and type for your home",
+      "Replace: drain, disconnect, install, connect",
+      "Test: hot water confirmed before we leave",
+    ],
+    notes: {
+      heading: "Good to know",
+      bullets: [
+        "Tankless water heaters: we don't install them",
+        "Some replacements need a City permit. Ask us",
+      ],
+    },
+    included: [
+      "Gas and electric tanks",
+      "Sizing for your household",
+      "Old tank drained and disconnected",
+      "New tank installed and connected",
+      "Venting checked",
+      "Testing",
+    ],
+    faqs: [
+      {
+        q: "How long does a hot water tank last?",
+        a: "Typically around 8 to 12 years, depending on water quality, usage and maintenance.",
+      },
+      {
+        q: "My tank is leaking. Can it be repaired?",
+        a: "A drip from a fitting can sometimes be fixed. A leak from the tank itself means it needs replacing.",
+      },
+      {
+        q: "What size tank do I need?",
+        a: "It depends on how many people and bathrooms you have and how you use hot water. We'll recommend the right size.",
+      },
+      {
+        q: "Do you install tankless water heaters?",
+        a: "No. We focus on hot water tanks: repair, replacement and commercial water heaters.",
+      },
+      {
+        q: "Can you replace a tank the same day?",
+        a: "Call us and we'll tell you what we can do based on the tank and timing.",
+      },
+    ],
+    related: [
+      "water-heaters",
+      "heating/boilers",
+      "maintenance-plans",
+      "heating/furnace-repair",
+    ],
+    image: VAN,
+  },
+  {
+    slug: "ventilation/hrv",
+    parent: "ventilation",
+    name: "HRVs & Air Exchangers",
+    serviceType: "HRV and air exchanger service",
+    tone: "cool",
+    title: "HRV Service Calgary | Air Exchanger Repair",
+    description: "HRV and air exchanger service, repair and installation in Calgary. Fresh air without losing heat. Homes and businesses. Call GBL HVAC LTD at 403-970-6988.",
+    h1: "HRV & Air Exchanger Service in Calgary",
+    lede: "Heat recovery ventilators serviced, repaired and installed so your home gets fresh air without losing heat.",
+    intro: [
+      "Many newer Calgary homes have an HRV. Most owners don't know it needs regular care.",
+    ],
+    sections: [
+      {
+        heading: "What an HRV does",
+        body: [],
+        bullets: [
+          "Pulls stale, humid air out",
+          "Brings fresh outdoor air in",
+          "Transfers heat between the two through a core",
+          "Result: fresh air without a blast of cold",
+        ],
+      },
+      {
+        heading: "Signs your HRV needs service",
+        body: [],
+        bullets: [
+          "Heavy window condensation in winter",
+          "Stuffy or musty rooms",
+          "Loud, rattling or not running",
+          "Ice or frost on the unit or outdoor hoods",
+          "Water around the unit",
+        ],
+      },
+      {
+        heading: "What we service",
+        body: [],
+        bullets: [
+          "Core and filters",
+          "Fans and motors",
+          "Condensate drain",
+          "Defrost operation",
+          "Controls and airflow balancing",
+          "Outdoor hoods",
+        ],
+      },
+      {
+        heading: "What you can do",
+        body: [],
+        bullets: [
+          "Clean filters as the manual recommends",
+          "Keep outdoor hoods clear of snow",
+          "Don't switch it off all winter",
+        ],
+      },
+    ],
+    steps: [
+      "Tell us what you're noticing",
+      "Inspect the unit, ducts and hoods",
+      "Clean the core and filters",
+      "Repair fans, drain or controls",
+      "Balance and confirm airflow",
+    ],
+    notes: {
+      heading: "What we don't do",
+      bullets: [
+        "Duct cleaning: we don't offer it",
+      ],
+    },
+    included: [
+      "HRV inspection",
+      "Core and filter cleaning",
+      "Fan and motor repair",
+      "Drain and defrost fixes",
+      "Airflow balancing",
+      "HRV installation",
+    ],
+    faqs: [
+      {
+        q: "Do I have an HRV?",
+        a: "Look for a box near your furnace with two insulated ducts running to an outside wall. Many newer Calgary homes have one.",
+      },
+      {
+        q: "Should I turn my HRV off in winter?",
+        a: "Usually not. It helps control humidity and condensation. If it's icing or noisy, have it checked.",
+      },
+      {
+        q: "How often should an HRV be cleaned?",
+        a: "Filters and the core often need cleaning every few months, per the manufacturer's manual, plus a yearly professional check.",
+      },
+      {
+        q: "Can you install an HRV?",
+        a: "Yes. We install HRVs in homes that need better ventilation.",
+      },
+      {
+        q: "Why is my HRV freezing up?",
+        a: "Often a defrost problem, a blocked drain or a balance issue. We'll find the cause.",
+      },
+    ],
+    related: [
+      "ventilation",
+      "maintenance-plans",
+      "heating",
+      "air-conditioning",
+    ],
+    image: VAN,
+  },
+  {
+    draft: true,
+    slug: "heating/heat-pumps",
+    parent: "heating",
+    name: "Heat Pumps",
+    serviceType: "Heat pump installation and repair",
+    tone: "cool",
+    title: "Heat Pumps Calgary | Install & Repair",
+    description: "Heat pump installation and repair in Calgary, including furnace-backed systems for cold winters. Call GBL HVAC LTD at 403-970-6988.",
+    h1: "Heat Pumps in Calgary",
+    lede: "Heat pumps heat and cool from one outdoor unit. In Calgary they're usually paired with a furnace for the coldest days.",
+    intro: [
+      "A heat pump moves heat instead of burning fuel. It cools in summer and heats on milder winter days.",
+    ],
+    sections: [
+      {
+        heading: "How they work in Calgary",
+        body: [],
+        bullets: [
+          "Mild days: the heat pump heats the home",
+          "Deep cold: a furnace or backup heat takes over",
+          "Summer: it works as your air conditioner",
+        ],
+      },
+      {
+        heading: "Is it right for you?",
+        body: [],
+        bullets: [
+          "Your ductwork and electrical service",
+          "Whether you keep a furnace as backup",
+          "How you heat and cool now",
+        ],
+      },
+      {
+        heading: "Signs of trouble",
+        body: [],
+        bullets: [
+          "Not heating or cooling",
+          "Heavy ice that doesn't clear",
+          "Running constantly",
+          "Strange noises",
+        ],
+      },
+    ],
+    steps: [
+      "Assessment",
+      "Options and sizing",
+      "Install or repair",
+      "Test heating and cooling",
+      "Walkthrough",
+    ],
+    included: [
+      "Heat pump assessment",
+      "Installation",
+      "Repair",
+      "Furnace pairing",
+      "Maintenance",
+    ],
+    faqs: [
+      {
+        q: "Do heat pumps work in Calgary winters?",
+        a: "Many are paired with a furnace or backup heat that takes over in the deepest cold.",
+      },
+      {
+        q: "Can a heat pump replace my AC?",
+        a: "Yes. A heat pump cools in summer just like an air conditioner.",
+      },
+    ],
+    related: [
+      "heating",
+      "air-conditioning",
+      "heating/furnace-installation",
+      "maintenance-plans",
+    ],
+    image: VAN,
+  },
+  {
+    draft: true,
+    slug: "air-conditioning/ductless-mini-splits",
+    parent: "air-conditioning",
+    name: "Ductless Mini-Splits",
+    serviceType: "Ductless mini-split installation and repair",
+    tone: "cool",
+    title: "Ductless Mini-Split Calgary | Install & Repair",
+    description: "Ductless mini-split installation and repair in Calgary for homes without ductwork, additions, garages and hot rooms. Call GBL HVAC LTD at 403-970-6988.",
+    h1: "Ductless Mini-Splits in Calgary",
+    lede: "Cooling, and often heating, for rooms and homes without ductwork.",
+    intro: [
+      "Mini-splits connect an outdoor unit to wall-mounted indoor units, with no ducts needed.",
+    ],
+    sections: [
+      {
+        heading: "Good for",
+        body: [],
+        bullets: [
+          "Homes with boilers or baseboard heat",
+          "Additions and renovated spaces",
+          "Hot upstairs rooms",
+          "Garages and workshops",
+        ],
+      },
+      {
+        heading: "What's involved",
+        body: [],
+        bullets: [
+          "Outdoor unit",
+          "Wall-mounted indoor head",
+          "Small line set through the wall",
+          "Electrical and condensate drain",
+        ],
+      },
+      {
+        heading: "Signs of trouble",
+        body: [],
+        bullets: [
+          "Not cooling",
+          "Water dripping from the indoor unit",
+          "Error codes",
+          "Noisy operation",
+        ],
+      },
+    ],
+    steps: [
+      "Assessment",
+      "Placement plan",
+      "Install",
+      "Test",
+      "Walkthrough",
+    ],
+    included: [
+      "Assessment",
+      "Installation",
+      "Repair",
+      "Cleaning and maintenance",
+    ],
+    faqs: [
+      {
+        q: "Do I need ductwork for a mini-split?",
+        a: "No. Mini-splits are designed for spaces without ducts.",
+      },
+      {
+        q: "Can one outdoor unit run several rooms?",
+        a: "Some systems can connect multiple indoor units. We'll tell you what fits your space.",
+      },
+    ],
+    related: [
+      "air-conditioning",
+      "air-conditioning/ac-installation",
+      "ventilation",
+      "maintenance-plans",
+    ],
+    image: VAN,
+  },
+  {
+    draft: true,
+    slug: "ventilation/humidifiers",
+    parent: "ventilation",
+    name: "Humidifiers",
+    serviceType: "Furnace humidifier installation and service",
+    tone: "cool",
+    title: "Furnace Humidifiers Calgary | Install & Service",
+    description: "Furnace humidifier installation and service in Calgary for dry winter air, static and comfort. Call GBL HVAC LTD at 403-970-6988.",
+    h1: "Furnace Humidifiers in Calgary",
+    lede: "Calgary winters are dry. A furnace humidifier adds moisture back through your heating system.",
+    intro: [
+      "Dry winter air means static shocks, dry skin and cracked wood. A whole-home humidifier helps.",
+    ],
+    sections: [
+      {
+        heading: "Signs your air is too dry",
+        body: [],
+        bullets: [
+          "Static shocks",
+          "Dry skin and throat",
+          "Gaps in hardwood floors",
+          "Cracking wood furniture",
+        ],
+      },
+      {
+        heading: "Getting it right",
+        body: [],
+        bullets: [
+          "Too much humidity in a cold snap causes window condensation",
+          "Turn it down when it gets very cold outside",
+          "Change the pad or filter every season",
+        ],
+      },
+      {
+        heading: "What we do",
+        body: [],
+        bullets: [
+          "Install furnace-mounted humidifiers",
+          "Replace pads and valves",
+          "Fix leaks and drains",
+          "Set the humidistat",
+        ],
+      },
+    ],
+    steps: [
+      "Check your furnace and ducts",
+      "Recommend a humidifier",
+      "Install",
+      "Set the humidistat",
+      "Show you seasonal care",
+    ],
+    included: [
+      "Humidifier installation",
+      "Pad replacement",
+      "Valve and drain repair",
+      "Humidistat setup",
+    ],
+    faqs: [
+      {
+        q: "What humidity should I keep in winter?",
+        a: "Lower humidity in very cold weather to avoid window condensation. We'll set it up and show you how to adjust.",
+      },
+      {
+        q: "How often do humidifier pads need changing?",
+        a: "Usually once a season, depending on use and water quality.",
+      },
+    ],
+    related: [
+      "ventilation",
+      "heating",
+      "ventilation/hrv",
+      "maintenance-plans",
+    ],
+    image: VAN,
+  },
+  {
+    draft: true,
+    slug: "heating/garage-heaters",
+    parent: "heating",
+    name: "Garage Heaters",
+    serviceType: "Garage and unit heater installation and repair",
+    tone: "warm",
+    title: "Garage Heaters Calgary | Unit Heater Install",
+    description: "Garage and shop unit heater installation and repair in Calgary. Stay warm all winter. Call GBL HVAC LTD at 403-970-6988.",
+    h1: "Garage & Unit Heaters in Calgary",
+    lede: "Heat for garages, workshops and warehouses through a Calgary winter.",
+    intro: [
+      "A properly installed unit heater keeps your garage or shop usable all winter.",
+    ],
+    sections: [
+      {
+        heading: "What we work on",
+        body: [],
+        bullets: [
+          "Garage unit heaters",
+          "Shop and warehouse heaters",
+          "Thermostats",
+          "Venting",
+        ],
+      },
+      {
+        heading: "Signs of trouble",
+        body: [],
+        bullets: [
+          "Won't light",
+          "Shuts off early",
+          "Noisy fan",
+          "Not keeping up",
+        ],
+      },
+      {
+        heading: "Placement and sizing",
+        body: [],
+        bullets: [
+          "Sized for the space and insulation",
+          "Proper clearances",
+          "Venting done right",
+        ],
+      },
+    ],
+    steps: [
+      "Assess the space",
+      "Size the heater",
+      "Install or repair",
+      "Test",
+      "Walkthrough",
+    ],
+    notes: {
+      heading: "Safety first",
+      bullets: [
+        "Smell gas: leave the building and call 911 or your gas utility from outside",
+        "CO alarm sounding: get everyone out and call 911",
+        "Never heat the house with an oven, stove or barbecue",
+      ],
+    },
+    included: [
+      "Unit heater installation",
+      "Repair",
+      "Thermostats",
+      "Venting checks",
+    ],
+    faqs: [
+      {
+        q: "What size heater does my garage need?",
+        a: "It depends on the size, insulation and doors. We'll size it properly.",
+      },
+      {
+        q: "Do you repair shop heaters?",
+        a: "Yes. We repair unit heaters in garages, shops and warehouses.",
+      },
+    ],
+    related: [
+      "heating",
+      "heating/furnace-repair",
+      "rooftop-units",
+      "maintenance-plans",
+    ],
+    image: VAN,
+  },
 ];
+
+// Only published pages. Everything (routes, sitemap, nav, footer, links) reads from this.
+export const SERVICES = ALL_SERVICES.filter((s) => !s.draft);
 
 export const HUBS = SERVICES.filter((s) => !s.parent);
 

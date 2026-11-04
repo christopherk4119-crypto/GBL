@@ -4,8 +4,9 @@ import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
 import Contact from "../components/Contact";
 import FaqSection from "../components/FaqSection";
-import { SERVICES, type Faq } from "@/lib/services";
-import { SERVICE_AREAS, SITE } from "@/lib/site";
+import { SERVICES } from "@/lib/services";
+import { GENERAL_FAQS } from "@/lib/faq";
+import { SITE } from "@/lib/site";
 
 const title = "HVAC FAQ Calgary | Furnace, AC & Refrigeration";
 const description =
@@ -13,34 +14,6 @@ const description =
 
 export const metadata: Metadata = pageMetadata({ title, description, path: "/faq" });
 
-// Questions about the business itself. Only these carry FAQPage schema on this page;
-// service questions already have it on their own pages.
-const GENERAL: Faq[] = [
-  {
-    q: "Are you really open 24 hours?",
-    a: `Yes. ${SITE.name} is open 24 hours a day, 7 days a week, including weekends and holidays. Call ${SITE.phone} any time.`,
-  },
-  {
-    q: "Who will I talk to when I call?",
-    a: "You talk directly to Quinn, the owner. No call centre and no answering service.",
-  },
-  {
-    q: "Do you work on homes and businesses?",
-    a: "Both. We handle furnaces, air conditioning, water heaters and ventilation for homes, and rooftop units, walk-in coolers and freezers, ice machines, hood fans, make-up air and commercial refrigeration for businesses.",
-  },
-  {
-    q: "What areas do you serve?",
-    a: `All of Calgary (${SERVICE_AREAS.filter((a) => a.includes("Calgary")).join(", ")}) plus ${SERVICE_AREAS.filter((a) => !a.includes("Calgary")).join(", ")}. Not sure if you're covered? Call ${SITE.phone}.`,
-  },
-  {
-    q: "How do I get a quote?",
-    a: `Call ${SITE.phone}, or fill in the free quote form at the bottom of any page and we'll get back to you shortly. For emergencies, calling is fastest.`,
-  },
-  {
-    q: "Do you charge extra for after-hours calls?",
-    a: "Ask when you call. We'll explain how the visit is charged before we come out, so there are no surprises.",
-  },
-];
 
 export default function FaqPage() {
   return (
@@ -58,7 +31,7 @@ export default function FaqPage() {
             </a>
           </div>
 
-          <FaqSection faqs={GENERAL} heading="About GBL HVAC LTD" />
+          <FaqSection faqs={GENERAL_FAQS} heading="About GBL HVAC LTD" schema={false} />
 
           {SERVICES.map((s) => (
             <div key={s.slug}>

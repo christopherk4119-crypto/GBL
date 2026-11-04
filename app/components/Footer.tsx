@@ -3,7 +3,7 @@ import { Clock, Mail, Phone } from "lucide-react";
 import Logo from "./Logo";
 import LightStreak from "./LightStreak";
 import { NAV, SITE } from "@/lib/site";
-import { SERVICES } from "@/lib/services";
+import { HUBS } from "@/lib/services";
 
 const SERVICE_LIST = ["Install", "Maintenance", "Commercial", "Residential", "Heating", "Air Conditioning", "Refrigeration", "Ventilation", "Water Heater", "Rooftop Units", "Walk-in Coolers & Freezers", "Ice Machines", "Hood Fans", "Make-Up Air"];
 
@@ -32,13 +32,18 @@ export default function Footer() {
         <nav aria-label="Services">
           <h2 className="mb-3 text-sm font-bold uppercase tracking-widest text-ice">Services</h2>
           <ul className="space-y-2">
-            {SERVICES.map((s) => (
+            {HUBS.map((s) => (
               <li key={s.slug}>
                 <Link href={`/${s.slug}`} className="text-white/80 hover:text-ice">
                   {s.h1.replace(/ in Calgary$/, "")}
                 </Link>
               </li>
             ))}
+            <li>
+              <Link href="/commercial" className="text-white/80 hover:text-ice">
+                Commercial HVAC &amp; Refrigeration
+              </Link>
+            </li>
           </ul>
         </nav>
 
@@ -52,6 +57,11 @@ export default function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link href="/service-areas" className="text-white/80 hover:text-ice">
+                Service Areas
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

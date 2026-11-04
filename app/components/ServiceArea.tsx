@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { MapPin, Phone } from "lucide-react";
 import Reveal from "./Reveal";
 import { SERVICE_AREAS, SITE } from "@/lib/site";
@@ -20,7 +21,12 @@ export default function ServiceArea() {
           </ul>
         </Reveal>
 
-        <p className="mt-10 text-lg text-white/80">Not sure if we cover you?</p>
+        <p className="mt-8">
+          <Link href="/service-areas" className="font-bold text-ice hover:underline">
+            See all service areas
+          </Link>
+        </p>
+        <p className="mt-6 text-lg text-white/80">Not sure if we cover you?</p>
         <a href={SITE.tel} className="btn-flame mt-4 px-8 py-4 text-lg">
           <Phone className="h-5 w-5" aria-hidden /> Call {SITE.phone}
         </a>

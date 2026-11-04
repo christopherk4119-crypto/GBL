@@ -6,12 +6,12 @@ import Reveal from "./Reveal";
 type Service = { title: string; href: string; text: string; icon: LucideIcon; tone: "warm" | "cool" };
 
 const SERVICES: Service[] = [
-  { title: "Heating", href: "/heating", icon: Flame, tone: "warm", text: "Furnace and boiler installation, repair and maintenance. Keep your home warm all Calgary winter." },
-  { title: "Air Conditioning", href: "/air-conditioning", icon: Snowflake, tone: "cool", text: "AC installation, repair and tune-ups so you're ready for summer heat." },
-  { title: "Refrigeration", href: "/refrigeration", icon: Refrigerator, tone: "cool", text: "Commercial refrigeration and walk-in cooler service for restaurants, stores and businesses." },
-  { title: "Ventilation", href: "/ventilation", icon: Fan, tone: "cool", text: "Ventilation, air exchangers and ductwork for cleaner, healthier air." },
-  { title: "Water Heater", href: "/water-heaters", icon: Droplets, tone: "warm", text: "Hot water tank repair and replacement for homes and businesses." },
-  { title: "Maintenance Plans", href: "/maintenance-plans", icon: CalendarCheck, tone: "warm", text: "Seasonal furnace and AC tune-ups that prevent breakdowns and lower energy bills." },
+  { title: "Furnace & Heating Repair", href: "/heating", icon: Flame, tone: "warm", text: "Furnace and boiler installation, repair and maintenance. Keep your home warm all Calgary winter." },
+  { title: "AC Repair & Installation", href: "/air-conditioning", icon: Snowflake, tone: "cool", text: "AC installation, repair and tune-ups so you're ready for summer heat." },
+  { title: "Commercial Refrigeration", href: "/refrigeration", icon: Refrigerator, tone: "cool", text: "Commercial refrigeration and walk-in cooler service for restaurants, stores and businesses." },
+  { title: "Ventilation & HRVs", href: "/ventilation", icon: Fan, tone: "cool", text: "Ventilation, air exchangers and ductwork for cleaner, healthier air." },
+  { title: "Hot Water Tanks", href: "/water-heaters", icon: Droplets, tone: "warm", text: "Hot water tank repair and replacement for homes and businesses." },
+  { title: "Furnace & AC Maintenance", href: "/maintenance-plans", icon: CalendarCheck, tone: "warm", text: "Seasonal furnace and AC tune-ups that prevent breakdowns and lower energy bills." },
 ];
 
 export default function Services() {
