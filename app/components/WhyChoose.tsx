@@ -6,7 +6,7 @@ const REASONS = [
   { emoji: "🕐", title: "Open 24 Hours", text: "Day, night, weekend or holiday, we pick up." },
   { emoji: "🔥❄️", title: "Heating AND Cooling", text: "One company for every system in your building." },
   { emoji: "🏠🏢", title: "Residential & Commercial", text: "From family homes to restaurants and offices." },
-  { emoji: "📞", title: "Talk Directly to Quinn", text: "No call centres. You speak to the owner." },
+  { emoji: "📞", title: "Talk Directly to Quinn", text: "No call centres. You speak to the owner, with 14 years in the trade." },
 ];
 
 export default function WhyChoose() {

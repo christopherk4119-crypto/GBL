@@ -63,6 +63,7 @@ const businessSchema = {
   telephone: "+1-403-970-6988",
   email: SITE.email,
   founder: { "@type": "Person", name: SITE.owner },
+  foundingDate: "2026-02",
   // Service-area business: city-level address only, no street address shown.
   address: { "@type": "PostalAddress", addressLocality: "Calgary", addressRegion: "AB", addressCountry: "CA" },
   areaServed: SERVICE_CITIES.map((name) => ({ "@type": "City", name })),

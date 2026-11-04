@@ -26,8 +26,7 @@ Follows the Local SEO Field Manual (built on yayageneralservice.com).
 - [ ] `/commercial`, `/service-areas`, `/about`
 - [ ] Re-request the reshaped hubs: `/`, `/heating`, `/air-conditioning`, `/water-heaters`, `/ventilation`
 
-**Draft pages (written, NOT live) — publish only when Quinn confirms he offers them** (remove `draft: true` in `lib/services.ts`):
-heat pumps (`/heating/heat-pumps`), ductless mini-splits (`/air-conditioning/ductless-mini-splits`), humidifiers (`/ventilation/humidifiers`), garage heaters (`/heating/garage-heaters`). Never add tankless.
+**Not offered (confirmed by Quinn, Nov 2026):** heat pumps, ductless mini-splits, humidifiers, garage heaters, tankless water heaters, duct cleaning. Never add pages or GBP services for these.
 - [ ] Live test of the quote form (activate Formspree if asked)
 
 **Vercel domains (checked, correct):** `www.gblhvac.ca` = Production; `gblhvac.ca` and `gbl-theta.vercel.app` both 308-redirect to it.
@@ -110,6 +109,8 @@ All page content lives in `lib/services.ts`. Adding an entry there creates the p
 - 1 Google review exists (text not supplied yet)
 - No social media profiles, no current website, no year established given
 - Preferred vibe: Friendly
+- Started GBL HVAC LTD in **February 2026**; **14 years** of residential and commercial experience before that (working for other companies)
+- No licences/tickets, insurance or WCB details to publish. The site makes no claims about them
 - Does NOT do (told to us directly): tankless water heaters, duct cleaning. Never list or imply them
 - Service areas expanded: High River, Strathmore, Canmore, Banff added
 - Also does (told to us directly): rooftop units, hood fans, make-up air units, ice machines, furnaces, walk-in coolers, walk-in freezers

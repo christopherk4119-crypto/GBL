@@ -9,7 +9,7 @@ import { pageMetadata } from "@/lib/seo";
 
 const title = "About GBL HVAC LTD | Calgary 24/7 HVAC Company";
 const description =
-  "GBL HVAC LTD is a Calgary heating, cooling and refrigeration company owned by Quinn Lou. Open 24/7 for homes and businesses. Call 403-970-6988.";
+  "GBL HVAC LTD is a Calgary HVAC company owned by Quinn Lou, with 14 years of residential and commercial experience. Open 24/7. Call 403-970-6988.";
 
 export const metadata: Metadata = pageMetadata({ title, description, path: "/about" });
 
@@ -37,15 +37,20 @@ export default function AboutPage() {
     <>
       <PageHero
         title="About GBL HVAC LTD"
-        lede="A Calgary heating, cooling and refrigeration company, owned and run by Quinn Lou. Open 24/7 for homes and businesses."
+        lede="A Calgary heating, cooling and refrigeration company, owned and run by Quinn Lou: 14 years of residential and commercial experience. Open 24/7."
         crumb="About"
         path="/about"
       />
       <div className="px-4 py-16 sm:px-6">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">
           <div>
-            {/* TODO(Quinn): 2–3 sentences on his story: when he started in the trade, why he started GBL. */}
-            <h2 className="text-2xl font-extrabold md:text-3xl">One call, any system, any hour</h2>
+            <h2 className="text-2xl font-extrabold md:text-3xl">14 years in the trade. Now it&apos;s his name on the van.</h2>
+            <p className="mt-4 text-lg leading-relaxed text-white/85">
+              Quinn Lou has spent 14 years working on residential and commercial heating, cooling and refrigeration systems, working for other
+              companies. In February 2026 he started {SITE.name} so customers could call him directly, any hour, and get the person who actually
+              does the work.
+            </p>
+            <h2 className="mt-10 text-2xl font-extrabold md:text-3xl">One call, any system, any hour</h2>
             <p className="mt-4 text-lg leading-relaxed text-white/85">
               {SITE.name} handles installation, maintenance and repair for heating, air conditioning, refrigeration, ventilation and hot water tanks. When
               a furnace dies at 2am in a Calgary cold snap, or a walk-in cooler starts warming up at closing time, Quinn picks up.
@@ -60,8 +65,7 @@ export default function AboutPage() {
               ))}
             </ul>
 
-            {/* TODO(Quinn): licences and tickets (gas fitter, refrigeration mechanic / Red Seal), insurance, WCB, year started.
-                Add them here as a "Licensed & insured" list ONLY once confirmed. Do not publish unconfirmed claims. */}
+            {/* No licence, insurance or WCB claims: not confirmed by the owner. Add only if he provides them. */}
 
             <h2 className="mt-10 text-2xl font-extrabold md:text-3xl">What we do</h2>
             <ul className="mt-4 grid gap-2 sm:grid-cols-2">

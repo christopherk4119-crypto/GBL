@@ -350,7 +350,7 @@ _Rooftop units, kitchen exhaust, make-up air and commercial ventilation._
 | Setting | Value |
 | --- | --- |
 | **Appointment / booking link** | `https://www.gblhvac.ca/#contact` (opens the quote form) |
-| **Opening date** | Leave blank until Quinn confirms the year he started |
+| **Opening date** | **February 2026** |
 | **Attributes** | Tick only what's true: *Onsite services*, *Online estimates*. Ask Quinn before ticking any ownership attributes (e.g. "Identifies as…") |
 | **Languages** | English (add others only if Quinn speaks them with customers) |
 | **Social profiles** | None yet. Add them here and tell me, so the website links to them too |

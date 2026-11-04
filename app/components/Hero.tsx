@@ -1,7 +1,7 @@
 import { CheckCircle2, Phone } from "lucide-react";
 import { SITE } from "@/lib/site";
 
-const TRUST = ["Open 24 Hours, 7 Days", "Residential & Commercial", "Install, Repair & Maintenance", "Serving All of Calgary"];
+const TRUST = ["Open 24 Hours, 7 Days", "14 Years Residential & Commercial", "Install, Repair & Maintenance", "Serving All of Calgary"];
 
 export default function Hero() {
   return (

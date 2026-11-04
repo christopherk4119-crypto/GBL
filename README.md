@@ -34,9 +34,8 @@ After replacing any of these, run `node scripts/build-icons.mjs` to regenerate t
 
 ## Content to confirm with the client (not invented)
 
-- [ ] Years in business / founding year
-- [ ] Licensing and certifications (Gas Fitter, Refrigeration Mechanic tickets, etc.)
-- [ ] Insurance / WCB coverage
+- Founded February 2026; 14 years of experience (on the About page and homepage)
+- No licence, insurance or WCB claims on the site: none provided
 - [ ] Whether emergency calls carry an after-hours fee
 - [ ] Pricing or financing
 - [ ] Real customer reviews: add them to `REVIEWS` in `app/components/Testimonials.tsx` (cards stay hidden while it is empty)
